@@ -3,6 +3,96 @@
 class NamesHelpers {
 
     /**
+    * get number module
+    * @param dividendo - int
+    * @param divisor - int
+    * @return int
+    */
+    getModulo(dividendo, divisor) {
+        return Math.round(dividendo - (Math.floor(dividendo / divisor) * divisor));
+    }
+
+    getRandomNumberBetween(min, max) {
+        return Math.floor(Math.random() * (max - min) + min);
+    }
+
+    /**
+     * random number
+     * @param total - integer quantidade de numeros
+     * @return array
+     */
+    getRandomNumbers(total) {
+        let numbers = [];
+        for (let i = 0; i < total; i++) {
+            numbers[i] = this.getRandomNumberBetween(1, 9);
+        }
+        return numbers;
+    }
+
+    /**
+     * verificator
+     * @param numeros - array numeros
+     * @return int
+     */
+    getVerifyDigit(numeros = []) {
+        let digito = 0;
+        let arraySize = numeros.length + 1;
+
+        numeros.map((numero, index) => {
+            digito += numero * (arraySize - index);
+        });
+
+        digito = 11 - (this.getModulo(digito, 11));
+        return digito >= 10 ? 0 : digito;
+    }
+
+    /**
+     * cpf number
+     * @return String - 11 digitos 
+     */
+    generateCpfFake(points) {
+        let number = this.getRandomNumbers(9);
+        number.push(this.getVerifyDigit(number));
+        number.push(this.getVerifyDigit(number));
+        number = number.join('');
+        if (points) {
+            let first = number.slice(0, 3);
+            let second = number.slice(3, 6);
+            let third = number.slice(6, 9);
+            let final = number.slice(9, 12);
+            number = `${first}.${second}.${third}-${final}`
+        }
+        return number;
+    }
+
+    /**
+     * cpf number
+     * @return String 
+     */
+    geneateRG() {
+        var num_ = 12;
+        var aux1 = new Array(num_);
+        aux1[0] = '483710027';
+        aux1[1] = '165980187';
+        aux1[2] = '438133018';
+        aux1[3] = '468238992';
+        aux1[4] = '110336793';
+        aux1[5] = '389773645';
+        aux1[6] = '338627017';
+        aux1[7] = '294854459';
+        aux1[8] = '337310026';
+        aux1[9] = '429085072';
+        aux1[10] = '271117813';
+        aux1[11] = '348280683';
+        aux1[12] = '467466269';
+        return aux1[Math.round(Math.random() * num_)];
+    }
+
+    generateEmail(email) {
+        return `${email}@mail.com.br`.replace(/ /g,'');
+    }
+
+    /**
      * this function return a array of simples names
      * @returns {Array}
      */
@@ -284,87 +374,7 @@ class NamesHelpers {
         ]
     }
 
-    /**
-     * get number module
-     * @param dividendo - int
-     * @param divisor - int
-     * @return int
-     */
-    getModulo(dividendo, divisor) {
-        return Math.round(dividendo - (Math.floor(dividendo / divisor) * divisor));
-    }
 
-    getRandomNumberBetween(min, max) {
-        return Math.floor(Math.random() * (max - min) + min);
-    }
-
-    /**
-     * random number
-     * @param total - integer quantidade de numeros
-     * @return array
-     */
-    getRandomNumbers(total) {
-        let numbers = [];
-        for (let i = 0; i < total; i++) {
-            numbers[i] = this.getRandomNumberBetween(1, 9);
-        }
-        return numbers;
-    }
-
-    /**
-     * verificator
-     * @param numeros - array numeros
-     * @return int
-     */
-    getVerifyDigit(numeros = []) {
-        let digito = 0;
-        let arraySize = numeros.length + 1;
-
-        numeros.map((numero, index) => {
-            digito += numero * (arraySize - index);
-        });
-
-        digito = 11 - (this.getModulo(digito, 11));
-        return digito >= 10 ? 0 : digito;
-    }
-
-    /**
-     * cpf number
-     * @return String - 11 digitos 
-     */
-    generateCpfFake(points) {
-        let number = this.getRandomNumbers(9);
-        number.push(this.getVerifyDigit(number));
-        number.push(this.getVerifyDigit(number));
-        number = number.join('');
-        if (points) {
-            let first = number.slice(0, 3);
-            let second = number.slice(3, 6);
-            let third = number.slice(6, 9);
-            let final = number.slice(9, 12);
-            number = `${first}.${second}.${third}-${final}`
-        }
-        return number;
-    }
-
-    geneateRG() {
-        var num_ = 12;
-        var aux1 = new Array(num_);
-        aux1[0] = '483710027';
-        aux1[1] = '165980187';
-        aux1[2] = '438133018';
-        aux1[3] = '468238992';
-        aux1[4] = '110336793';
-        aux1[5] = '389773645';
-        aux1[6] = '338627017';
-        aux1[7] = '294854459';
-        aux1[8] = '337310026';
-        aux1[9] = '429085072';
-        aux1[10] = '271117813';
-        aux1[11] = '348280683';
-        aux1[12] = '467466269';
-        return aux1[Math.round(Math.random()*num_)];
-    }
 
 }
 

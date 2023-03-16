@@ -88,9 +88,19 @@ class PersonalData {
         return this.NamesHelpers.generateCpfFake();
     }
 
-    email() {
-        if (this.person) { }
-        return this;
+    /**
+    * this function a email
+    * @param {boolean} chainEnd
+    * @returns  string | object
+    */
+    email(chainEnd) {
+        if (this.person) {
+            let firstName = this.person.firstName ?? this.firstName();
+            let lastName = this.person.lastName ?? this.lastName();
+            this.person.email = this.NamesHelpers.generateEmail(firstName + lastName);
+            return chainEnd ? this.person : this;
+        }
+        return this.NamesHelpers.generateEmail();
     }
 
     workCard() {
