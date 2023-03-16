@@ -46,35 +46,46 @@ class PersonalData {
         return lastName;
     }
 
-     /**
+    /**
     * this function create a full name if exist or create a new full name
     * @param {boolean} chainEnd
     * @returns  string | object
     */
     fullName(chainEnd = false) {
         if (this.person) {
-            let firstName = this.person.firstName ?? this.firstName() ;
-            let lastName  = this.person.lastName ?? this.lastName();
-            this.person.fullname = firstName + ' ' + lastName 
+            let firstName = this.person.firstName ?? this.firstName();
+            let lastName = this.person.lastName ?? this.lastName();
+            this.person.fullname = firstName + ' ' + lastName
             return chainEnd ? this.person : this;
         }
         return this.firstName() + ' ' + this.lastName();
     }
 
-    rg() {
+    /**
+     * this function create a rg
+    * @param {boolean} chainEnd
+    * @returns  string | object
+    */
+    rg(chainEnd) {
         if (this.person) {
-            this.person.cpf = this.NamesHelpers.gerarCpfFake();
+            this.person.rg = this.NamesHelpers.geneateRG();
             return chainEnd ? this.person : this;
         }
-        return this.NamesHelpers.gerarCpfFake();
+        return this.NamesHelpers.geneateRG();
     }
 
-    cpf() {
+    /**
+    * this function create a cpf with ou without point
+    * @param {boolean} points
+    * @param {boolean} chainEnd
+    * @returns  string | object
+    */
+    cpf(points, chainEnd = false) {
         if (this.person) {
-            this.person.cpf = this.NamesHelpers.gerarCpfFake();
+            this.person.cpf = this.NamesHelpers.generateCpfFake(points);
             return chainEnd ? this.person : this;
         }
-        return this.NamesHelpers.gerarCpfFake();
+        return this.NamesHelpers.generateCpfFake();
     }
 
     email() {
