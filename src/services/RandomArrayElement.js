@@ -13,13 +13,30 @@ class RandomArrayElement{
 
     /**
      * return a random number between 2 and 5
-     * @param {number} array 
      * @returns int
      */
     randoNumber(){
        return Math.random() * (5 - 2) + 2;
     }
 
+    
+    /**
+     * return a random strintg
+     * @param {boolean} isUpper
+     * @param {number} length 
+     * @returns string
+     */
+    randomString(isUpper, length){
+        let result = '';
+        const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        const charactersLength = characters.length;
+        let counter = 0;
+        while (counter < length) {
+          result += characters.charAt(Math.floor(Math.random() * charactersLength));
+          counter += 1;
+        }
+        return isUpper ? result : result.toLowerCase();
+    }
 
 }
 

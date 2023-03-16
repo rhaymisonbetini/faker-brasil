@@ -17,8 +17,8 @@ class NamesHelpers {
     }
 
     /**
-     * random number
-     * @param total - integer quantidade de numeros
+     * generate  random number
+     * @param total - integer 
      * @return array
      */
     getRandomNumbers(total) {
@@ -30,7 +30,7 @@ class NamesHelpers {
     }
 
     /**
-     * verificator
+     * generate verificator
      * @param numeros - array numeros
      * @return int
      */
@@ -47,7 +47,7 @@ class NamesHelpers {
     }
 
     /**
-     * cpf number
+     * generate cpf number
      * @return String - 11 digitos 
      */
     generateCpfFake(points) {
@@ -66,7 +66,7 @@ class NamesHelpers {
     }
 
     /**
-     * cpf number
+     * generate cpf number
      * @return String 
      */
     geneateRG() {
@@ -88,8 +88,34 @@ class NamesHelpers {
         return aux1[Math.round(Math.random() * num_)];
     }
 
+    /**
+     * generate email 
+     * @return String 
+     */
     generateEmail(email) {
-        return `${email}@mail.com.br`.replace(/ /g,'');
+        return `${email}@mail.com.br`.replace(/ /g, '');
+    }
+
+    /**
+     * generate workcard 
+     * @return String 
+     */
+    generateWorkCard(points) {
+        let numbers = this.getRandomNumbers(11);
+        numbers = numbers.join('');
+        if (points) {
+            var first = numbers.slice(0, 3);
+            var second = numbers.slice(3, 8);
+            var third = numbers.slice(8, 10);
+            var final = numbers.slice(10, 11);
+            numbers = `${first}.${second}.${third}-${final}`
+        }
+        return numbers;
+    }
+
+    generatePassport(inital) {
+        let numbers = this.getRandomNumbers(6);
+        return `${inital}${numbers.join('')}`;
     }
 
     /**
