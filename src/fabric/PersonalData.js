@@ -7,7 +7,7 @@ class PersonalData {
 
     constructor() {
         this.person = {};
-        this.RandomArrayElement = new RandomArrayElement();
+        this.randomArrayElement = new RandomArrayElement();
         this.NamesHelpers = new NamesHelpers();
     }
 
@@ -17,7 +17,7 @@ class PersonalData {
      * @returns  string | object
      */
     firstName(chainEnd = false) {
-        let name = this.RandomArrayElement.randomElement(this.NamesHelpers.getSimpleNames());
+        let name = this.randomArrayElement.randomElement(this.NamesHelpers.getSimpleNames());
         if (this.person) {
             this.person.firstName = name
             return chainEnd ? this.person : this;
@@ -32,11 +32,11 @@ class PersonalData {
     */
     lastName(chainEnd = false) {
 
-        let totallastName = this.RandomArrayElement.randoNumber();
+        let totallastName = this.randomArrayElement.randoNumber();
         let lastName = '';
 
         for (let i = 0; i < Math.round(totallastName); i++) {
-            lastName += ' ' + this.RandomArrayElement.randomElement(this.NamesHelpers.getLastName());
+            lastName += ' ' + this.randomArrayElement.randomElement(this.NamesHelpers.getLastName());
         }
         lastName = lastName.trim();
         if (this.person) {
@@ -123,7 +123,7 @@ class PersonalData {
     * @returns  string | object
     */
     passPort(chainEnd = false) {
-        let initial = this.RandomArrayElement.randomString(true, 2)
+        let initial = this.randomArrayElement.randomString(true, 2)
         if (this.person) {
             this.person.passport = this.NamesHelpers.generatePassport(initial);
             return chainEnd ? this.person : this;

@@ -6,7 +6,7 @@ class UniveristyHelpers {
      * this method return array of Object
      * @returns {array} array<Object>
      */
-    static getUniveristyArray() {
+    getUniveristyArray() {
         return [
             {
                 "universidade": "ACADEMIA DA POLÍCIA CIVIL DO ESTADO DA BAHIA",
