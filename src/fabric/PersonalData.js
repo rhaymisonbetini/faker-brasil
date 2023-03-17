@@ -153,11 +153,32 @@ class PersonalData {
     }
 
     /**
-     * this function generate a birthDate
-     * @param {boolean} slash
-     * @param {boolean} chainEnd
-     * @returns  object
-     */
+    * this function random normal number phone for Brazi
+    * @param {boolean} prefix
+    * @param {boolean} mask
+    * @param {boolean} chainEnd
+    * @returns  string | object
+    */
+    phone(prefix, mask, chainEnd = false) {
+        let ddd = this.randomArrayElement.randomElement(this.NamesHelpers.getDDDBrasil()).split('-')[0];
+        let phone = this.NamesHelpers.generatePhone(ddd, prefix, mask);
+        if (this.person) {
+            this.person.phone = phone
+            return chainEnd ? this.person : this;
+        }
+        return phone
+    }
+
+    cellPhone() {
+
+    }
+
+    /**
+    * this function generate a birthDate
+    * @param {boolean} slash
+    * @param {boolean} chainEnd
+    * @returns  object
+    */
     newPerson() {
         let person = this.firstName()
             .lastName()
@@ -172,9 +193,9 @@ class PersonalData {
     }
 
     /**
-     * if you not want do create a new class you just clear the context of person
-     * @returns 
-     */
+    * if you not want do create a new class you just clear the context of person
+    * @returns 
+    */
     clear() {
         this.person = {}
     }
