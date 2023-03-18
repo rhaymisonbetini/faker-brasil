@@ -10,7 +10,7 @@ class PersonalData {
 
     /**
      * this function create a firstName 
-     * @returns  string | object
+     * @returns  string
      */
     firstName() {
         return RandomArrayElement.randomElement(NamesHelpers.getSimpleNames());
@@ -18,7 +18,7 @@ class PersonalData {
 
     /**
     * this function create a lastname
-    * @returns  string | object
+    * @returns  string
     */
     lastName() {
 
@@ -35,15 +35,15 @@ class PersonalData {
 
     /**
     * this function create a full name if exist or create a new full name
-    * @returns  string | object
+    * @returns  string
     */
     fullName() {
-        return this.firstName() + ' ' +  this.lastName()
+        return this.firstName() + ' ' + this.lastName()
     }
 
     /**
      * this function create a rg
-    * @returns  string | object
+    * @returns  string
     */
     rg() {
         return NamesHelpers.geneateRG();
@@ -52,7 +52,7 @@ class PersonalData {
     /**
     * this function create a cpf with ou without point
     * @param {boolean} points
-    * @returns  string | object
+    * @returns  string
     */
     cpf(points) {
         return NamesHelpers.generateCpfFake(points);
@@ -60,7 +60,7 @@ class PersonalData {
 
     /**
     * this function generate a email
-    * @returns  string | object
+    * @returns  string
     */
     email(firstName = null) {
         let email = '';
@@ -75,7 +75,7 @@ class PersonalData {
     /**
     * this function generate a workcard
     * @param {boolean} points
-    * @returns  string | object
+    * @returns  string
     */
     workCard(points) {
         return NamesHelpers.generateWorkCard(points);
@@ -83,7 +83,7 @@ class PersonalData {
 
     /**
     * this function generate a passport
-    * @returns  string | object
+    * @returns  string
     */
     passPort() {
         let initial = RandomArrayElement.randomString(true, 2)
@@ -93,7 +93,7 @@ class PersonalData {
     /**
     * this function generate a birthDate
     * @param {boolean} slash
-    * @returns  string | object
+    * @returns  string
     */
     birthDate(slash) {
         const emptyDate = new Date();
@@ -110,7 +110,7 @@ class PersonalData {
     * this function random normal number phone for Brazi
     * @param {boolean} prefix
     * @param {boolean} mask
-    * @returns  string | object
+    * @returns  string
     */
     phone(prefix, mask) {
         let ddd = RandomArrayElement.randomElement(NamesHelpers.getDDDBrasil()).split('-')[0];
@@ -122,7 +122,7 @@ class PersonalData {
     * this function random normal number phone for Brazi
     * @param {boolean} prefix
     * @param {boolean} mask
-    * @returns  string | object
+    * @returns  string
     */
     cellPhone(prefix, mask) {
         let ddd = RandomArrayElement.randomElement(NamesHelpers.getDDDBrasil()).split('-')[0];
@@ -136,25 +136,19 @@ class PersonalData {
     * @returns  object
     */
     newPerson() {
-        let person = this.firstName()
-            .lastName()
-            .fullName()
-            .birthDate(true)
-            .cpf(true)
-            .rg()
-            .phone(true, true)
-            .email()
-            .workCard(true)
-            .passPort(true)
-        return person;
-    }
-
-    /**
-    * if you not want do create a new class you just clear the context of person
-    * @returns 
-    */
-    clear() {
-        this.person = {}
+        return {
+            firstName: this.firstName(),
+            lastName: this.lastName(),
+            fullName: this.fullName(),
+            birthDate: this.birthDate(true),
+            cpf: this.cpf(true),
+            rg: this.rg(),
+            phone: this.phone(true, true),
+            cellPhone: this.cellPhone(true, true),
+            email: this.email(),
+            workCard: this.workCard(true),
+            passPort: this.passPort(true)
+        }
     }
 
 }
