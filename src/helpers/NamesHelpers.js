@@ -4,24 +4,24 @@ class NamesHelpers {
 
     /**
     * get number module
-    * @param dividendo - int
-    * @param divisor - int
-    * @return int
+    * @param {number} dividendo - int
+    * @param {number} divisor - int
+    * @return {number} int
     */
-    getModulo(dividendo, divisor) {
+    static getModulo(dividendo, divisor) {
         return Math.round(dividendo - (Math.floor(dividendo / divisor) * divisor));
     }
 
-    getRandomNumberBetween(min, max) {
+    static getRandomNumberBetween(min, max) {
         return Math.floor(Math.random() * (max - min) + min);
     }
 
     /**
      * generate  random number
-     * @param total - integer 
-     * @return array
+     * @param {number} total - integer 
+     * @return {array} array
      */
-    getRandomNumbers(total) {
+    static getRandomNumbers(total) {
         let numbers = [];
         for (let i = 0; i < total; i++) {
             numbers[i] = this.getRandomNumberBetween(1, 9);
@@ -32,9 +32,9 @@ class NamesHelpers {
     /**
      * generate verificator
      * @param {array} numeros - array numeros
-     * @return int
+     * @return {number} int
      */
-    getVerifyDigit(numeros = []) {
+    static getVerifyDigit(numeros = []) {
         let digito = 0;
         let arraySize = numeros.length + 1;
 
@@ -48,10 +48,10 @@ class NamesHelpers {
 
     /**
      * generate cpf number
-     * @param {bool} points 
-     * @return String - 11 digitos 
+     * @param {boolean} points 
+     * @return {string} string - 11 digits
      */
-    generateCpfFake(points) {
+    static generateCpfFake(points) {
         let number = this.getRandomNumbers(9);
         number.push(this.getVerifyDigit(number));
         number.push(this.getVerifyDigit(number));
@@ -68,9 +68,9 @@ class NamesHelpers {
 
     /**
      * generate cpf number
-     * @return String 
+     * @return {string} string 
      */
-    geneateRG() {
+    static geneateRG() {
         var num_ = 12;
         var aux1 = new Array(num_);
         aux1[0] = '483710027';
@@ -92,9 +92,9 @@ class NamesHelpers {
     /**
      * generate email 
      * @param {string} email 
-     * @return String 
+     * @return {string} String 
      */
-    generateEmail(email) {
+    static generateEmail(email) {
         return `${email}@mail.com.br`.replace(/ /g, '');
     }
 
@@ -103,7 +103,7 @@ class NamesHelpers {
      * @param {bool} points 
      * @return String 
      */
-    generateWorkCard(points) {
+    static generateWorkCard(points) {
         let numbers = this.getRandomNumbers(11);
         numbers = numbers.join('');
         if (points) {
@@ -119,9 +119,9 @@ class NamesHelpers {
     /**
     * generate passport 
     * @param {string} inital
-    * @return String 
+    * @return {string} string 
     */
-    generatePassport(inital) {
+    static generatePassport(inital) {
         let numbers = this.getRandomNumbers(6);
         return `${inital}${numbers.join('')}`;
     }
@@ -131,9 +131,9 @@ class NamesHelpers {
      * @param {string} ddd 
      * @param {string} prefix 
      * @param {bool} mask 
-     * @returns string
+     * @returns {string} string
      */
-    generatePhone(ddd, prefix, mask) {
+    static generatePhone(ddd, prefix, mask) {
         let phone = parseInt(Math.random() * 1000000, 10).toString()
         if (mask) {
             let first = phone.slice(0, 2)
@@ -146,10 +146,29 @@ class NamesHelpers {
     }
 
     /**
+    * generate phone number with prefix or string
+    * @param {string} ddd 
+    * @param {string} prefix 
+    * @param {bool} mask 
+    * @returns {string} string
+    */
+    static generateCellphone(ddd, prefix, mask) {
+        let cellPhone = parseInt(Math.random() * 10000000, 10).toString()
+        if (mask) {
+            let first = cellPhone.slice(0, 2)
+            let second = cellPhone.slice(2, 6)
+            cellPhone = '(' + ddd + ') ' + '9' + first + '-' + second
+        } else {
+            cellPhone = ddd + '9' + cellPhone;
+        }
+        return prefix ? '+55 ' + cellPhone : cellPhone;
+    }
+
+    /**
      * this function return a array of simples names
      * @returns {Array}
      */
-    getSimpleNames() {
+    static getSimpleNames() {
         return ["Helena", "Miguel"
             , "Alice", "Arthur"
             , "Laura", "Heitor"
@@ -206,7 +225,7 @@ class NamesHelpers {
     * this function return a array of lastname
     * @returns {Array}
     */
-    getLastName() {
+    static getLastName() {
         return [
             "Agrisi",
             "Merisio",
@@ -431,7 +450,7 @@ class NamesHelpers {
     * this function return a array of ddd with state
     * @returns {Array}
     */
-    getDDDBrasil() {
+    static getDDDBrasil() {
         return [
             "11-SP",
             "12-SP",

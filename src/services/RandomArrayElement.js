@@ -7,7 +7,7 @@ class RandomArrayElement{
      * @param {array} array 
      * @returns any
      */
-    randomElement(array){
+    static randomElement(array){
         return array[Math.floor(Math.random()*array.length)];
     }
 
@@ -15,7 +15,7 @@ class RandomArrayElement{
      * return a random number between 2 and 5
      * @returns int
      */
-    randoNumber(){
+    static randoNumber(){
        return Math.random() * (5 - 2) + 2;
     }
 
@@ -26,7 +26,7 @@ class RandomArrayElement{
      * @param {number} length 
      * @returns string
      */
-    randomString(isUpper, length){
+    static randomString(isUpper, length){
         let result = '';
         const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
         const charactersLength = characters.length;

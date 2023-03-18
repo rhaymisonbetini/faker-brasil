@@ -1,0 +1,28 @@
+{
+  "name": "faker-brasil",
+  "version": "1.0.0",
+  "description": "This library provides fake data for users data from Brazil",
+  "main": "index.js",
+  "dependencies": {
+    "ts-mixer": "^6.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rhaymisonbetini/faker-brasil.git"
+  },
+  "keywords": [
+    "javascript",
+    "fake",
+    "faker"
+  ],
+  "author": "rhaymisonbetini <rhaymisoncristian@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rhaymisonbetini/faker-brasil/issues"
+  },
+  "homepage": "https://github.com/rhaymisonbetini/faker-brasil#readme"
+}
