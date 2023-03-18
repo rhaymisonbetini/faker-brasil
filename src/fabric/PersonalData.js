@@ -6,138 +6,96 @@ const NamesHelpers = require('../helpers/NamesHelpers');
 class PersonalData {
 
     constructor() {
-        this.person = {};
-        this.randomArrayElement = new RandomArrayElement();
-        this.NamesHelpers = new NamesHelpers();
     }
 
     /**
      * this function create a firstName 
-     * @param {boolean} chainEnd
      * @returns  string | object
      */
-    firstName(chainEnd = false) {
-        let name = this.randomArrayElement.randomElement(this.NamesHelpers.getSimpleNames());
-        if (this.person) {
-            this.person.firstName = name
-            return chainEnd ? this.person : this;
-        }
-        return name;
+    firstName() {
+        return RandomArrayElement.randomElement(NamesHelpers.getSimpleNames());
     }
 
     /**
     * this function create a lastname
-    * @param {boolean} chainEnd
     * @returns  string | object
     */
-    lastName(chainEnd = false) {
+    lastName() {
 
-        let totallastName = this.randomArrayElement.randoNumber();
+        let totallastName = RandomArrayElement.randoNumber();
         let lastName = '';
 
         for (let i = 0; i < Math.round(totallastName); i++) {
-            lastName += ' ' + this.randomArrayElement.randomElement(this.NamesHelpers.getLastName());
+            lastName += ' ' + RandomArrayElement.randomElement(NamesHelpers.getLastName());
         }
         lastName = lastName.trim();
-        if (this.person) {
-            this.person.lastName = lastName;
-            return chainEnd ? this.person : this;
-        }
+
         return lastName;
     }
 
     /**
     * this function create a full name if exist or create a new full name
-    * @param {boolean} chainEnd
     * @returns  string | object
     */
-    fullName(chainEnd = false) {
-        if (this.person) {
-            let firstName = this.person.firstName ?? this.firstName();
-            let lastName = this.person.lastName ?? this.lastName();
-            this.person.fullname = firstName + ' ' + lastName
-            return chainEnd ? this.person : this;
-        }
-        return this.firstName() + ' ' + this.lastName();
+    fullName() {
+        return this.firstName() + ' ' +  this.lastName()
     }
 
     /**
      * this function create a rg
-    * @param {boolean} chainEnd
     * @returns  string | object
     */
-    rg(chainEnd) {
-        if (this.person) {
-            this.person.rg = this.NamesHelpers.geneateRG();
-            return chainEnd ? this.person : this;
-        }
-        return this.NamesHelpers.geneateRG();
+    rg() {
+        return NamesHelpers.geneateRG();
     }
 
     /**
     * this function create a cpf with ou without point
     * @param {boolean} points
-    * @param {boolean} chainEnd
     * @returns  string | object
     */
-    cpf(points, chainEnd = false) {
-        if (this.person) {
-            this.person.cpf = this.NamesHelpers.generateCpfFake(points);
-            return chainEnd ? this.person : this;
-        }
-        return this.NamesHelpers.generateCpfFake();
+    cpf(points) {
+        return NamesHelpers.generateCpfFake(points);
     }
 
     /**
     * this function generate a email
-    * @param {boolean} chainEnd
     * @returns  string | object
     */
-    email(chainEnd) {
-        if (this.person) {
-            let firstName = this.person.firstName ?? this.firstName();
-            let lastName = this.person.lastName ?? this.lastName();
-            this.person.email = this.NamesHelpers.generateEmail(firstName + lastName);
-            return chainEnd ? this.person : this;
+    email(firstName = null) {
+        let email = '';
+        if (firstName) {
+            email = NamesHelpers.generateEmail(firstName + lastName);
+        } else {
+            email = NamesHelpers.generateEmail(this.firstName() + this.lastName());
         }
-        return this.NamesHelpers.generateEmail();
+        return email
     }
 
     /**
     * this function generate a workcard
     * @param {boolean} points
-    * @param {boolean} chainEnd
     * @returns  string | object
     */
-    workCard(points, chainEnd = false) {
-        if (this.person) {
-            this.person.workCard = this.NamesHelpers.generateWorkCard(points);
-            return chainEnd ? this.person : this;
-        }
-        return this.NamesHelpers.generateWorkCard(points);
+    workCard(points) {
+        return NamesHelpers.generateWorkCard(points);
     }
 
     /**
     * this function generate a passport
-    * @param {boolean} chainEnd
     * @returns  string | object
     */
-    passPort(chainEnd = false) {
-        let initial = this.randomArrayElement.randomString(true, 2)
-        if (this.person) {
-            this.person.passport = this.NamesHelpers.generatePassport(initial);
-            return chainEnd ? this.person : this;
-        }
-        return this.NamesHelpers.generatePassport(initial);
+    passPort() {
+        let initial = RandomArrayElement.randomString(true, 2)
+        return NamesHelpers.generatePassport(initial);
     }
 
     /**
     * this function generate a birthDate
     * @param {boolean} slash
-    * @param {boolean} chainEnd
     * @returns  string | object
     */
-    birthDate(slash, chainEnd = false) {
+    birthDate(slash) {
         const emptyDate = new Date();
         const randomDate = new Date();
         const dateFormatter = Intl.DateTimeFormat('PT-br');
@@ -145,38 +103,36 @@ class PersonalData {
         if (!slash) {
             formattedRandomDate = formattedRandomDate.replace(/\//g, '-');
         }
-        if (this.person) {
-            this.person.birthDate = formattedRandomDate
-            return chainEnd ? this.person : this;
-        }
-        return formattedRandomDate;
+        return formattedRandomDate
     }
 
     /**
     * this function random normal number phone for Brazi
     * @param {boolean} prefix
     * @param {boolean} mask
-    * @param {boolean} chainEnd
     * @returns  string | object
     */
-    phone(prefix, mask, chainEnd = false) {
-        let ddd = this.randomArrayElement.randomElement(this.NamesHelpers.getDDDBrasil()).split('-')[0];
-        let phone = this.NamesHelpers.generatePhone(ddd, prefix, mask);
-        if (this.person) {
-            this.person.phone = phone
-            return chainEnd ? this.person : this;
-        }
-        return phone
+    phone(prefix, mask) {
+        let ddd = RandomArrayElement.randomElement(NamesHelpers.getDDDBrasil()).split('-')[0];
+        let phone = NamesHelpers.generatePhone(ddd, prefix, mask);
+        return phone;
     }
 
-    cellPhone() {
-
+    /**
+    * this function random normal number phone for Brazi
+    * @param {boolean} prefix
+    * @param {boolean} mask
+    * @returns  string | object
+    */
+    cellPhone(prefix, mask) {
+        let ddd = RandomArrayElement.randomElement(NamesHelpers.getDDDBrasil()).split('-')[0];
+        let cellPhone = NamesHelpers.generateCellphone(ddd, prefix, mask);
+        return cellPhone
     }
 
     /**
     * this function generate a birthDate
     * @param {boolean} slash
-    * @param {boolean} chainEnd
     * @returns  object
     */
     newPerson() {
@@ -186,6 +142,7 @@ class PersonalData {
             .birthDate(true)
             .cpf(true)
             .rg()
+            .phone(true, true)
             .email()
             .workCard(true)
             .passPort(true)

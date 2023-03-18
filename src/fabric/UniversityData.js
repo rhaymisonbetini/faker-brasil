@@ -6,34 +6,32 @@ const RandomArrayElement = require('../services/RandomArrayElement');
 
 class UniversityData {
 
-    constructor(){
-        this.universityHelper = new UniversityHelper();
-        this.randomArrayElement = new RandomArrayElement();
-
+    constructor() {
     }
 
     /**
-     * 
+     * return full university object
      * @returns {object} object
      */
-    getUniversity(){
-        return this.randomArrayElement.randomElement(this.universityHelper.getUniveristyArray());
-    }
-
-    getUniversitySigla(){
-        return this.randomArrayElement.randomElement(this.universityHelper.getUniveristyArray()).sigla;
-    }
-
-    getUniveristyName(){
-        return this.randomArrayElement.randomElement(this.universityHelper.getUniveristyArray()).universidade;
+    getUniversity() {
+        return RandomArrayElement.randomElement(UniversityHelper.getUniveristyArray());
     }
 
     /**
-    * if you not want do create a new class you just clear the context of university
-    * @returns 
+    *  return sigla (UFBA, UFES, UFS) 
+    * @returns {string} string
     */
-    clear() {
-        this.univerity = {}
+    getUniversitySigla() {
+        return RandomArrayElement.randomElement(UniversityHelper.getUniveristyArray()).sigla;
+    }
+
+
+    /**
+    *  return a name of universirty
+    * @returns {string} string
+    */
+    getUniveristyName() {
+        return RandomArrayElement.randomElement(UniversityHelper.getUniveristyArray()).universidade;
     }
 }
 
