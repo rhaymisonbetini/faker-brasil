@@ -5,9 +5,6 @@ const NamesHelpers = require('../helpers/NamesHelpers');
 
 class PersonalData {
 
-    constructor() {
-    }
-
     /**
      * this function create a firstName 
      * @returns  string

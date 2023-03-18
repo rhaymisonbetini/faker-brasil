@@ -6,9 +6,6 @@ const RandomArrayElement = require('../services/RandomArrayElement');
 
 class UniversityData {
 
-    constructor() {
-    }
-
     /**
      * return full university object
      * @returns {object} object
