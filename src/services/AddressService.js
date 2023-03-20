@@ -23,14 +23,15 @@ class AddressService {
      * 
      * @param {number} initi 
      * @param {number} final 
-     * @returns string
+     * @returns {string}
      */
-    static randomRangeCep(initi, final){
+    static randomRangeCep(initi, final) {
         let min = parseInt(initi);
         let max = parseInt(final);
         let result = Math.random() * (max - min) + min;
         return Math.floor(result)
     }
+
 }
 
 module.exports = AddressService
