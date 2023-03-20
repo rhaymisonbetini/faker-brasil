@@ -51,7 +51,6 @@ class AddressHelpers {
         ]
     }
 
-
     /**
      * return a array of range ceps
      * @returns array
