@@ -2,6 +2,7 @@
 
 const BankHelpers = require('../helpers/BankHelpers');
 const RandomArrayElement = require('../services/RandomArrayElement');
+const DateHelpers = require('../helpers/DateHelpers')
 
 class BankData {
 
@@ -47,11 +48,22 @@ class BankData {
 
     /**
      * create a fake card
-     * @returns {Object}
+     * @returns {string}
      */
-    card(){
-        return {
+    creadCardNumber() {
+        return BankHelpers.generateCredCardNumber();
+    }
 
+    credCard(flag) {
+        if (!flag) {
+            let flags = ['VISA', 'MasterCard', 'Amex', 'Diners', 'Discover', 'EnRoute', 'JCB', 'Voyager']
+            flag = RandomArrayElement.randomElement(flags)
+        }
+        return {
+            flag: flag,
+            number: this.creadCardNumber(flag),
+            ccv: RandomArrayElement.randomStringOnlyNumbers(3),
+            expiration: DateHelpers.moreToday()
         }
     }
 
@@ -59,7 +71,7 @@ class BankData {
     * get a random banck type
     * @returns {string}
     */
-    fullBank() {
+    fullBank(flag = null) {
         let bank = this.bank();
         return {
             code: bank.code,
@@ -67,7 +79,7 @@ class BankData {
             accountNumber: this.bankAccountNumber(),
             agency: this.bankAgency(),
             type: this.accountType(),
-            card: this.card()
+            card: this.credCard(flag)
         }
     }
 }
