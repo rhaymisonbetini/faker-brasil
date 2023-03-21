@@ -2,6 +2,7 @@
 
 const RandomArrayElement = require('../services/RandomArrayElement');
 const NamesHelpers = require('../helpers/NamesHelpers');
+const DateHelpers = require('../helpers/DateHelpers');
 
 class PersonalData {
 
@@ -70,6 +71,19 @@ class PersonalData {
     }
 
     /**
+    * this function generate a email
+    * @returns  {Object}
+    */
+    cnh() {
+        return {
+            register: RandomArrayElement.randomStringOnlyNumbers(11),
+            expiration: DateHelpers.moreToday(),
+            type: RandomArrayElement.randomElement(['A', 'B', 'AB', 'C', 'D']),
+            permission: RandomArrayElement.randomElement(['SIM', 'NAO'])
+        }
+    }
+
+    /**
     * this function generate a workcard
     * @param {boolean} points
     * @returns  string
@@ -93,10 +107,7 @@ class PersonalData {
     * @returns  string
     */
     birthDate(slash) {
-        const emptyDate = new Date();
-        const randomDate = new Date();
-        const dateFormatter = Intl.DateTimeFormat('PT-br');
-        let formattedRandomDate = dateFormatter.format(emptyDate.setDate(randomDate.getDate() - Math.floor(Math.random() * 40000)));
+        let formattedRandomDate = DateHelpers.lessRandomYear(RandomArrayElement.randoNumberIn(2, 100));
         if (!slash) {
             formattedRandomDate = formattedRandomDate.replace(/\//g, '-');
         }
@@ -128,7 +139,7 @@ class PersonalData {
     }
 
     /**
-    * this function generate a birthDate
+    * this function generate a newPerson
     * @param {boolean} slash
     * @returns  object
     */
@@ -138,6 +149,68 @@ class PersonalData {
             lastName: this.lastName(),
             fullName: this.fullName(),
             birthDate: this.birthDate(true),
+            cpf: this.cpf(true),
+            rg: this.rg(),
+            phone: this.phone(true, true),
+            cellPhone: this.cellPhone(true, true),
+            email: this.email(),
+            workCard: this.workCard(true),
+            passPort: this.passPort(true)
+        }
+    }
+
+    /**
+    * this function generate a new young Person
+    * @param {boolean} slash
+    * @returns  object
+    */
+    newPersonYounger() {
+        return {
+            firstName: this.firstName(),
+            lastName: this.lastName(),
+            fullName: this.fullName(),
+            birthDate: DateHelpers.younger(),
+            cpf: this.cpf(true),
+            rg: this.rg(),
+            phone: this.phone(true, true),
+            cellPhone: this.cellPhone(true, true),
+            email: this.email(),
+            passPort: this.passPort(true)
+        }
+    }
+
+    /**
+    * this function generate a new adult
+    * @param {boolean} slash
+    * @returns  object
+    */
+    newAdultPerson() {
+        return {
+            firstName: this.firstName(),
+            lastName: this.lastName(),
+            fullName: this.fullName(),
+            birthDate: DateHelpers.adult(),
+            cpf: this.cpf(true),
+            rg: this.rg(),
+            phone: this.phone(true, true),
+            cellPhone: this.cellPhone(true, true),
+            email: this.email(),
+            workCard: this.workCard(true),
+            passPort: this.passPort(true)
+        }
+    }
+
+    /**
+    * this function generate a new adult
+    * @param {boolean} slash
+    * @returns  object
+    */
+    newOlderPerson() {
+        return {
+            firstName: this.firstName(),
+            lastName: this.lastName(),
+            fullName: this.fullName(),
+            birthDate: DateHelpers.older(),
             cpf: this.cpf(true),
             rg: this.rg(),
             phone: this.phone(true, true),
