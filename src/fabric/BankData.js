@@ -46,6 +46,16 @@ class BankData {
     }
 
     /**
+     * create a fake card
+     * @returns {Object}
+     */
+    card(){
+        return {
+
+        }
+    }
+
+    /**
     * get a random banck type
     * @returns {string}
     */
@@ -56,7 +66,8 @@ class BankData {
             name: bank.name,
             accountNumber: this.bankAccountNumber(),
             agency: this.bankAgency(),
-            type: this.accountType()
+            type: this.accountType(),
+            card: this.card()
         }
     }
 }
