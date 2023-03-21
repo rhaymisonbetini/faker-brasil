@@ -3,6 +3,26 @@
 class RandomArrayElement {
 
     /**
+     * create array number 
+     * @param {number} total 
+     * @param {number} numero 
+     * @returns {Array}
+     */
+    static createArrayNumbers(total, numero) {
+        return Array.from(Array(total), () => (Math.round(Math.random() * numero)));
+    }
+
+    /**
+     * return number to create cnpj
+     * @param {number} dividendo 
+     * @param {number} divisor 
+     * @returns number
+     */
+    static mod(dividendo, divisor) {
+        return Math.round(dividendo - (Math.floor(dividendo / divisor) * divisor))
+    }
+
+    /**
      * return a rando element from array
      * @param {array} array 
      * @returns any
@@ -19,11 +39,11 @@ class RandomArrayElement {
         return Math.random() * (5 - 2) + 2;
     }
 
-      /**
-     * return a random number between min and max
-     * @returns int
-     */
-      static randoNumberIn(min,max) {
+    /**
+   * return a random number between min and max
+   * @returns int
+   */
+    static randoNumberIn(min, max) {
         return Math.random() * (max - min) + min;
     }
     /**
