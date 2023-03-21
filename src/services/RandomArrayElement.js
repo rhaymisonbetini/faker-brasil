@@ -19,7 +19,13 @@ class RandomArrayElement {
         return Math.random() * (5 - 2) + 2;
     }
 
-
+      /**
+     * return a random number between min and max
+     * @returns int
+     */
+      static randoNumberIn(min,max) {
+        return Math.random() * (max - min) + min;
+    }
     /**
      * return a random strintg
      * @param {boolean} isUpper
