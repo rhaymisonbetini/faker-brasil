@@ -47,11 +47,11 @@ class AutoData {
         return AutoHelpers.autoByModel(model)
     }
     /**
-     * return a licenseplace with or not mask
+     * return a licenseplate with or not mask
      * @param {boolean} mask
      * @return {string}
      */
-    licensePlace(mask = false) {
+    licensePlate(mask = false) {
         let initial = '';
         let number = '';
         let min = 0;
@@ -64,15 +64,100 @@ class AutoData {
     }
 
     /**
+     *  generate renanvam wutg 11 digits
+     * @returns  {string}
+     */
+    renavam() {
+        return RandomArrayElement.randomStringOnlyNumbers(11)
+    }
+
+    /**
+     * return a fake chassi
+     * @returns {string}
+     */
+    chassi() {
+        let c1 = RandomArrayElement.randomString(3)
+        let c2 = RandomArrayElement.randomString(6)
+        let c3 = RandomArrayElement.randomString(2)
+        let c4 = RandomArrayElement.randomString(6)
+        return `${c1} ${c2} ${c3} ${c4}`
+    }
+
+    /**
+    * get category of car
+    * @returns {string}
+    */
+    category() {
+        return RandomArrayElement.randomElement(AutoHelpers.category()).nome
+    }
+
+    /**
+     * get type of car
+     * @returns {string}
+     */
+    type() {
+        return RandomArrayElement.randomElement(AutoHelpers.type()).nome
+    }
+
+    /**
+    * get body of car
+    * @returns {string}
+    */
+    body() {
+        return RandomArrayElement.randomElement(AutoHelpers.body()).nome
+    }
+
+    /**
+    * get fuel of car
+    * @returns {string}
+    */
+    fuel() {
+        return RandomArrayElement.randomElement(AutoHelpers.fuel()).nome
+    }
+
+    /**
+    * get specie of car
+    * @returns {string}
+    */
+    specie() {
+        return RandomArrayElement.randomElement(AutoHelpers.specie()).nome
+    }
+
+    /**
+    * get restrictions of car
+    * @returns {string}
+    */
+    restrictions() {
+        return RandomArrayElement.randomElement(AutoHelpers.restrictions()).nome
+    }
+
+    /**
+    * get color of car
+    * @returns {string}
+    */
+    color() {
+        return RandomArrayElement.randomElement(AutoHelpers.color()).nome
+    }
+
+    /**
      * return a full auto details
      * @returns {Object}
      */
-    fullAuto(){
+    fullAuto() {
         let auto = this.auto();
         return {
             name: auto.name,
             model: auto.marca,
-            licencePlace: this.licensePlace(true)
+            licencePlate: this.licensePlate(true),
+            chassi: this.chassi(),
+            renavam: this.renavam(),
+            category: this.category(),
+            type: this.type(),
+            body: this.body(),
+            fuel: this.fuel(),
+            specie: this.specie(),
+            restrictions: this.restrictions(),
+            color: this.color(),
         }
     }
 

@@ -22,6 +22,138 @@ class AutoHelpers {
     }
 
     /**
+     * return array of category
+     *@return {Array<Object>}
+     */
+    static category() {
+        return [
+            { "id": 2, "nome": "ALUGUEL" },
+            { "id": 5, "nome": "APRENDIZAGEM" },
+            { "id": 1, "nome": "PARTICULAR" }
+        ]
+    }
+
+    /**
+    * return array of specie
+    *@return {Array<Object>}
+    */
+    static specie() {
+        return [
+            { "id": 2, "nome": "CARGA" },
+            { "id": 4, "nome": "CORRIDA" },
+            { "id": 6, "nome": "ESPECIAL" },
+            { "id": 3, "nome": "MISTO" },
+            { "id": 1, "nome": "PASSAGEIRO" },
+            { "id": 5, "nome": "TRAÇÃO" }
+        ]
+    }
+
+    /**
+   * return array of restrictions
+   *@return {Array<Object>}
+   */
+    static restrictions() {
+        return [
+            { "id": 0, "nome": "SEM RESTRIÇÃO" },
+            { "id": 3, "nome": "ALIENAÇÃO FIDUCIÁRIA" },
+            { "id": 1, "nome": "ARRENDAMENTO" },
+            { "id": 2, "nome": "RESERVA DE DOMÍNIO" },
+            { "id": 4, "nome": "RESTRIÇÃO JUDICIAL" },
+            { "id": 7, "nome": "RESTRIÇÃO POR BENEF. TRIBUTÁRIO" },
+            { "id": 6, "nome": "RESTRIÇÃO POR ROUBO OU FURTO" }
+        ]
+    }
+
+    /**
+     * 
+     * @returns {Array<Object>}
+     */
+    static color() {
+        return [
+            { "id": 1, "nome": "AMARELO" },
+            { "id": 2, "nome": "AZUL" },
+            { "id": 3, "nome": "BEGE" },
+            { "id": 4, "nome": "BRANCA" },
+            { "id": 5, "nome": "CINZA" },
+            { "id": 6, "nome": "DOURADA" },
+            { "id": 7, "nome": "GRENA" },
+            { "id": 8, "nome": "LARANJA" },
+            { "id": 9, "nome": "MARROM" },
+            { "id": 10, "nome": "PRATA" },
+            { "id": 11, "nome": "PRETA" },
+            { "id": 12, "nome": "ROSA" },
+            { "id": 13, "nome": "ROXA" },
+            { "id": 14, "nome": "VERDE" },
+            { "id": 15, "nome": "VERMELHA" },
+            { "id": 16, "nome": "FANTASIA" }
+        ]
+    }
+
+    /**
+     * return array of bodies
+     *@return {Array<Object>}
+     */
+    static body() {
+        return [
+            { "id": 101, "nome": "AMBULÂNCIA" },
+            { "id": 102, "nome": "BASCULANTE" },
+            { "id": 103, "nome": "BLINDADA" },
+            { "id": 105, "nome": "BUGGY" },
+            { "id": 108, "nome": "C. FECHADA" },
+            { "id": 106, "nome": "CAB. DUPLA" },
+            { "id": 107, "nome": "CAB. ABERTA" },
+            { "id": 110, "nome": "CONVERSÍVEL" },
+            { "id": 112, "nome": "FURGÃO" },
+            { "id": 113, "nome": "JIPE" },
+            { "id": 122, "nome": "TRAILER" }
+        ]
+    }
+
+    /**
+     * return array of types
+     *@return {Array<Object>}
+     */
+    static type() {
+        return [
+            { "id": 6, "nome": "AUTOMÓVEL" },
+            { "id": 14, "nome": "CAMINHÃO" },
+            { "id": 13, "nome": "CAMINHONETA" },
+            { "id": 24, "nome": "CARGA / CAM" },
+            { "id": 2, "nome": "CICLOMOTO" },
+            { "id": 22, "nome": "ESP / ÔNIBUS" },
+            { "id": 7, "nome": "MICROÔNIBUS" },
+            { "id": 23, "nome": "MISTO / CAM" },
+            { "id": 4, "nome": "MOTOCICLO" },
+            { "id": 3, "nome": "MOTONETA" },
+            { "id": 8, "nome": "ÔNIBUS" },
+            { "id": 10, "nome": "REBOQUE" },
+            { "id": 5, "nome": "TRICICLO" },
+            { "id": 17, "nome": "C. TRATOR" }
+        ]
+    }
+
+    /**
+     * return array of fuels
+     *@return {Array<Object>}
+     */
+    static fuel() {
+        return  [
+            { "id": 1, "nome": "ÁLCOOL" },
+            { "id": 9, "nome": "ÁLCOOL / GNC" },
+            { "id": 3, "nome": "DIESEL" },
+            { "id": 10, "nome": "DIESEL / GNC" },
+            { "id": 7, "nome": "ELFONT EX" },
+            { "id": 6, "nome": "ELFONT IN" },
+            { "id": 5, "nome": "GÁS METANO" },
+            { "id": 4, "nome": "GASOGÊNIO" },
+            { "id": 8, "nome": "GASOL / GNC" },
+            { "id": 2, "nome": "GASOLINA" },
+            { "id": 12, "nome": "ÁLCOOL / GASOLINA" },
+            { "id": 13, "nome": "ÁLCOOL / GASOL / GNV" }
+        ]
+    }
+
+    /**
      * return array of object with name and auto model
      *@return {Array<Object>}
      */
