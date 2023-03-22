@@ -42,7 +42,7 @@ class RandomArrayElement {
 
     /**
      * return a random number between 2 and 5
-     * @returns int
+     * @returns {int}
      */
     static randoNumber() {
         return Math.random() * (5 - 2) + 2;
@@ -50,7 +50,7 @@ class RandomArrayElement {
 
     /**
    * return a random number between min and max
-   * @returns int
+   * @returns {int}
    */
     static randoNumberIn(min, max) {
         return Math.floor(Math.random() * (max - min) + min);
@@ -58,7 +58,7 @@ class RandomArrayElement {
 
     /**
     * return a random number between min and max and not Flor
-    * @returns int
+    * @returns {int}
     */
     static randoNumberInNotFloor(min, max) {
         return Math.floor(Math.random() * (max - min) + min);
@@ -82,6 +82,10 @@ class RandomArrayElement {
         return isUpper ? result : result.toLowerCase();
     }
 
+    /**
+    * return a random stirng
+    * @returns {int}
+    */
     static randomString(length) {
         let result = '';
         const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
@@ -94,6 +98,10 @@ class RandomArrayElement {
         return result;
     }
 
+    /**
+    * return a random stirng number
+    * @returns {int}
+    */
     static randomStringOnlyNumbers(length) {
         let result = '';
         const characters = '0123456789';
@@ -104,6 +112,21 @@ class RandomArrayElement {
             counter += 1;
         }
         return result;
+    }
+
+    /**
+    * return a string without especial portugues caracteres
+    * @returns {int}
+    */
+    static removeAcc(text) {
+        text = text.toLowerCase();
+        text = text.replace(new RegExp('[ÁÀÂÃ]', 'gi'), 'a');
+        text = text.replace(new RegExp('[ÉÈÊ]', 'gi'), 'e');
+        text = text.replace(new RegExp('[ÍÌÎ]', 'gi'), 'i');
+        text = text.replace(new RegExp('[ÓÒÔÕ]', 'gi'), 'o');
+        text = text.replace(new RegExp('[ÚÙÛ]', 'gi'), 'u');
+        text = text.replace(new RegExp('[Ç]', 'gi'), 'c');
+        return text;
     }
 
     /**
