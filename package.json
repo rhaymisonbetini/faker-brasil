@@ -7,6 +7,7 @@
     "axios": "^1.3.4",
     "moment": "^2.29.4",
     "moment-random": "^1.1.0",
+    "netmask": "^2.0.2",
     "ts-mixer": "^6.0.3"
   },
   "devDependencies": {},
