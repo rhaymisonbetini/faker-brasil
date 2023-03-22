@@ -1,7 +1,6 @@
 'use strict'
 const momentRandom = require('moment-random');
 const moment = require('moment');
-var todayDate = moment();
 
 class DateHelpers {
 
@@ -9,11 +8,13 @@ class DateHelpers {
      * return now current
      * @returns {string}
      */
-    static current(){
+    static current() {
+        var todayDate = moment();
         return todayDate.format('DD-MM-YYYY HH:mm:ss');
     }
 
     static moreToday() {
+        var todayDate = moment();
         return momentRandom(todayDate.add(1024, 'days'), moment.now()).format('DD-MM-YYYY');
     }
 
@@ -23,6 +24,7 @@ class DateHelpers {
      * @returns 
      */
     static lessRandomYear(years) {
+        var todayDate = moment();
         return momentRandom(moment.now(), todayDate.subtract(years, 'years')).format('DD-MM-YYYY');
     }
 
@@ -32,6 +34,7 @@ class DateHelpers {
     * @returns 
     */
     static younger() {
+        var todayDate = moment();
         return momentRandom(moment.now(), todayDate.subtract(18, 'y')).format('DD-MM-YYYY');
     }
 

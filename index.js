@@ -7,6 +7,7 @@ const AddressData = require('./src/fabric/AddressData');
 const AutoData = require('./src/fabric/AutoData');
 const BankData = require('./src/fabric/BankData');
 const IndustryData = require('./src/fabric/IndustryData');
+const MarketData = require('./src/fabric/MarketData')
 
 class SuperFakerBrasil extends Mixin(
     PersonalData,
@@ -14,7 +15,8 @@ class SuperFakerBrasil extends Mixin(
     AddressData,
     AutoData,
     BankData,
-    IndustryData
+    IndustryData,
+    MarketData
 ) {
 
     constructor() {

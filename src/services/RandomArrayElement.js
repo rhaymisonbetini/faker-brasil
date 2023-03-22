@@ -7,8 +7,8 @@ class RandomArrayElement {
      * @param {string} string 
      * @returns {string}
      */
-    static removeAllEmptySpaceFromString(string){
-        return string.replace(/ /g,'')
+    static removeAllEmptySpaceFromString(string) {
+        return string.replace(/ /g, '')
     }
 
     /**
@@ -55,6 +55,15 @@ class RandomArrayElement {
     static randoNumberIn(min, max) {
         return Math.floor(Math.random() * (max - min) + min);
     }
+
+    /**
+    * return a random number between min and max and not Flor
+    * @returns int
+    */
+    static randoNumberInNotFloor(min, max) {
+        return Math.floor(Math.random() * (max - min) + min);
+    }
+
     /**
      * return a random strintg
      * @param {boolean} isUpper

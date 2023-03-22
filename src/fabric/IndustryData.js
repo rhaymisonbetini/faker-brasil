@@ -65,7 +65,7 @@ class IndustryData {
      * return a full enterprise data as object
      * @returns {Object}
      */
-    fullEnterPrise() {
+    fullEnterPrise(activity = null) {
         let name = this.enterprise()
         let nameEmpty = RandomArrayElement.removeAllEmptySpaceFromString(name)
         let site = nameEmpty.toLocaleLowerCase()
@@ -76,7 +76,7 @@ class IndustryData {
             cnpj: this.cnpj(true),
             inscription: RandomArrayElement.randomStringOnlyNumbers(12),
             openDate: DateHelpers.lessRandomYear(5),
-            activity: this.activity(),
+            activity: activity ? activity :this.activity(),
             site: 'www' + site + 'com.br',
             email: personalData.email(nameEmpty),
             phone: personalData.phone(true),
