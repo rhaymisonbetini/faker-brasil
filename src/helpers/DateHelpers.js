@@ -5,6 +5,14 @@ var todayDate = moment();
 
 class DateHelpers {
 
+    /**
+     * return now current
+     * @returns {string}
+     */
+    static current(){
+        return todayDate.format('DD-MM-YYYY HH:mm:ss');
+    }
+
     static moreToday() {
         return momentRandom(todayDate.add(1024, 'days'), moment.now()).format('DD-MM-YYYY');
     }

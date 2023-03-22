@@ -4,7 +4,7 @@ const IndustryHelper = require('../helpers/IndustryHelper');
 const RandomArrayElement = require('../services/RandomArrayElement');
 const DateHelpers = require('../helpers/DateHelpers')
 const PersonalData = require('../fabric/PersonalData')
-
+const AddressData = require('../fabric/AddressData')
 class IndustryData {
     /**
      * return a random job
@@ -52,6 +52,62 @@ class IndustryData {
         else
             return `${n1}${n2}${n3}${n4}${n5}${n6}${n7}${n8}${n9}${n10}${n11}${n12}${d1}${d2}`;
     }
+
+    /**
+     * return a activity for a enterprise
+     * @returns {string}
+     */
+    activity() {
+        return RandomArrayElement.randomElement(IndustryHelper.activity())
+    }
+
+    /**
+     * return a full enterprise data as object
+     * @returns {Object}
+     */
+    fullEnterPrise() {
+        let name = this.enterprise()
+        let nameEmpty = RandomArrayElement.removeAllEmptySpaceFromString(name)
+        let site = nameEmpty.toLocaleLowerCase()
+        let addressData = new AddressData();
+        let personalData = new PersonalData();
+        return {
+            name: name,
+            cnpj: this.cnpj(true),
+            inscription: RandomArrayElement.randomStringOnlyNumbers(12),
+            openDate: DateHelpers.lessRandomYear(5),
+            activity: this.activity(),
+            site: 'www' + site + 'com.br',
+            email: personalData.email(nameEmpty),
+            phone: personalData.phone(true),
+            cellPhone: personalData.cellPhone(true),
+            address: addressData.randomFullAddress(),
+        }
+    }
+
+    /**
+     * return object o a simple fake nfe
+     * @returns {Object}
+     */
+    nfe() {
+        return {
+            number: RandomArrayElement.randomStringOnlyNumbers(3),
+            serie: 1,
+            inOrOut: RandomArrayElement.randomElement(['ENTRADA', 'SAIDA']),
+            accessKey: RandomArrayElement.randomStringOnlyNumbers(44),
+            operation: RandomArrayElement.randomElement(['Venda de Produto', 'Prestação de Serviços', 'Remessa', 'Consignação', 'Transferência', 'Devolução', 'Devolução de mercadoria', 'Importação', 'Exportação']),
+            autorizationProtocol: RandomArrayElement.randomStringOnlyNumbers(15) + ' ' + DateHelpers.lessRandomYear(0) + ' ' + DateHelpers.current().split(' ')[1],
+            crt: RandomArrayElement.randoNumberIn(1, 4),
+            inscription: RandomArrayElement.randomStringOnlyNumbers(12),
+            cpnpj: this.cnpj(),
+            date: DateHelpers.lessRandomYear(0),
+            baseIcms: RandomArrayElement.randoNumberIn(50, 1000).toString() + ',00',
+            icms: RandomArrayElement.randoNumberIn(50, 1000).toString() + ',00',
+            value: RandomArrayElement.randoNumberIn(1000, 10000).toString() + ',00',
+            weight: RandomArrayElement.randoNumberIn(50, 100).toString()
+        }
+    }
+
 }
 
 module.exports = IndustryData;

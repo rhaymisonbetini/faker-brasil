@@ -3,6 +3,15 @@
 class RandomArrayElement {
 
     /**
+     * remove all empty spaces form a give string
+     * @param {string} string 
+     * @returns {string}
+     */
+    static removeAllEmptySpaceFromString(string){
+        return string.replace(/ /g,'')
+    }
+
+    /**
      * create array number 
      * @param {number} total 
      * @param {number} numero 
@@ -44,7 +53,7 @@ class RandomArrayElement {
    * @returns int
    */
     static randoNumberIn(min, max) {
-        return Math.random() * (max - min) + min;
+        return Math.floor(Math.random() * (max - min) + min);
     }
     /**
      * return a random strintg
