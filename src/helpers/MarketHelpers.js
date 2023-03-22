@@ -330,7 +330,7 @@ class MarketHelpers {
         ]
     }
 
-    
+
     /**
     * Array of string with eletro products
     * @returns {Array<Objec>}
@@ -360,6 +360,178 @@ class MarketHelpers {
             'ADEGA CLIMATIZADA',
         ]
     }
+
+    /**
+    * Array of string with marker products
+    * @returns {Array<Objec>}
+    */
+    static pcMarket() {
+        return ['Adaptador',
+            'Cabo',
+            'Caixa de som',
+            'Cartucho Compátivel',
+            'Cartucho Canon',
+            'Cartucho Epson',
+            'Cartucho HP',
+            'Cartucho Lexmark',
+            'Estabilizador',
+            'Etiqueta Ink jet',
+            'Etiqueta matricial',
+            'Filtro de linha',
+            'Fita dat',
+            'Fita para impressora',
+            'Fita para PDV',
+            'Fone de ouvido',
+            'Formulário contínuo',
+            'Fonte',
+            'Joystick',
+            'Mouse',
+            'Mouse pad',
+            'MP3',
+            'MP4',
+            'No-break',
+            'Papel para Ink Jet /Laser',
+            'Papel fotográfico',
+            'Papel para ploter',
+            'Pasta para formulário contínuo',
+            'Pen drive',
+            'Porta cd',
+            'Porta CPU',
+            'Protetor de tela',
+            'Teclado',
+            'Toner HP',
+            'Toner Lexmark',
+            'Transparências',
+            'Web cam',
+            'Monitor',
+            'Fonte',
+            'Cabo USB',
+            'Memoria RAM',
+            'SSD',
+            'Gabinete',
+            'CPU'
+        ]
+    }
+
+    /**
+    * return array o array with string
+    * @returns {Array<array>}
+    */
+    static pc() {
+        return [
+            [
+                'Intel Core i5-10210U (10ª geração);',
+                'SSD de 512GB;',
+                '8GB de memória RAM;',
+                'Tela de 15.6" com resolução HD;',
+                'Windows 10;',
+                'Uma porta USB 2.0 e uma porta USB 3.0;',
+                'HDMI.',
+            ],
+            [
+                'Intel Intel Core i3 1115G4 (11ª geração);',
+                '4GB memória RAM DDR4;',
+                'SSD de 256GB de armazenamento;',
+                'Tela LED HD de 15.6";',
+                'Windows 10;',
+                'Duas portas USB 3.1 Gen 1 e uma porta USB 2.0;',
+                'HDMI.',
+            ],
+            [
+                'Intel Core i7-10510U (10ª geração);',
+                '8GB de memória RAM;',
+                'Placa de vídeo dedicada NVIDIA GeForce MX110 de 2GB;',
+                'HDD de 1TB;',
+                'SSD de 128GB;',
+                'Tela LED de 15.6" HD antirreflexo;',
+                'Uma porta USB 2.0 e uma porta USB 3.0;',
+                'Windows 10;',
+                'HDMI.',
+            ],
+            [
+                'Intel i5-10210U (10ª geração);',
+                '8GB de memória RAM DDR4;',
+                '1TB de HDD;',
+                'Tela LCD Full HD de 15.6" antirreflexo;',
+                'Uma porta USB 2.0 e três portas USB 3.0;',
+                'Windows 10;',
+                'HDMI.',
+            ],
+            [
+                'Intel i7 1165G7 (11ª geração);',
+                '8GB de memória RAM DDR4;',
+                'SSD de 256GB;',
+                'Tela antireflexo Full HD de 15.6";',
+                'Windows 10;',
+                'Duas portas USB 2.0 e uma porta USB 3.0;',
+                'HDMI.',
+            ],
+            [
+                'Intel Celeron;',
+                '4GB de memória RAM;',
+                'SSD de 64GB;',
+                'Tela Full HD 13.3";',
+                'Windows 10;',
+                'Uma porta USB 2.0 e uma porta USB 3.0;',
+                'HDMI.',
+            ],
+            [
+                'Intel Core i5-10210U (10ª geração);',
+                '8GB de memória RAM DDR4;',
+                'HDD de 1TB;',
+                'Windows 10;',
+                'Tela de 15.6" NanoEdge;',
+                'Duas portas USB 2.0;',
+                'HDMI.',
+            ],
+            [
+            'Intel i7 11800H (11ª geração);',
+            'NVIDIA GeForce RTX 3060 6GB GDDR6;',
+            'SSD de 512GB;',
+            '16GB de memória RAM DDR4;',
+            'Tela de 15.6" Full HD;',
+            'Duas portas USB 2.0 e uma porta USB 3.0;',
+            'Windows 10;',
+            'HDMI.',
+            ]
+        ]
+    }
+
+    /**
+    * Array of string with marker products
+    * @returns {Array<string>}
+    */
+    static clothes(){
+        return [
+            'Camiseta',
+            'Camisa',
+            'Camisa gola polo',
+            'Camisola',
+            'Camisa de manga comprida',
+            'Camisa de manga curta',
+            'Jaqueta',
+            'Jaqueta jeans',
+            'Croped',
+            'Baby look',
+            'Casaco',
+            'Casaco moletom',
+            'Cueca',
+            'Calcinha',
+            'Cueca box',
+            'Bermuda',
+            'Short',
+            'Calça',
+            'Calça jeans',
+            'Meia',
+            'Boné',
+            'Gorro',
+            'Boina',
+            'Saia',
+            'Sutiã',
+            'Tomara-que-caia'
+        ]
+    }
+
 }
 
 module.exports = MarketHelpers
