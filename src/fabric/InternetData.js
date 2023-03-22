@@ -7,6 +7,7 @@ class InternetData {
 
     /**
     * return a fake ip string
+    * @returns {String}
     */
     ip() {
         return (Math.floor(Math.random() * 255) + 1) + "." + (Math.floor(Math.random() * 255)) + "." + (Math.floor(Math.random() * 255)) + "." + (Math.floor(Math.random() * 255));
@@ -49,7 +50,6 @@ class InternetData {
         return RandomArrayElement.removeAcc(RandomArrayElement.removeAllEmptySpaceFromString(domain).toLowerCase())
     }
 
-  
 }
 
 module.exports = InternetData 
