@@ -95,7 +95,7 @@ class NamesHelpers {
      * @return {string} String 
      */
     static generateEmail(email) {
-        return `${email}@mail.com.br`.replace(/ /g, '');
+        return `${email}@mail.com`.replace(/ /g, '');
     }
 
     /**

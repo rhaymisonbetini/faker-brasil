@@ -63,7 +63,7 @@ class PersonalData {
     email(firstName = null) {
         let email = '';
         if (firstName) {
-            email = NamesHelpers.generateEmail(firstName + lastName);
+            email = NamesHelpers.generateEmail(firstName);
         } else {
             email = NamesHelpers.generateEmail(this.firstName() + this.lastName());
         }
