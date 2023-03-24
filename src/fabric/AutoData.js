@@ -6,6 +6,15 @@ const RandomArrayElement = require('../services/RandomArrayElement')
 class AutoData {
 
     /**
+    * return a auto model.
+    * If you whant the model you just need split return and get 0 position
+    * @returns {string}
+    */
+    motocicle() {
+        return RandomArrayElement.randomElement(AutoHelpers.motocicle())
+    }
+
+    /**
     * return a auto model
     * @returns {string}
     */
@@ -157,6 +166,24 @@ class AutoData {
             fuel: this.fuel(),
             specie: this.specie(),
             restrictions: this.restrictions(),
+            color: this.color(),
+        }
+    }
+
+    
+    /**
+     * return a full motocicly
+     * @returns {Object}
+     */
+    fullMotocicle() {
+        let auto = this.motocicle();
+        return {
+            name: auto,
+            model: auto.split(' ')[0],
+            licencePlate: this.licensePlate(true),
+            chassi: this.chassi(),
+            renavam: this.renavam(),
+            fuel: 'Gasolina',
             color: this.color(),
         }
     }

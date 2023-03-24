@@ -23,7 +23,7 @@ class AutoHelpers {
 
     /**
      * return array of category
-     *@return {Array<Object>}
+     *@return {Array<object>}
      */
     static category() {
         return [
@@ -35,7 +35,7 @@ class AutoHelpers {
 
     /**
     * return array of specie
-    *@return {Array<Object>}
+    *@return {Array<object>}
     */
     static specie() {
         return [
@@ -50,7 +50,7 @@ class AutoHelpers {
 
     /**
    * return array of restrictions
-   *@return {Array<Object>}
+   *@return {Array<object>}
    */
     static restrictions() {
         return [
@@ -66,7 +66,7 @@ class AutoHelpers {
 
     /**
      * 
-     * @returns {Array<Object>}
+     * @returns {Array<object>}
      */
     static color() {
         return [
@@ -91,7 +91,7 @@ class AutoHelpers {
 
     /**
      * return array of bodies
-     *@return {Array<Object>}
+     *@return {Array<object>}
      */
     static body() {
         return [
@@ -111,7 +111,7 @@ class AutoHelpers {
 
     /**
      * return array of types
-     *@return {Array<Object>}
+     *@return {Array<object>}
      */
     static type() {
         return [
@@ -134,10 +134,10 @@ class AutoHelpers {
 
     /**
      * return array of fuels
-     *@return {Array<Object>}
+     *@return {Array<object>}
      */
     static fuel() {
-        return  [
+        return [
             { "id": 1, "nome": "ÁLCOOL" },
             { "id": 9, "nome": "ÁLCOOL / GNC" },
             { "id": 3, "nome": "DIESEL" },
@@ -154,8 +154,69 @@ class AutoHelpers {
     }
 
     /**
+    * return array of motocicles
+    *@return {Array<string>}
+    */
+    static motocicle() {
+        return ["Haojue Nex",
+            "Honda Pop 110i",
+            "Honda Biz 110i",
+            "Yamaha Factor 150",
+            "Honda XRE 300",
+            "Haouje Dk 150",
+            "Honda CG 160",
+            "Yamaha Factor 150",
+            "Honda Bros 160",
+            "Yamaha Crosser 150",
+            "Haojue Nex",
+            "Honda Biz 125",
+            "Honda Biz 110i",
+            "Honda Pop 110i",
+            "Shineray Jet 50",
+            "Honda CB 250 F Twister",
+            "Kawasaki Z 400",
+            "Honda CG 160 Cargo",
+            "Dafra Apache RTR 200",
+            "Haojue Chopper Road 150",
+            "Honda XRE 300",
+            "Kawasaki Versys 300",
+            "Royal Enfiled Himalayn",
+            "Yamaha XTZ 150 Crosser",
+            "Honda PCX",
+            "Yamaha Nax",
+            "Kymco Agility 200",
+            "Haojue Lindy 125 CBS",
+            "Dafra Maxsym",
+            "Royal Enfield Classic 500",
+            "Kawasaki Z900",
+            "Suzuki GSX 750",
+            "Triumph Street Triple RS",
+            "Yamaha MT7",
+            "BMW S 1000XR",
+            "Triumph Tiger 800",
+            "Yamaha XTZ 1200",
+            "Kawasaki Versys 650",
+            "Ducati Multristrada",
+            "BMW S 1000RR",
+            "Kawasaki Ninja 400",
+            "Honda CBR 1000RR Fireblade",
+            "Suzuki GSX1000R",
+            "Yamaha YZF R3",
+            "BMW K 1600 Bagger",
+            "Harley avidson CVO Limited",
+            "BRP Spyder RT Limited",
+            "Kawasaki Versys 650 Tourer",
+            "Kawasaki Vulcan S",
+            "Suzuki Boulevard M1800R",
+            "Harley avidson Fat Boy 114",
+            "Triumph Rocket 3 R",
+            "Harley avidson Sport Glide"
+        ]
+    }
+
+    /**
      * return array of object with name and auto model
-     *@return {Array<Object>}
+     *@return {Array<object>}
      */
     static auto() {
         return [
