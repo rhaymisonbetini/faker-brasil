@@ -143,6 +143,22 @@ class MarketData {
     }
 
     /**
+     * return a cellphone model string
+     * @returns {string}
+     */
+    cellPhoneModel() {
+        return RandomArrayElement.randomElement(MarketHelpers.cellPhone())
+    }
+
+    /**
+     * return a single constrution item
+     * @returns {string}
+     */
+    construction() {
+        return RandomArrayElement.randomElement(MarketHelpers.construction())
+    }
+
+    /**
     * return Array of objetct of a eletronico by Suplier
     * @param {number} products 
     * @param {number} supplier 
