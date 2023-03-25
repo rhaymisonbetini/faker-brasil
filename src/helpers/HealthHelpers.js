@@ -1,0 +1,140 @@
+'use strict'
+
+class HealthHelpers {
+
+
+    /**
+    * return a vertination  array string
+    * @returns {Array<string>}
+    */
+    static vetName() {
+        return [
+
+            "Clínica Veterinária e Pet Shop Dr. Pet",
+            "Clínica Veterinária e Pet Shop Mundo Animal",
+            "Clínica Veterinária e Pet Shop Vida de Cão",
+            "Clínica Veterinária e Pet Shop Cuidando de Bichos",
+            "Clínica Veterinária e Pet Shop Pet House",
+            "Clínica Veterinária e Pet Shop Bichos & Cia",
+            "Clínica Veterinária e Pet Shop Bom Prato",
+            "Clínica Veterinária e Pet Shop Dr. Vida",
+            "Clínica Veterinária e Pet Shop Amigo Animal",
+            "Clínica Veterinária e Pet Shop Zoológico",
+            "Clínica Veterinária e Pet Shop Dr. Bicho",
+            "Clínica Veterinária e Pet Shop Cão & Gato",
+            "Clínica Veterinária e Pet Shop Petshop",
+            "Clínica Veterinária e Pet Shop Dr. Zoo",
+            "Clínica Veterinária e Pet Shop Vet+",
+            "Clínica Veterinária e Pet Shop Banho & Tosa",
+            "Clínica Veterinária e Pet Shop Animalandia",
+            "Clínica Veterinária e Pet Shop Dr. Vet",
+            "Clínica Veterinária e Pet Shop Animalis",
+            "Clínica Veterinária e Pet Shop Mundo dos Bichos",
+            "Clínica Veterinária e Pet Shop Dr. Pets",
+            "Clínica Veterinária e Pet Shop Vida Animal",
+            "Clínica Veterinária e Pet Shop Cuidando do seu Bichinho",
+            "Clínica Veterinária e Pet Shop Bichinho Feliz",
+            "Clínica Veterinária e Pet Shop Bom Amigo",
+            "Clínica Veterinária e Pet Shop Dr. Amigo",
+            "Clínica Veterinária e Pet Shop Zoonoses",
+            "Clínica Veterinária e Pet Shop Dr. Zoo Animal",
+            "Clínica Veterinária e Pet Shop Cão Viver",
+            "Clínica Veterinária e Pet Shop Gatinho Amigo",
+            "Clínica Veterinária e Pet Shop Pets Amigo",
+            "Clínica Veterinária e Pet Shop Drº Vet",
+            "Clínica Veterinária e Pet Shop Banho Tosa Animal",
+            "Clínica Veterinária e Pet Shop Animal Animais",
+            "Clínica Veterinária e Pet Shop Drº Animail",
+            "Clínica Veterinária e Pet Shop Vida de Animais",
+            "Clínica Veterinária e Pet Shop Cuidando de Seres Vivos",
+            "Clínica Veterinária e Pet Shop Bichos Vivos",
+            "Clínica Veterinária e Pet Shop Bom Alimento",
+            "Clínica Veterinária e Pet Shop Drº Alimentação Saudável",
+            "Clínica Veterinária e Pet Shop Zoosaludable",
+            "Clínica Veterinária e Pet Shop Drº Zoo",
+            "Saudavel Cão",
+            "Saudavel Gatinho",
+            "Saudavel Pets Saudaveis Drº Vet",
+            "Saudavel Banho Tosa",
+            "Saudavel Animal Animais",
+            "Saudaveis Drº Animail ",
+            "Saudavel Vida de Animais",
+            "Saudaveis Cuidando de Seres Vivos",
+            "Saudaveis Bichos Vivos",
+            "Saudaveis Bom Alimento ",
+            "Saudavel Drº Alimentação",
+            "Saudavel Zoosaludable Drº Zoo",
+            "Saudavel Animal zoo",
+            "Saudavel Cão",
+        ]
+    }
+
+    /**
+     * return a odonto clinica array string
+     * @returns {Array<string>}
+     */
+    static dental() {
+        return [
+            "Ateliê de Sorriso",
+            "Belo sorriso",
+            "Centro Clínico dos dentes",
+            "Odontologia certa",
+            "Sorriso & Cia",
+            "Branco Odonto",
+            "Clínica do Doutor X",
+            "Fino Odonto",
+            "Centro do Sorriso",
+            "Sorriso geral",
+            "Ideal dentes",
+            "Ilumine odontologia",
+            "New Odonto",
+            "Max Odonto",
+            "Max Dent",
+            "Hiper Odonto",
+            "Nova Odonto",
+            "Odontologia geral",
+            "Pronto Odonto",
+            "SOS dentes",
+            "Porto dental",
+            "Mundial dentes",
+            "SOS sorriso",
+            "Sempre sorrindo",
+            "Saúde & sorriso",
+            "Supremo Odonto",
+            "Arte do Sorriso",
+            "Dentes e dentinhos",
+            "Fino dente",
+            "Dr. Odonto",
+            "Centro Clínico do Sorriso",
+            "Soberano Odonto",
+            "Mais Odonto",
+            "Prime Odonto",
+            "Clínica brilho dental",
+            "Clínica dente branco",
+            "Ponto do Sorriso",
+            "Mega White",
+            "Bio Odonto",
+            "Sorrisão White",
+            "Mestre Odonto",
+            "Dental Art",
+            "Saúde Odonto",
+            "Belo sorriso",
+            "Hospital dos dentes",
+            "Express Odonto",
+            "Divino sorriso",
+            "Boca e sorriso",
+            " OdontoRir",
+            "Odonto Master",
+            "Top Dentes",
+            "Doutor dos dentes",
+            "Clínica geral dos dentes",
+            "Clínica do belo sorriso",
+            "Clínica sorrir sempre",
+            "Clínica sorrir mais",
+            "Senhor Odonto",
+        ]
+    }
+
+}
+
+module.exports = HealthHelpers
