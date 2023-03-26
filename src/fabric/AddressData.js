@@ -22,7 +22,7 @@ class AddressData {
     */
     randomCep() {
         let random = RandomArrayElement.randomElement(AddressHelpers.getArrayOfRangeCep())
-        return AddressService.randomRangeCep(random.init, random.end)
+        return AddressService.randomRangeCep(random.init, random.end).toString()
     }
 
     /**
@@ -32,7 +32,7 @@ class AddressData {
     */
     randomCepByState(location) {
         let random = AddressHelpers.getRangeByLocation(location);
-        return AddressService.randomRangeCep(random.init, random.end)
+        return AddressService.randomRangeCep(random.init, random.end).toString()
     }
 
     /**
@@ -83,9 +83,9 @@ class AddressData {
     }
 
     /**
-  * get a full random address by a building
-  * @return {object} 
-  */
+    * get a full random address by a building
+    * @return {object} 
+    */
     randomFullAddressBuilding() {
         let state = RandomArrayElement.randomElement(AddressHelpers.getArrayOfRangeCep());
         let stateAndCity = AddressHelpers.getCityAndStateByLocation(state.sigla)
