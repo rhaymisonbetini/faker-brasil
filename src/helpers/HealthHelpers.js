@@ -2,6 +2,292 @@
 
 class HealthHelpers {
 
+    /**
+    * return type of medics
+    * @returns {Array<string>}
+    */
+    static medicEspecialist() {
+        return [
+            "Podólogo",
+            "Clínico geral",
+            "Pediatra",
+            "Endocrinologista",
+            "Neurologista",
+            "Reumatologista",
+            "Alergista / Imunologista",
+            "Psiquiatra",
+            "Nefrologista",
+            "Ginicologista",
+            "Psiquiatra",
+            "Cardiologista",
+            "Nutricionista",
+            "Pneumologista",
+            "Cirurgião",
+            "Médico de emergência",
+            "Oftalmologista",
+            "Oncologista",
+            "Urologista",
+            "Otorrinolaringologista",
+            "Anestesista",
+            "Dermatologista",
+            "Radiologista",
+            "Gastroenterologista",
+            "Cardiologista",
+            "Ortopedista"
+        ]
+    }
+
+    /**
+    * return a list name of medical exam
+    * @returns {Array<string>}
+    */
+    static medicalExams() {
+        return [
+            "hemograma",
+            "glicemia em jejum",
+            "colesterol e triglicerídeos",
+            "ureia e creatina",
+            "tgo (ast) e tgp (alt)",
+            "tsh e t4 livre",
+            "ácido úrico",
+            "exames de urina",
+            "eletrocardiograma",
+            "teste ergométrico",
+            "ecocardiograma",
+            "papanicolau;",
+            "mamografia;",
+            "ultrassonografia transvaginal.",
+            "toque retal;",
+            "dosagem de psa.",
+            "anamnese clínica e esportiva;",
+            "avaliação física completa;",
+            "consulta nutricional;",
+            "análises clínicas;",
+            "teste cardiopulmonar;",
+            "raio-x de tórax",
+            "eletrocardiograma",
+            "m.a.p.a",
+            "holter",
+            "audiometria",
+            "radiografia",
+            "espirometria",
+            "eletrocardiograma",
+            "colesterol total e frações (hdl, ldl e vldl) e triglicerídeos",
+            "transaminases ou tgo (ast) e tgp (alp)",
+            "t3 total; t4 livre e tsh",
+            "lh (hormônio luteinizante)",
+            "e2 (estradiol)",
+            "hiv1 e hiv2 para hiv;",
+            "vdlr para sífilis;",
+            "teste para clamídia;",
+            "teste para gonorreia;",
+            "anti-hcv para hepatite c",
+            "anti-hbs e outros para hepatite b;",
+            "anticorpos igg ou anticorpos igm para herpes 1 e 2.",
+            "papanicolaou",
+            "colposcopia ou vulvoscopia",
+            "ultrassonografias",
+            "mamografia ",
+            "densitometria óssea"
+        ]
+    }
+
+    /**
+    * return type of dental specialist
+    * @returns {Array<string>}
+    */
+    static dentalSpecialist() {
+        return [
+            "Acupuntura",
+            "Cirurgia e Traumatologia Bucomaxilofaciais",
+            "Dentística",
+            "Disfunção Temporomandibular e Dor Orofacial",
+            "Endodontia",
+            "Estomatologia",
+            "Harmonização orofacial",
+            "Homeopatia",
+            "Implantodontia",
+            "Odontogeriatria",
+            "Odontologia do Esporte ",
+            "Odontologia do Trabalho",
+            "Odontologia Legal",
+            "Odontologia para Pacientes com Necessidades Especiais",
+            "Odontopediatria",
+            "Ortodontia",
+            "Ortopedia Funcional dos Maxilares",
+            "Patologia Oral e Maxilofacial",
+            "Periodontia",
+            "Prótese Bucomaxilofacial",
+            "Prótese Dentária",
+            "Radiologia Odontológica e Imaginologia",
+            "Saúde Coletiva"
+        ]
+    }
+
+    /**
+    * return a list name of dental exam
+    * @returns {Array<string>}
+    */
+    static dentalExams() {
+        return [
+            "Consulta inicial",
+            "Consulta de urgência em horário comercial",
+            "Consulta de urgência fora do horário comercial",
+            "Perícia inicial, Intermediária ou final ",
+            "Falta não justificada à consulta ",
+            "Falta não justificada à perícia ",
+            "Vistoria de Instalações",
+            "Rx periapical",
+            "Rx interproximal (“bitewing”) ",
+            "Rx oclusal",
+            "Rx póstero-anterior",
+            "Rx da ATM:incidências",
+            "Rx panorâmica",
+            "Telerradiografia com traçado computadorizado ",
+            "Telerradiografia sem traçado",
+            "Rx de mão",
+            "Modelos ortodônticos (par) (NORMA: ",
+            "“Slide” ou fotografia (máximo:unidades) (NORMA: ",
+            "Documentação ortodôntica, ",
+            "Rx panorâmica com traçado",
+            "Tomografia computadorizada:ATM",
+            "Tomografia computadorizada:ATM’s",
+            "Tomografia computadorizada:seio da face",
+            "Tomografia computadorizada:seios da face",
+            "Tomografia computadorizada:dente",
+            "Tomografia computadorizada:dentes",
+            "Tomografia computadorizada:dentes",
+            "Tomografia computadorizada:dentes",
+            "Tomografia computadorizada: maxila ou mandíbula total",
+            "Teste de risco de cárie ",
+            "Teste de pH salivar / Capacidade Tampão ",
+            "Teste de fluxo salivar / Sialometria ",
+            "Exame citopatológico oncótico de líquidos e raspados ou “imprint” de lesões bucais ",
+            "Profilaxia",
+            "Orientação de Higiene Oral e de dieta alimentar",
+            "Aplicação de flúor gel ",
+            "Controle de placa bacteriana",
+            "Tratamento de gengivite ",
+            "Remineralização ",
+            "Aplicação de verniz de flúor",
+            "Aplicação de selante",
+            "Aplicação de selante invasivo ",
+            "Aplicação de cariostático ",
+            "Remineralização ",
+            "Adequação do meio bucal com ionômero de vidro ",
+            "Adequação do meio bucal com IRM ",
+            "Restauração de ionômero de vidro , ",
+            "Restauração preventiva (ionômero + selante) , ",
+            "Coroa de aço, acetato ou policarbonato  Rx inicial periapical e Rx final",
+            "imal (P. inicial e P. final) , ",
+            "Capeamento pulpar em decíduo ",
+            "Capeamento pulpar em permanente ",
+            "Restauração provisória ",
+            "Pulpotomia ",
+            "Tratamento endodôntico em decíduo  Rx final periapical ",
+            "Exodontia de decíduo ",
+            "Mantenedor de espaço fixo ou removível (P. final com mantenedor)",
+            "Placa miorrelaxante ",
+            "Plano inclinado ",
+            "Condicionamento infantil ",
+            "Ulotomia ",
+            "Ulectomia ",
+            "Restauração de amálgamaface (P. inicial e P. final) ",
+            "Restauração de amálgamafaces (P. inicial e P. final) ",
+            "Restauração de amálgamafaces (P. inicial e P. final) ",
+            "Restauração de amálgamafaces (P. inicial e P. final) ",
+        ]
+    }
+
+    /**
+    * return type of veterinariam specialist
+    * @returns {Array<string>}
+    */
+    static vetSpecialist() {
+        return [
+            "cirurgia;",
+            "patologia;",
+            "acupuntura",
+            "medicina felina",
+            "diagnóstico por imagem;",
+            "anestesiologia;",
+            "clínica médica para pequenos animais;",
+            "inspeção higiênica sanitária e tecnológica",
+            "endocrinologia;",
+            "medicina de animais selvagens;",
+            "medicina intensiva;",
+            "dermatologia;",
+            "cardiologia",
+            "oftalmologia;",
+            "homeopatia;",
+            "oncologia;",
+            "medicina veterinária legal;",
+            "medicina veterinária de coletivo;",
+            "nefrologia e urologia",
+            "nutrição e nutrologia",
+        ]
+    }
+
+    static vetExames() {
+        return [
+            "Histopatológico (1 amostra)",
+            "Histopatológico (amostras adicionais)",
+            "Biópsia de Pele para Dermatopatias (até 3 fragmentos)",
+            "Biópsia Gástrica com pesquisa Helicobacter spp",
+            "Peça cirúrgica (Ex: mastectomia, baço, amputações)",
+            "Histopatológico com avaliação de margem cirúrgica)",
+            "Citologia (1 local)",
+            "Citologia (local adicional)",
+            "Citologia Vaginal",
+            "PARR: Diagnóstico e Imunofenotipagem de linfomas",
+            "Teste para mutação do gene BRAF para carcinoma",
+            "de vesícula urinária e próstata de cães",
+            "Citometria de Fluxo 1",
+            "Citometria de Fluxo 2",
+            "PCR para Oncogene C-Kit em Mastocitoma ",
+            "PCR para Oncogene C-Kit + Imunoistoquímica",
+            "Marcador Sorológico para Tumor de Mama (CEA) ",
+            "OncoMapa",
+            "MDR 1 - (Gene de múltipla resistência a drogas)",
+            "PKD - (Doença do Rim Policístico de Felinos) ",
+            "Anaplasma spp",
+            "Babesia spp",
+            "Bordetella spp ",
+            "Blastomyces dermatitidis ",
+            "Borrelia burgdorferi",
+            "Brucella spp",
+            "Calicivírus felino ",
+            "Campylobacter spp ",
+            "Vírus da Cinomose canina ",
+            "Chlamydophila psittaci ",
+            "Cryptococcus spp",
+            "FeLV Plus (DNA pró viral e RNA) ",
+            "FIV Plus (DNA pró viral e RNA) ",
+            "Herpesvírus canino 1",
+            "Herpesvírus felino 1",
+            "Leishmania spp",
+            "Mycoplasma haemocanis (Haemobartonella canis)",
+            "Mycoplasma haemofelis (Haemobartonella felis) ",
+            "Rangelia vitalli",
+            "Painel Hemoparasita Canino I",
+            "Painel Hemoparasita Canino II",
+            "Painel Anemia Canina",
+            "Painel Infeccioso Canino II",
+            "Painel Entérico Canino II",
+            "Painel Reprodutivo Canino",
+            "Painel Neurológico Felino",
+            "Painel Infeccioso Felino",
+            "Painel Respiratório Felino",
+            "Painel Uveite Felino",
+            "Painel Reprodutivo Felino",
+            "Painel Anemia Felino I",
+            "Painel Anemia Felino II",
+            "Painel Agentes Fúngicos",
+            "Babesia Bovinos",
+            "Babesia Equinos",
+            "Hemoparasitas Equinos II",
+        ]
+    }
 
     /**
     * return a vertination  array string
