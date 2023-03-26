@@ -6,7 +6,7 @@ const DateHelpers = require('../helpers/DateHelpers')
 const NamesHelpers = require('../helpers/NamesHelpers');
 
 
-class HealthDatas {
+class HealthData {
 
     /**
      * return a hospital string name ex: Casa de misericordia
@@ -86,4 +86,4 @@ class HealthDatas {
 
 }
 
-module.exports = HealthDatas
+module.exports = HealthData
