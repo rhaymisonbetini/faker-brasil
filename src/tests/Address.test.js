@@ -2,7 +2,7 @@ const AddressData = require('../fabric/AddressData');
 const { it, expect } = require('@jest/globals');
 let addressData = new AddressData();
 
-describe('Teste for AddressDatas', () => {
+describe('Teste for AddressDatas generator', () => {
 
     it('Get cep on Correios API', async () => {
         let asyncData = new AddressData();
