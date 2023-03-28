@@ -8,7 +8,7 @@ class BankData {
 
     /**
      * return a bank with identificator
-     * @returns {Object}
+     * @returns {object}
      */
     bank() {
         return RandomArrayElement.randomElement(BankHelpers.banks())

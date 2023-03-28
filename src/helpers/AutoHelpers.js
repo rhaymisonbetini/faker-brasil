@@ -4,7 +4,7 @@ class AutoHelpers {
 
     /**
      *  return array of object with name and model by model type
-     * @param {string} model 
+     * @param {object} model 
      * @returns 
      */
     static autoByModel(model) {
