@@ -32,7 +32,7 @@ class AutoData {
 
     /**
     * return a object with model and name
-    * @returns {Object}
+    * @returns {object}
     */
     auto() {
         return RandomArrayElement.randomElement(AutoHelpers.auto())
@@ -41,16 +41,16 @@ class AutoData {
     /**
     * return objecti with model and name by name
     * @param {string} model 
-    * @returns {Array<Object>}
+    * @returns {Array<object>}
     */
     autosByModel(model) {
         return AutoHelpers.autosByModel(model)
     }
 
     /**
-    * return objecti with model and name by name
+    * return object with model and name by name
     * @param {string} model 
-    * @returns {Array<Object>}
+    * @returns {object}
     */
     autoByModel(model) {
         return AutoHelpers.autoByModel(model)
@@ -150,7 +150,7 @@ class AutoData {
 
     /**
      * return a full auto details
-     * @returns {Object}
+     * @returns {object}
      */
     fullAuto() {
         let auto = this.auto();
@@ -173,7 +173,7 @@ class AutoData {
     
     /**
      * return a full motocicly
-     * @returns {Object}
+     * @returns {object}
      */
     fullMotocicle() {
         let auto = this.motocicle();
