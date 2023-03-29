@@ -63,7 +63,7 @@ class IndustryData {
 
     /**
      * return a full enterprise data as object
-     * @returns {Object}
+     * @returns {object}
      */
     fullEnterPrise(activity = null) {
         let name = this.enterprise()
@@ -87,7 +87,7 @@ class IndustryData {
 
     /**
      * return object o a simple fake nfe
-     * @returns {Object}
+     * @returns {object}
      */
     nfe() {
         return {

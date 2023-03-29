@@ -166,7 +166,7 @@ class NamesHelpers {
 
     /**
      * this function return a array of simples names
-     * @returns {Array}
+     * @returns {array}
      */
     static getSimpleNames() {
         return ["Helena", "Miguel"
@@ -223,7 +223,7 @@ class NamesHelpers {
 
     /**
     * this function return a array of lastname
-    * @returns {Array}
+    * @returns {array}
     */
     static getLastName() {
         return [
@@ -448,7 +448,7 @@ class NamesHelpers {
 
     /**
     * this function return a array of ddd with state
-    * @returns {Array}
+    * @returns {array}
     */
     static getDDDBrasil() {
         return [

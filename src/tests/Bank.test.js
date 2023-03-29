@@ -2,7 +2,7 @@ const BankData = require('../fabric/BankData');
 const { it, expect } = require('@jest/globals');
 let bankData = new BankData();
 
-describe('Teste for Bankda generator', () => {
+describe('Teste for BankData generator', () => {
 
     it('Get a banck json with name and code', () => {
         let bank = bankData.bank();

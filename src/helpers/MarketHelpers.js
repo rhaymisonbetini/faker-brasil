@@ -4,7 +4,7 @@ class MarketHelpers {
 
     /**
     * Array of string with marker products
-    * @returns {Array<string>}
+    * @returns {array<string>}
     */
     static cellPhone() {
         return [
@@ -58,7 +58,7 @@ class MarketHelpers {
 
     /**
     * Array of string with marker products
-    * @returns {Array<string>}
+    * @returns {array<string>}
     */
     static construction() {
         return [
@@ -347,7 +347,7 @@ class MarketHelpers {
 
     /**
      * Array of string with marker products
-     * @returns {Array<string>}
+     * @returns {array<string>}
      */
     static marketList() {
         return [
@@ -467,7 +467,7 @@ class MarketHelpers {
 
     /**
      * Array of string with marker products
-     * @returns {Array<Objec>}
+     * @returns {array<Objec>}
      */
     static drugStore() {
         return ['NEOSORO',
@@ -676,7 +676,7 @@ class MarketHelpers {
 
     /**
     * Array of string with eletro products
-    * @returns {Array<Objec>}
+    * @returns {array<Objec>}
     */
     static eletro() {
         return [
@@ -706,7 +706,7 @@ class MarketHelpers {
 
     /**
     * Array of string with marker products
-    * @returns {Array<Objec>}
+    * @returns {array<Objec>}
     */
     static pcMarket() {
         return ['Adaptador',
@@ -758,7 +758,7 @@ class MarketHelpers {
 
     /**
     * return array o array with string
-    * @returns {Array<array>}
+    * @returns {array<array>}
     */
     static pc() {
         return [
@@ -842,7 +842,7 @@ class MarketHelpers {
 
     /**
     * Array of string with marker products
-    * @returns {Array<string>}
+    * @returns {array<string>}
     */
     static clothes() {
         return [

@@ -11357,7 +11357,7 @@ class AddressHelpers {
 
     /**
      * return array obj all city in state
-     * @returns {Array{Object}}
+     * @returns {array{object}}
      */
     static arrayCityAndState() {
         return [

@@ -23,7 +23,7 @@ class AutoHelpers {
 
     /**
      * return array of category
-     *@return {Array<object>}
+     *@return {array<object>}
      */
     static category() {
         return [
@@ -35,7 +35,7 @@ class AutoHelpers {
 
     /**
     * return array of specie
-    *@return {Array<object>}
+    *@return {array<object>}
     */
     static specie() {
         return [
@@ -50,7 +50,7 @@ class AutoHelpers {
 
     /**
    * return array of restrictions
-   *@return {Array<object>}
+   *@return {array<object>}
    */
     static restrictions() {
         return [
@@ -66,7 +66,7 @@ class AutoHelpers {
 
     /**
      * 
-     * @returns {Array<object>}
+     * @returns {array<object>}
      */
     static color() {
         return [
@@ -91,7 +91,7 @@ class AutoHelpers {
 
     /**
      * return array of bodies
-     *@return {Array<object>}
+     *@return {array<object>}
      */
     static body() {
         return [
@@ -111,7 +111,7 @@ class AutoHelpers {
 
     /**
      * return array of types
-     *@return {Array<object>}
+     *@return {array<object>}
      */
     static type() {
         return [
@@ -134,7 +134,7 @@ class AutoHelpers {
 
     /**
      * return array of fuels
-     *@return {Array<object>}
+     *@return {array<object>}
      */
     static fuel() {
         return [
@@ -155,7 +155,7 @@ class AutoHelpers {
 
     /**
     * return array of motocicles
-    *@return {Array<string>}
+    *@return {array<string>}
     */
     static motocicle() {
         return ["Haojue Nex",
@@ -216,7 +216,7 @@ class AutoHelpers {
 
     /**
      * return array of object with name and auto model
-     *@return {Array<object>}
+     *@return {array<object>}
      */
     static auto() {
         return [

@@ -4,7 +4,7 @@ class HealthHelpers {
 
     /**
     * return type of medics
-    * @returns {Array<string>}
+    * @returns {array<string>}
     */
     static medicEspecialist() {
         return [
@@ -39,7 +39,7 @@ class HealthHelpers {
 
     /**
     * return a list name of medical exam
-    * @returns {Array<string>}
+    * @returns {array<string>}
     */
     static medicalExams() {
         return [
@@ -94,7 +94,7 @@ class HealthHelpers {
 
     /**
     * return type of dental specialist
-    * @returns {Array<string>}
+    * @returns {array<string>}
     */
     static dentalSpecialist() {
         return [
@@ -126,7 +126,7 @@ class HealthHelpers {
 
     /**
     * return a list name of dental exam
-    * @returns {Array<string>}
+    * @returns {array<string>}
     */
     static dentalExams() {
         return [
@@ -201,7 +201,7 @@ class HealthHelpers {
 
     /**
     * return type of veterinariam specialist
-    * @returns {Array<string>}
+    * @returns {array<string>}
     */
     static vetSpecialist() {
         return [
@@ -291,7 +291,7 @@ class HealthHelpers {
 
     /**
     * return a vertination  array string
-    * @returns {Array<string>}
+    * @returns {array<string>}
     */
     static vetName() {
         return [
@@ -357,7 +357,7 @@ class HealthHelpers {
 
     /**
      * return a odonto clinica array string
-     * @returns {Array<string>}
+     * @returns {array<string>}
      */
     static dental() {
         return [

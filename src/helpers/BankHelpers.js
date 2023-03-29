@@ -102,10 +102,10 @@ class BankHelpers {
             );
         }
 
-        let p1 = number[0].slice(0,4);
-        let p2 = number[0].slice(4,8);
-        let p3 = number[0].slice(8,12);
-        let p4 = number[0].slice(12,16);
+        let p1 = number[0].slice(0, 4);
+        let p2 = number[0].slice(4, 8);
+        let p3 = number[0].slice(8, 12);
+        let p4 = number[0].slice(12, 16);
 
         return `${p1} ${p2} ${p3} ${p4}`
 
@@ -201,7 +201,7 @@ class BankHelpers {
 
     /**
      * return array of backs types
-     * @returns {Array<Objext>}
+     * @returns {array<object>}
      */
     static types() {
         return ['CORRENTE', 'PJ', 'POUPANÇA', 'CONJUNTA']
@@ -209,7 +209,7 @@ class BankHelpers {
 
     /**
      * return array of backs
-     * @returns {Array<Objext>}
+     * @returns {array<object>}
      */
     static banks() {
         return [

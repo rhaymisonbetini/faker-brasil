@@ -5,6 +5,10 @@ let autoData = new AutoData();
 
 describe('Teste for AutoData generator', () => {
 
+    it('Espect to be a instace of a class', () => {
+        expect(autoData).toBeInstanceOf(AutoData)
+    })
+
     it('Get a motocicle type', () => {
         expect(typeof autoData.motocicle()).toEqual('string')
     })

@@ -4,7 +4,7 @@ class UniveristyHelpers {
 
     /**
      * this method return array of Object
-     * @returns {array} array<Object>
+     * @returns  {array<object>}
      */
     static getUniveristyArray() {
         return [

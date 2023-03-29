@@ -41,7 +41,7 @@ class AutoData {
     /**
     * return objecti with model and name by name
     * @param {string} model 
-    * @returns {Array<object>}
+    * @returns {array<object>}
     */
     autosByModel(model) {
         return AutoHelpers.autosByModel(model)

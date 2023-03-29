@@ -4,7 +4,7 @@ class GovHelpers {
 
     /**
     * return array of string with a superior court in Brazil
-    * @returns {Array<string>}
+    * @returns {array<string>}
     */
     static superiorCourt() {
         return [
@@ -21,7 +21,7 @@ class GovHelpers {
 
     /**
     * return array of string with a regional court in Brazil
-    * @returns {Array<string>}
+    * @returns {array<string>}
     */
     static regionalCourt() {
         return [
@@ -36,7 +36,7 @@ class GovHelpers {
 
     /**
     * return array of string with a justice court in Brazil
-    * @returns {Array<string>}
+    * @returns {array<string>}
     */
     static justiceCourt() {
         return [
@@ -72,7 +72,7 @@ class GovHelpers {
 
     /**
     * return array of string with a any manys electoral court
-    * @returns {Array<string>}
+    * @returns {array<string>}
     */
     static electoraCourt() {
         return [
@@ -108,7 +108,7 @@ class GovHelpers {
 
     /**
     * return array of string with a any manys worker court
-    * @returns {Array<string>}
+    * @returns {array<string>}
     */
     static workerCourt() {
         return [
@@ -141,7 +141,7 @@ class GovHelpers {
 
     /**
     * return array of string with a any manys military conuncil
-    * @returns {Array<string>}
+    * @returns {array<string>}
     */
     static militaryCourt() {
         return [
@@ -153,7 +153,7 @@ class GovHelpers {
 
     /**
     * return array of string with a any manys reginal conuncil
-    * @returns {Array<string>}
+    * @returns {array<string>}
     */
     static professionalCouncil() {
         return [
@@ -194,7 +194,7 @@ class GovHelpers {
 
     /**
     * return array of string with all Chamber of Deputies
-    * @returns {Array<string>}
+    * @returns {array<string>}
     */
     static ChamberOfDeputies() {
         return [
@@ -240,7 +240,7 @@ class GovHelpers {
 
     /**
     * return array of string with all Federal Senate
-    * @returns {Array<string>}
+    * @returns {array<string>}
     */
     static federalSenate() {
         return [
@@ -301,7 +301,7 @@ class GovHelpers {
 
     /**
     * return array of string with all civil house
-    * @returns {Array<string>}
+    * @returns {array<string>}
     */
     static civilHouse() {
         return [
@@ -333,7 +333,7 @@ class GovHelpers {
 
     /**
     * return array of string with all ministries
-    * @returns {Array<string>}
+    * @returns {array<string>}
     */
     static ministries() {
         return [

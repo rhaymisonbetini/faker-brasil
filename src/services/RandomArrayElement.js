@@ -15,7 +15,7 @@ class RandomArrayElement {
      * create array number 
      * @param {number} total 
      * @param {number} numero 
-     * @returns {Array}
+     * @returns {array}
      */
     static createArrayNumbers(total, numero) {
         return Array.from(Array(total), () => (Math.round(Math.random() * numero)));
@@ -144,7 +144,7 @@ class RandomArrayElement {
 
     /**
          * return alphabet upper
-         * @returns {Array<string>}
+         * @returns {array<string>}
          */
     static alphabet() {
         return [

@@ -4,7 +4,7 @@ class GymHelpers {
 
     /**
      * return a list of workout series
-     * @returns {Array<string>}
+     * @returns {array<string>}
      */
     static series() {
         return [
@@ -17,7 +17,7 @@ class GymHelpers {
 
     /**
     * return a array with special Techniques
-    * @returns {Array<array>}
+    * @returns {array<array>}
     */
     static speciaTechniques() {
         return [
@@ -34,7 +34,7 @@ class GymHelpers {
 
     /**
      * return a array with exercicies types
-     * @returns {Array<array>}
+     * @returns {array<array>}
      */
     static typesOfExercise() {
         return [
@@ -109,7 +109,7 @@ class GymHelpers {
 
     /**
     * return array with list machines in gym
-    * @returns {Array<string>}
+    * @returns {array<string>}
     */
     static machineName() {
         return [
@@ -150,7 +150,7 @@ class GymHelpers {
 
     /**
     * return array with list of a gym name
-    * @returns {Array<string>}
+    * @returns {array<string>}
     */
     static gymName() {
         return [
