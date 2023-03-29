@@ -72,7 +72,7 @@ class PersonalData {
 
     /**
     * this function generate a email
-    * @returns  {Object}
+    * @returns {object}
     */
     cnh() {
         return {
@@ -141,7 +141,7 @@ class PersonalData {
     /**
     * this function generate a newPerson
     * @param {boolean} slash
-    * @returns  object
+    * @returns  {object}
     */
     newPerson() {
         return {
@@ -162,7 +162,7 @@ class PersonalData {
     /**
     * this function generate a new young Person
     * @param {boolean} slash
-    * @returns  object
+    * @returns  {object}
     */
     newPersonYounger() {
         return {
@@ -182,7 +182,7 @@ class PersonalData {
     /**
     * this function generate a new adult
     * @param {boolean} slash
-    * @returns  object
+    * @returns  {object}
     */
     newAdultPerson() {
         return {
@@ -203,7 +203,7 @@ class PersonalData {
     /**
     * this function generate a new adult
     * @param {boolean} slash
-    * @returns  object
+    * @returns  {object}
     */
     newOlderPerson() {
         return {

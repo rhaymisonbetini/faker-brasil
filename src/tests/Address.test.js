@@ -4,6 +4,10 @@ let addressData = new AddressData();
 
 describe('Teste for AddressDatas generator', () => {
 
+    it('Espect to be a instace of a class', () => {
+        expect(addressData).toBeInstanceOf(AddressData)
+    })
+
     it('Get cep on Correios API', async () => {
         let asyncData = new AddressData();
         asyncData.getAddressByCepCorreio('29140669').then((cep) => {

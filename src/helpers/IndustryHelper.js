@@ -4,7 +4,7 @@ class IndustryHelper {
 
     /**
      * return a array of objects with a possible activity for a insdustry
-     * @returns {Array<Object>}
+     * @returns {array<object>}
      */
     static activity() {
         return [
@@ -136,7 +136,7 @@ class IndustryHelper {
     }
     /**
      * return a array with all jobs
-     * @returns {Array<string>}
+     * @returns {array<string>}
      */
     static jobs() {
         return [

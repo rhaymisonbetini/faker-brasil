@@ -16,7 +16,7 @@ class InternetData {
     /**
      * create a netWork fake datas
      * @param {String} ip
-     * @return {Object}
+     * @return {object}
      */
     network(ip = null) {
         const IP = ip ?? this.ip()

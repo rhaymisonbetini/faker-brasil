@@ -7,7 +7,7 @@ class GovData {
 
     /**
     * return array of string with a any many reginal conuncil
-    * @returns {Array<string>}
+    * @returns {array<string>}
     */
     professionalCouncilList() {
         return GovHelpers.professionalCouncil();
@@ -38,7 +38,7 @@ class GovData {
 
     /**
     * return array of string with a superior court in Brazil
-    * @returns {Array<string>}
+    * @returns {array<string>}
     */
     superiorCourtList() {
         return GovHelpers.superiorCourt();
@@ -55,7 +55,7 @@ class GovData {
 
     /**
     * return array of string with a regional court in Brazil
-    * @returns {Array<string>}
+    * @returns {array<string>}
     */
     regionalCourtList() {
         return GovHelpers.regionalCourt();
@@ -72,7 +72,7 @@ class GovData {
 
     /**
     * return array of string with a justice court in Brazil
-    * @returns {Array<string>}
+    * @returns {array<string>}
     */
     justiceCourtList() {
         return GovHelpers.justiceCourt();
@@ -89,7 +89,7 @@ class GovData {
 
     /**
     * return array of string with a electoral court in Brazil
-    * @returns {Array<string>}
+    * @returns {array<string>}
     */
     electoralCourtList() {
         return GovHelpers.electoraCourt();
@@ -106,7 +106,7 @@ class GovData {
 
     /**
     * return array of string with a worker court in Brazil
-    * @returns {Array<string>}
+    * @returns {array<string>}
     */
     workerCourtList() {
         return GovHelpers.workerCourt();
@@ -123,7 +123,7 @@ class GovData {
 
     /**
    * return  string with a military court in Brazil
-   * @returns {Array<string>}
+   * @returns {array<string>}
    */
     militaryCourtList() {
         return GovHelpers.militaryCourt();

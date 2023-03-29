@@ -10,7 +10,7 @@ class MarketData {
     /**
      * return marketProduct name, price and validate
      * @param {boolean} complete
-     * @returns Object
+     * @returns object
      */
     marketProduct(complete = false) {
         let industryData = new IndustryData();
@@ -29,7 +29,7 @@ class MarketData {
      * return Array of objetct of a MakertProducts by Suplier
      * @param {number} products 
      * @param {number} supplier 
-     * @returns {Array<Object>}
+     * @returns {array<object>}
      */
     generateMarketBySupplier(products, supplier) {
         let industryData = new IndustryData();
@@ -51,7 +51,7 @@ class MarketData {
     /**
     * return drugStore name, price and validate
      * @param {boolean} complete
-    * @returns Object
+    * @returns object
     */
     drugStoreProducts(complete = false) {
         let industryData = new IndustryData();
@@ -68,7 +68,7 @@ class MarketData {
     * return Array of objetct of a drugstore by Suplier
     * @param {number} products 
     * @param {number} supplier 
-    * @returns {Array<Object>}
+    * @returns {array<object>}
     */
     generateDrugStoreBySupplier(products, supplier) {
         let industryData = new IndustryData();
@@ -90,7 +90,7 @@ class MarketData {
     /**
     * return eletronico name, price and validate
     * @param {boolean} complete
-    * @returns Object
+    * @returns object
     */
     eletronicProducts(complete = false) {
         let industryData = new IndustryData();
@@ -107,7 +107,7 @@ class MarketData {
     * return Array of objetct of a eletronico by Suplier
     * @param {number} products 
     * @param {number} supplier 
-    * @returns {Array<Object>}
+    * @returns {array<object>}
     */
     generateEletronicSupplier(products, supplier) {
         let industryData = new IndustryData();
@@ -129,7 +129,7 @@ class MarketData {
     /**
     * return eletronico name, price and validate
     * @param {boolean} complete
-    * @returns {Array<Object>}
+    * @returns {array<object>}
     */
     pcProducts(complete = false) {
         let industryData = new IndustryData();
@@ -162,7 +162,7 @@ class MarketData {
     * return Array of objetct of a eletronico by Suplier
     * @param {number} products 
     * @param {number} supplier 
-    * @returns {Array<Object>}
+    * @returns {array<object>}
     */
     generatepcProductsSupplier(products, supplier) {
         let industryData = new IndustryData();
@@ -185,7 +185,7 @@ class MarketData {
     /**
     * return eletronico name, price and validate
     * @param {boolean} complete
-    * @returns {Array<Array>}
+    * @returns {array<Array>}
     */
     pc() {
         return RandomArrayElement.randomElement(MarketHelpers.pc())
@@ -195,7 +195,7 @@ class MarketData {
     /**
     * return eletronico name, price and validate
     * @param {boolean} complete
-    * @returns {Array<Object>}
+    * @returns {array<object>}
     */
     clothesProduct(complete = false) {
         let industryData = new IndustryData();
@@ -215,7 +215,7 @@ class MarketData {
     * return Array of objetct of a eletronico by Suplier
     * @param {number} products 
     * @param {number} supplier 
-    * @returns {Array<Object>}
+    * @returns {array<object>}
     */
     generateClothesProductsSupplier(products, supplier) {
         let industryData = new IndustryData();

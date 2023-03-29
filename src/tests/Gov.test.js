@@ -4,6 +4,11 @@ let addressData = new GovData();
 
 
 describe('Test for GovDatas generator', () => {
+
+    it('Espect to be a instace of a class', () => {
+        expect(addressData).toBeInstanceOf(GovData)
+    })
+
     it('Professional council List', () => {
         expect(addressData.professionalCouncilList()).toBeInstanceOf(Array)
         expect(typeof addressData.professionalCouncilList()[0]).toEqual('string')
