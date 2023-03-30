@@ -30,7 +30,7 @@ class HealthData {
 
     /**
     * return a name of medical exam
-    * @returns {array<string>}
+    * @returns {string}
     */
     medicalExams() {
         return RandomArrayElement.randomElement(HealthHelpers.medicalExams());
@@ -46,7 +46,7 @@ class HealthData {
 
     /**
     * return a name of dental exam
-    * @returns {array<string>}
+    * @returns {string}
     */
     dentalExams() {
         return RandomArrayElement.randomElement(HealthHelpers.dentalExams());
@@ -70,7 +70,7 @@ class HealthData {
 
     /**
     * return a name of veterinariam exam
-    * @returns {array<string>}
+    * @returns {string}
     */
     vetExams() {
         return RandomArrayElement.randomElement(HealthHelpers.vetExames());
