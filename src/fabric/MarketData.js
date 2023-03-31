@@ -29,7 +29,7 @@ class MarketData {
      * return Array of objetct of a MakertProducts by Suplier
      * @param {number} products 
      * @param {number} supplier 
-     * @returns {array<object>}
+     * @returns {Array<object>}
      */
     generateMarketBySupplier(products, supplier) {
         let industryData = new IndustryData();
@@ -185,7 +185,7 @@ class MarketData {
     /**
     * return eletronico name, price and validate
     * @param {boolean} complete
-    * @returns {array<Array>}
+    * @returns {array<array>}
     */
     pc() {
         return RandomArrayElement.randomElement(MarketHelpers.pc())
