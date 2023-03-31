@@ -7,7 +7,7 @@ class InternetData {
 
     /**
     * return a fake ip string
-    * @returns {String}
+    * @returns {string}
     */
     ip() {
         return (Math.floor(Math.random() * 255) + 1) + "." + (Math.floor(Math.random() * 255)) + "." + (Math.floor(Math.random() * 255)) + "." + (Math.floor(Math.random() * 255));
@@ -40,7 +40,7 @@ class InternetData {
      * @returns {string}
      */
     domain(domain = null, https = false) {
-        let prefix = https ? 'http://' : 'https://';
+        let prefix = !https ? 'http://' : 'https://';
         let types = ['.com.br', '.net', '.com', '.pt']
         if (domain) {
             domain = prefix + domain + RandomArrayElement.randomElement(types)
