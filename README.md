@@ -30,12 +30,21 @@ Prontinho! Estamos prontos para utilizar e criar dados fakes.
 Nossa biblioteca hoje conta com diversos métodos de criação de dados fakes que estão distribuídos em 
 11 classes geradoras de dados fakes!
 
-<strong>Dados pessoais, dados de automóveis, Dados Bancários, Dados de agência governamentais, 
-Dados de Academia e treinos, dados de instituições de saúde (hospital, veterinária, odonto), 
-dados de internet, dados de Mercado (super mercado, eletrônicos, eletrodomésticos, farmácia), 
-dados da indústria, dados de Universidades.</strong>
+ ### Geradores
+ *  <a href="#p">Dados pessoais</a>
+ *  Dados de endereço
+ *  Dados de automóveis 
+ *  Dados Bancários
+ *  Dados de agência governamentais, 
+ *  Dados de Academia e treinos, 
+ *  Dados de instituições de saúde (hospital, veterinária, odonto)
+ *  Dados de internet, 
+ *  Dados de Mercado (super mercado, eletrônicos, eletrodomésticos, farmácia), 
+ *  Dados da indústria, 
+ *  Dados de Universidades.
 
-## Metodo de dados pessoais
+
+<h3 id="p">Dados Pessoais</h3>
 
 ```javascript
     //Este metodo retorna um nome simples ex: Lucas, Pedro, Sara
