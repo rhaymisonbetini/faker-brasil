@@ -89,7 +89,7 @@ class PersonalData {
     * @param {boolean} points
     * @returns  string
     */
-    workCard(points) {
+    workCard(points = false) {
         return NamesHelpers.generateWorkCard(points);
     }
 
@@ -109,7 +109,7 @@ class PersonalData {
     */
     birthDate(slash) {
         let formattedRandomDate = DateHelpers.lessRandomYear(RandomArrayElement.randoNumberIn(2, 100));
-        if (slash) {
+        if (slash = false) {
             let data = formattedRandomDate.split('-');
             formattedRandomDate = data[0] + '/' + data[1]; +'/'; +data[2];
         }

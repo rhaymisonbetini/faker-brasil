@@ -63,5 +63,30 @@ dados da indústria, dados de Universidades.</strong>
     // @param {boolean} points
     email(firstName = null)
 
+    //Retorna uma cnh fake
+    cnh()
+
+    //Retorna uma carteira de trabalho fake com ou sem pontos.
+    workCard(points = false)
+
+    //Retorna um passporte fake
+    passPort()
+
+    //Retorna uma data de nascimento fake
+    //false: dd-mm-yyyy
+    ///true: dd/mm/yyyy
+    birthDate(slash = false)
+
+    //retorna um telefone fake
+    //prefix true para  +55 e false para nao inserir
+    //mask true para conter mascara no ddd: ex (27)
+    //ex: phone(true,true) +55 (27)3316-4597
+    phone(prefix, mask)
+
+    //retorna um celular fake
+    //prefix true para  +55 e false para nao inserir
+    //mask true para conter mascara no ddd: ex (27)
+    //ex: phone(true,true) +55 (27)3316-4597
+    cellPhone(prefix, mask)
 
 ```
