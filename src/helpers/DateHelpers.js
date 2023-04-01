@@ -44,6 +44,7 @@ class DateHelpers {
     * @returns 
     */
     static adult() {
+        var todayDate = moment();
         let newm = todayDate.year();
         let init = newm - 18;
         let end = newm - 60;
@@ -56,6 +57,7 @@ class DateHelpers {
     * @returns 
     */
     static older() {
+        var todayDate = moment();
         let newm = todayDate.year();
         let init = newm - 60;
         let end = newm - 120;
