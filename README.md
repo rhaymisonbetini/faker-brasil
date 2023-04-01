@@ -18,7 +18,7 @@ npm install faker-brasil
 ```
 Pronto, agora você precisa importa a Lib no seu arquivo javascript
 
-```
+```javascript
 const SuperFakerBrasil = require('faker-brasil');
 ```
 Criamos uma nova instância da classe SuperFakerBrasil e estamos pronto para utilizar toda nossa biblioteca.
