@@ -31,17 +31,17 @@ Nossa biblioteca hoje conta com diversos métodos de criação de dados fakes qu
 11 classes geradoras de dados fakes!
 
  ### Geradores
- *  <a href="#p">Dados pessoais</a>
- *  Dados de endereço
- *  Dados de automóveis 
- *  Dados Bancários
- *  Dados de agência governamentais, 
- *  Dados de Academia e treinos, 
- *  Dados de instituições de saúde (hospital, veterinária, odonto)
- *  Dados de internet, 
- *  Dados de Mercado (super mercado, eletrônicos, eletrodomésticos, farmácia), 
- *  Dados da indústria, 
- *  Dados de Universidades.
+ * <a href="#peronal"> Dados pessoais</a></a>
+ * <a href="#anddress"> Dados de endereço</a>
+ * <a href="#auto"> Dados de automóveis </a>
+ * <a href="#bank"> Dados Bancários</a>
+ * <a href="#gov"> Dados de agência governamentais, </a>
+ * <a href="#gym"> Dados de Academia e treinos, </a>
+ * <a href="#health"> Dados de instituições de saúde (hospital, veterinária, odonto)</a>
+ * <a href="#internet"> Dados de internet, </a>
+ * <a href="#market"> Dados de Mercado (super mercado, eletrônicos, eletrodomésticos, farmácia), </a>
+ * <a href="#industry"> Dados da indústria, </a>
+ * <a href="#univerity"> Dados de Universidades.</a>
 
 
 <h3 id="p">Dados Pessoais</h3>
@@ -123,6 +123,46 @@ Nossa biblioteca hoje conta com diversos métodos de criação de dados fakes qu
     newOlderPerson()
 
 ```
-DADOS DE AUTOMÓVEIS (TO FAZENDO A DOCUMENTACAO!)
+<h3 id="anddress">Dados de endereço</h3>
+
 ```javascript
 ```
+<h3 id="auto">Dados de automóveis</h3>
+
+```javascript
+```
+
+<h3 id="bank">Dados Bancários</h3>
+
+```javascript
+```
+<h3 id="gov"> Dados de agência governamentais</h3>
+
+```javascript
+```
+<h3 id="gym">Dados de Academia e treinos</h3>
+
+```javascript
+```
+<h3 id="health">Dados de instituições de saúde (hospital, veterinária, odonto)</h3>
+
+```javascript
+```
+<h3 id="internet">Dados de internet</h3>
+
+```javascript
+```
+<h3 id="market">Dados de Mercado (super mercado, eletrônicos, eletrodomésticos, farmácia)</h3>
+
+```javascript
+```
+<h3 id="industry">Dados da indústria</h3>
+
+```javascript
+```
+<h3 id="univerity">Dados de Universidades</h3>
+
+```javascript
+```
+
+ 
