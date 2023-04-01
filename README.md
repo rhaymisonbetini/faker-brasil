@@ -42,6 +42,9 @@ Nossa biblioteca hoje conta com diversos métodos de criação de dados que est�
  * <a href="#market"> Dados de Mercado (super mercado, eletrônicos, eletrodomésticos, farmácia), </a>
  * <a href="#industry"> Dados da indústria, </a>
  * <a href="#univerity"> Dados de Universidades.</a>
+ * <a href="#univerity"> Dados geograficos - DESENVOLVIMENTO.</a>
+ * <a href="#univerity"> Dados imagens - DESENVOLVIMENTO.</a>
+ * <a href="#univerity"> Dados sportes - DESENVOLVIMENTO.</a>
 
 
 <h3 id="p">Dados Pessoais</h3>
