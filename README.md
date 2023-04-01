@@ -2,7 +2,6 @@
   <img src="./src/assets/logo.png" width="100%" height="150"/>
 </div>
 
-# JS-PORT-SCAN FOR NODE.JS
 <p align="center">
    <img alt="Bower" src="https://img.shields.io/bower/l/MI?style=flat-square">
    <img alt="Bower" src="https://img.shields.io/badge/version-1.0.0-blue">
