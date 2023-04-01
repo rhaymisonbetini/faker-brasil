@@ -98,17 +98,17 @@ Nossa biblioteca hoje conta com diversos métodos de criação de dados fakes qu
 
     //Este metodo é bem da hora e preguiçoso! Ele te retorna uma pessoa com dados completo!
     //ex retorno: {
-        // firstName: this.firstName(),
-        // lastName: this.lastName(),
-        // fullName: this.fullName(),
-        // birthDate: this.birthDate(true),
-        // cpf: this.cpf(true),
-        // rg: this.rg(),
-        // phone: this.phone(true, true),
-        // cellPhone: this.cellPhone(true, true),
-        // email: this.email(),
-        // workCard: this.workCard(true),
-        // passPort: this.passPort(true)
+// firstName: this.firstName(),
+// lastName: this.lastName(),
+// fullName: this.fullName(),
+// birthDate: this.birthDate(true),
+// cpf: this.cpf(true),
+// rg: this.rg(),
+// phone: this.phone(true, true),
+// cellPhone: this.cellPhone(true, true),
+// email: this.email(),
+// workCard: this.workCard(true),
+// passPort: this.passPort(true)
     //}
     newPerson()
 
@@ -173,6 +173,98 @@ Nossa biblioteca hoje conta com diversos métodos de criação de dados fakes qu
 <h3 id="auto">Dados de automóveis</h3>
 
 ```javascript
+
+  //Este metodo retorn um modelo e marca de modo : Honda Pop 110i,Honda PCX
+  motocicle()
+
+  //Este metodo retorna um nome de carro ex:Sentra S 2.0/ 2.0 Flex Fuel 16V Aut.
+  autoName()
+
+  //Este metodo retorna uma carro de automovel ex: nissan
+  autoModel()
+
+  //Este metodo retorna um carro com nome e modelo
+  auto()
+
+  //Este metodo retprma um array de carros pelo modelo
+  //model:string ex: Renault
+  // return [...{{ "name": "LOGAN Authentique Hi-Flex 1.0 16V 4p", "marca": "Renault" },
+  // { "name": "LOGAN Authentique Hi-Flex 1.6 8V 4p", "marca": "Renault" }} ...]
+  autosByModel(model)
+
+  //Este metodo retorna apenas um carro aleatorio pelo modelo
+  //model:string ex: Renault
+  //{ "name": "LOGAN Authentique Hi-Flex 1.6 8V 4p", "marca": "Renault" }
+  autoByModel(model)
+
+  //Este metodo retorna uma placa de carro com ou sem mascara
+  //mask: boolean 
+  // true xxx-xxxx
+  // false xxxxxxx
+  licensePlate(mask)
+
+  //Este metodo retorna um numero fake de renavam
+  renavam()
+  //Este metodo retorna um numero fake de chassi
+  chassi()
+
+  //Este metodo retorna uma categoria aleatoria
+  //ex: ALUGUEL, PARTICULAR
+  category()
+
+  //Este metodo retorn um tipo aleatorio
+  //ex:AUTOMÓVEL, MICROÔNIBUS,ÔNIBUS
+  type()
+
+  //Este metodo retorna a cacorrecia
+  //ex: AMBULÂNCIA, TRAILER,FURGÃO
+  body()
+
+  //Este metodo retorna o tipo de combustivel do carro
+  //ex: ÁLCOOL,DIESEL,GASOGÊNIO
+  fuel()
+
+  //Este metodo retorna a especie do carro
+  //ex: CARGA, ESPECIAL, PASSAGEIRO
+  specie()
+
+  //Este metodo retorna as restricoes do veiculo
+  //ex: ALIENAÇÃO FIDUCIÁRIA,RESTRIÇÃO POR BENEF. TRIBUTÁRIO
+  restrictions()
+
+  //Este metodo retorna uma cor aleatoria de veiculo
+  //ex: AMARELO,FANTASIA,PRATA
+  color()
+
+  //Este é o metodo preguiçoso que retorna um carro com todos os dados completos
+  //ex: {
+    // name: auto.name,
+    // model: auto.marca,
+    // licencePlate: this.licensePlate(true),
+    // chassi: this.chassi(),
+    // renavam: this.renavam(),
+    // category: this.category(),
+    // type: this.type(),
+    // body: this.body(),
+    // fuel: this.fuel(),
+    // specie: this.specie(),
+    // restrictions: this.restrictions(),
+    // color: this.color(),
+  // }
+  fullAuto()
+
+  //Este é o metodo preguiçoso que retorna uma moto com todos os dados completos
+  //ex: {
+    // name: auto,
+    // model: auto.split(' ')[0],
+    // licencePlate: this.licensePlate(true),
+    // chassi: this.chassi(),
+    // renavam: this.renavam(),
+    // fuel: 'Gasolina',
+    // color: this.color(),
+  // }
+  fullMotocicle()
+
 ```
 
 <h3 id="bank">Dados Bancários</h3>
