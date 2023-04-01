@@ -37,7 +37,7 @@ class AddressData {
 
     /**
      * generate a random street name
-     * @returns string
+     * @returns {string}
      */
     street() {
         return RandomArrayElement.randomElement(AddressHelpers.initialName()) + ' ' + RandomArrayElement.randomElement(AddressHelpers.streetAndneighborhood())
@@ -45,7 +45,7 @@ class AddressData {
 
     /**
     * generate a random neighborhood name
-    * @returns string
+    * @returns {string}
     */
     neighborhood() {
         return RandomArrayElement.randomElement(AddressHelpers.streetAndneighborhood()) + ' ' + RandomArrayElement.randomElement(AddressHelpers.initialName())
@@ -53,12 +53,32 @@ class AddressData {
 
     /**
    * generate a random building name
-   * @returns string
+   * @returns {string}
    */
     building() {
         let personalData = new PersonalData();
         let types = ['Condominio', 'Conjunto', 'Prédio', 'Edifício', 'Residencial']
         return RandomArrayElement.randomElement(types) + ' ' + personalData.firstName() + ' ' + RandomArrayElement.randomElement(AddressHelpers.streetAndneighborhood())
+    }
+
+    /**
+    * generate a random building name
+    * @returns {string}
+   */
+    city(){
+        let state = RandomArrayElement.randomElement(AddressHelpers.getArrayOfRangeCep());
+        let stateAndCity = AddressHelpers.getCityAndStateByLocation(state.sigla)
+        let city = RandomArrayElement.randomElement(stateAndCity.cidades);
+        return city
+    }
+
+    /**
+    * generate a random building name
+    * @returns {string}
+    */
+    state(){
+        let state = RandomArrayElement.randomElement(AddressHelpers.getArrayOfRangeCep());
+        return state.sigla;
     }
 
     /**

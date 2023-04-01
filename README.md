@@ -146,6 +146,12 @@ Nossa biblioteca hoje conta com diversos métodos de criação de dados fakes qu
   //ex: Condominio Juares de Padua
   building()
 
+  //Este metodo retorna uma cidade aleatoria
+  city()
+
+  //Metoto retorna um estado brasileiro aleatorio
+  state()
+
   //Este metodo gera randomicamente um endereco completo
   //ex de retorno: {
     //  cep: string,
