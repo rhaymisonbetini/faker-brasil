@@ -29,9 +29,9 @@ describe('Teste for AddressDatas generator', () => {
     })
 
     it('Random cep erro if without state', () => {
-        try{
+        try {
             addressData.randomCepByState()
-        }catch(e){
+        } catch (e) {
             expect(e).toBeInstanceOf(TypeError);
         }
     })
@@ -42,6 +42,19 @@ describe('Teste for AddressDatas generator', () => {
 
     it('Neighborhood name', () => {
         expect(typeof addressData.neighborhood()).toEqual('string')
+    })
+
+
+    it('city name', () => {
+        let add = addressData.city()
+        expect(typeof add).toEqual('string')
+        expect(add.length).toBeGreaterThan(0)
+    })
+
+    it('state name', () => {
+        let add = addressData.city()
+        expect(typeof add).toEqual('string')
+        expect(add.length).toBeGreaterThan(0)
     })
 
     it('Building name', () => {

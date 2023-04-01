@@ -107,9 +107,9 @@ class PersonalData {
     * @param {boolean} slash
     * @returns  string
     */
-    birthDate(slash) {
+    birthDate(slash = false) {
         let formattedRandomDate = DateHelpers.lessRandomYear(RandomArrayElement.randoNumberIn(2, 100));
-        if (slash = false) {
+        if (slash ) {
             let data = formattedRandomDate.split('-');
             formattedRandomDate = data[0] + '/' + data[1]; +'/'; +data[2];
         }
