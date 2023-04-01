@@ -201,7 +201,6 @@ class PersonalData {
 
     /**
     * this function generate a new adult
-    * @param {boolean} slash
     * @returns  {object}
     */
     newOlderPerson() {
