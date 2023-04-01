@@ -27,8 +27,8 @@ Essa super classe estende de todas as outras através, criando assim uma super c
 const fakerBrasil = new SuperFakerBrasil();
 ```
 Prontinho! Estamos prontos para utilizar e criar dados fakes. 
-Nossa biblioteca hoje conta com diversos métodos de criação de dados fakes que estão distribuídos em 
-11 classes geradoras de dados fakes!
+Nossa biblioteca hoje conta com diversos métodos de criação de dados que estão distribuídos em 
+11 classes geradoras!
 
  ### Geradores
  * <a href="#peronal"> Dados pessoais</a></a>
@@ -165,7 +165,7 @@ Nossa biblioteca hoje conta com diversos métodos de criação de dados fakes qu
   // }
   randomFullAddress()
 
-  //Este metodo retorna randomicamente um endereco compleot, só que de do metodo buildg
+  //Este metodo retorna randomicamente um endereco completo, só que de do metodo buildg
   // O retorno é igual ao do randomFullAddress adicionando apenas o campo bloco
   randomFullAddressBuilding()
 
