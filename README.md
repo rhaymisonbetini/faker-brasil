@@ -11,3 +11,28 @@
 
 <h1>A MAIOR BIBLIOTECA DE DADOS FAKES GENUINAMENTE BRASILEIROS. FEITO DE BRASILERIO PARA BRASILEIROS!</h1>
 <h1>THE LARGEST LIBRARY OF GENUINELY BRAZILIAN FAKE DATA. MADE FROM BR TO BRS</h1>
+
+<h4>Como instalar essa bagaça!</h4>
+
+```
+npm install faker-brasil
+```
+Pronto, agora você precisa importa a Lib no seu arquivo javascript
+
+```
+const SuperFakerBrasil = require('faker-brasil');
+```
+Criamos uma nova instância da classe SuperFakerBrasil e estamos pronto para utilizar toda nossa biblioteca.
+Essa super classe estende de todas as outras através, criando assim uma super classe fake
+
+```javascript
+const fakerBrasil = new SuperFakerBrasil();
+```
+Prontinho! Estamos prontos para utilizar e criar dados fakes. 
+Nossa biblioteca hoje conta com diversos métodos de criação de dados fakes que estão distribuídos em 
+11 classes geradoras de dados fakes!
+
+<strong>Dados pessoais, dados de automóveis, Dados Bancários, Dados de agência governamentais, 
+Dados de Academia e treinos, dados de instituições de saúde (hospital, veterinária, odonto), 
+dados de internet, dados de Mercado (super mercado, eletrônicos, eletrodomésticos, farmácia), 
+dados da indústria, dados de Universidades.</strong>
