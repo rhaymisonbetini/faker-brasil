@@ -34,3 +34,34 @@ Nossa biblioteca hoje conta com diversos métodos de criação de dados fakes qu
 Dados de Academia e treinos, dados de instituições de saúde (hospital, veterinária, odonto), 
 dados de internet, dados de Mercado (super mercado, eletrônicos, eletrodomésticos, farmácia), 
 dados da indústria, dados de Universidades.</strong>
+
+## Metodo de dados pessoais
+
+```javascript
+    //Este metodo retorna um nome simples ex: Lucas, Pedro, Sara
+    firstName() 
+
+    //Este metodo retorna um sobre nome ex: Balestre, Cenedesi, Ferari,Leoardes
+    lastName() 
+
+    //Este metdo retorna um nome completo:  Lucas Betini soares de almeida
+    fullName()
+
+    //Retorna um rg fake
+    rg()
+    
+    // Este metodo retorn um cpf valido com mascara ou nao...
+    // false: 12345678955
+    // true:  123.456.789-55
+    // @param {boolean} points
+    cpf(points = false)
+
+
+    // Este metodo retorn um email com ou sem um prefixo
+    // null: radom@radom.com.br ou .pt
+    // firstName:  firstName@radom.com.br ou pt
+    // @param {boolean} points
+    email(firstName = null)
+
+
+```

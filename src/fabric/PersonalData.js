@@ -52,12 +52,13 @@ class PersonalData {
     * @param {boolean} points
     * @returns  string
     */
-    cpf(points) {
+    cpf(points = false) {
         return NamesHelpers.generateCpfFake(points);
     }
 
     /**
     * this function generate a email
+    * @param {string} firstName
     * @returns  string
     */
     email(firstName = null) {
