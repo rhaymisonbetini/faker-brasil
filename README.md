@@ -98,17 +98,17 @@ Nossa biblioteca hoje conta com diversos métodos de criação de dados fakes qu
 
     //Este metodo é bem da hora e preguiçoso! Ele te retorna uma pessoa com dados completo!
     //ex retorno: {
-// firstName: this.firstName(),
-// lastName: this.lastName(),
-// fullName: this.fullName(),
-// birthDate: this.birthDate(true),
-// cpf: this.cpf(true),
-// rg: this.rg(),
-// phone: this.phone(true, true),
-// cellPhone: this.cellPhone(true, true),
-// email: this.email(),
-// workCard: this.workCard(true),
-// passPort: this.passPort(true)
+    // firstName: this.firstName(),
+    // lastName: this.lastName(),
+    // fullName: this.fullName(),
+    // birthDate: this.birthDate(true),
+    // cpf: this.cpf(true),
+    // rg: this.rg(),
+    // phone: this.phone(true, true),
+    // cellPhone: this.cellPhone(true, true),
+    // email: this.email(),
+    // workCard: this.workCard(true),
+    // passPort: this.passPort(true)
     //}
     newPerson()
 
@@ -154,14 +154,14 @@ Nossa biblioteca hoje conta com diversos métodos de criação de dados fakes qu
 
   //Este metodo gera randomicamente um endereco completo
   //ex de retorno: {
-    //  cep: string,
-    //  state: string,
-    //  fullstate: string,
-    //  city: string,
-    //  neighborhood: string,
-    //  street: string,
-    //  number: number,
-    //  complement: string
+  //  cep: string,
+  //  state: string,
+  //  fullstate: string,
+  //  city: string,
+  //  neighborhood: string,
+  //  street: string,
+  //  number: number,
+  //  complement: string
   // }
   randomFullAddress()
 
@@ -238,30 +238,30 @@ Nossa biblioteca hoje conta com diversos métodos de criação de dados fakes qu
 
   //Este é o metodo preguiçoso que retorna um carro com todos os dados completos
   //ex: {
-    // name: auto.name,
-    // model: auto.marca,
-    // licencePlate: this.licensePlate(true),
-    // chassi: this.chassi(),
-    // renavam: this.renavam(),
-    // category: this.category(),
-    // type: this.type(),
-    // body: this.body(),
-    // fuel: this.fuel(),
-    // specie: this.specie(),
-    // restrictions: this.restrictions(),
-    // color: this.color(),
+  // name: auto.name,
+  // model: auto.marca,
+  // licencePlate: this.licensePlate(true),
+  // chassi: this.chassi(),
+  // renavam: this.renavam(),
+  // category: this.category(),
+  // type: this.type(),
+  // body: this.body(),
+  // fuel: this.fuel(),
+  // specie: this.specie(),
+  // restrictions: this.restrictions(),
+  // color: this.color(),
   // }
   fullAuto()
 
   //Este é o metodo preguiçoso que retorna uma moto com todos os dados completos
   //ex: {
-    // name: auto,
-    // model: auto.split(' ')[0],
-    // licencePlate: this.licensePlate(true),
-    // chassi: this.chassi(),
-    // renavam: this.renavam(),
-    // fuel: 'Gasolina',
-    // color: this.color(),
+  // name: auto,
+  // model: auto.split(' ')[0],
+  // licencePlate: this.licensePlate(true),
+  // chassi: this.chassi(),
+  // renavam: this.renavam(),
+  // fuel: 'Gasolina',
+  // color: this.color(),
   // }
   fullMotocicle()
 
