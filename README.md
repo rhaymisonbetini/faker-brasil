@@ -126,6 +126,43 @@ Nossa biblioteca hoje conta com diversos métodos de criação de dados fakes qu
 <h3 id="anddress">Dados de endereço</h3>
 
 ```javascript
+  //Este metodo é um quebra galho e busca um cep diretamente nos correios
+  async getAddressByCepCorreio(cep)
+
+  //Este metodo gera um cep randomico
+  randomCep()
+
+  //Este metodo gera um cep randomigo pela localidade
+  //location:location  ex: SP, RJ, MG, ES
+  randomCepByState(location)
+
+  //Este metodo gera um nome de rua alatorio
+  street()
+
+  //Este metodo gera um nome de bairro fake
+  neighborhood()
+
+  //Este metodo gera randomicamente um condominio, conunto, predio, edificil etc...
+  //ex: Condominio Juares de Padua
+  building()
+
+  //Este metodo gera randomicamente um endereco completo
+  //ex de retorno: {
+    //  cep: string,
+    //  state: string,
+    //  fullstate: string,
+    //  city: string,
+    //  neighborhood: string,
+    //  street: string,
+    //  number: number,
+    //  complement: string
+  // }
+  randomFullAddress()
+
+  //Este metodo retorna randomicamente um endereco compleot, só que de do metodo buildg
+  // O retorno é igual ao do randomFullAddress adicionando apenas o campo bloco
+  randomFullAddressBuilding()
+
 ```
 <h3 id="auto">Dados de automóveis</h3>
 
