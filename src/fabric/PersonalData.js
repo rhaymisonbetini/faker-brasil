@@ -142,7 +142,6 @@ class PersonalData {
 
     /**
     * this function generate a newPerson
-    * @param {boolean} slash
     * @returns  {object}
     */
     newPerson() {
@@ -163,7 +162,6 @@ class PersonalData {
 
     /**
     * this function generate a new young Person
-    * @param {boolean} slash
     * @returns  {object}
     */
     newPersonYounger() {
@@ -183,7 +181,6 @@ class PersonalData {
 
     /**
     * this function generate a new adult
-    * @param {boolean} slash
     * @returns  {object}
     */
     newAdultPerson() {

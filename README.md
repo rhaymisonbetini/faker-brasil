@@ -53,14 +53,12 @@ dados da indústria, dados de Universidades.</strong>
     // Este metodo retorn um cpf valido com mascara ou nao...
     // false: 12345678955
     // true:  123.456.789-55
-    // @param {boolean} points
     cpf(points = false)
 
 
     // Este metodo retorn um email com ou sem um prefixo
     // null: radom@radom.com.br ou .pt
     // firstName:  firstName@radom.com.br ou pt
-    // @param {boolean} points
     email(firstName = null)
 
     //Retorna uma cnh fake
@@ -86,7 +84,36 @@ dados da indústria, dados de Universidades.</strong>
     //retorna um celular fake
     //prefix true para  +55 e false para nao inserir
     //mask true para conter mascara no ddd: ex (27)
-    //ex: phone(true,true) +55 (27)3316-4597
+    //ex: cellPhone(true,true) +55 (27)99956-5478
     cellPhone(prefix, mask)
 
+    //Este metodo é bem da hora e preguiçoso! Ele te retorna uma pessoa com dados completo!
+    //ex retorno: {
+        // firstName: this.firstName(),
+        // lastName: this.lastName(),
+        // fullName: this.fullName(),
+        // birthDate: this.birthDate(true),
+        // cpf: this.cpf(true),
+        // rg: this.rg(),
+        // phone: this.phone(true, true),
+        // cellPhone: this.cellPhone(true, true),
+        // email: this.email(),
+        // workCard: this.workCard(true),
+        // passPort: this.passPort(true)
+    //}
+    newPerson()
+
+    //Este metodo te retorna uma pessoa completa com menos de 18 anos de 
+    //idade com base no ano corrente
+    newPersonYounger()
+
+    //Este metodo te retorna uma pessoa adulta completa com mais de 18 e menos de 60 anos
+    newAdultPerson()
+
+    //Este metodo te retorna uma pessoa idosa completa com mais de 60 anos
+    newOlderPerson()
+
+```
+DADOS DE AUTOMÓVEIS
+```javascript
 ```
