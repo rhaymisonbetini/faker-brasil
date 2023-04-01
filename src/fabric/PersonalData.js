@@ -108,8 +108,9 @@ class PersonalData {
     */
     birthDate(slash) {
         let formattedRandomDate = DateHelpers.lessRandomYear(RandomArrayElement.randoNumberIn(2, 100));
-        if (!slash) {
-            formattedRandomDate = formattedRandomDate.replace(/\//g, '-');
+        if (slash) {
+            let data = formattedRandomDate.split('-');
+            formattedRandomDate = data[0] + '/' + data[1]; +'/'; +data[2];
         }
         return formattedRandomDate
     }
