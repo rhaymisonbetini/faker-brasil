@@ -273,6 +273,44 @@ Nossa biblioteca hoje conta com diversos métodos de criação de dados que est�
 <h3 id="bank">Dados Bancários</h3>
 
 ```javascript
+  //Este metodo retorna um objeto com um banco brasileiro aleatorio
+  //ex: "code": "001","name": "BANCO DO BRASIL",
+  bank()
+
+  //Este metodo retorna aleatoriamente o nome de um banco brasileiro
+  bankName()
+
+  //Este metodo retorna os tipos de contas bancarias existentes
+  //ex: ['CORRENTE', 'PJ', 'POUPANÇA', 'CONJUNTA']
+  accountType()
+
+  //Este metodo retorna uma conta bancaria
+  //154787-9
+  bankAccountNumber()
+
+  //Este metodo retorna uma agencia bancaria de 4 digitios
+  bankAgency()
+
+  //Este metodo retorna  o numero de um cartao de crédito valido
+  creadCardNumber()
+
+  //Este metodo retorna um objecto de cartao de credito completo
+  //Ele aceita uma flag como parametro, caso nao seja passado ele escolhe uma das opcoes possiveis.
+  //flags = ['VISA', 'MasterCard', 'Amex', 'Diners', 'Discover', 'EnRoute', 'JCB', 'Voyager']
+  //ex:{flag:'string', number:'string','ccv',expiration:'string'}
+  credCard(flag)
+
+  //Este metodo cria uma conta bancaria completa com cartao
+  //Aceita uma flag para cartao ( como metodo credCard)
+  //ex:  return {
+  //code: bank.code,
+  //name: bank.name,
+  //accountNumber: this.bankAccountNumber(),
+  //agency: this.bankAgency(),
+  //type: this.accountType(),
+  //card: this.credCard(flag)
+  // }
+  fullBank(flag)
 ```
 <h3 id="gov"> Dados de agência governamentais</h3>
 
