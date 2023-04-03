@@ -315,6 +315,78 @@ Nossa biblioteca hoje conta com diversos métodos de criação de dados que est�
 <h3 id="gov"> Dados de agência governamentais</h3>
 
 ```javascript
+   
+   //Este metodo retorna um array de string com conselhos de profissões
+   // ex:Advogados: Ordem dos Advogados do Brasil Nacional (OAB) e Ordem dos Advogados do Brasil Seccional (OAB do respectivo estado de atuação)
+   professionalCouncilList()
+
+   //Este metodo retorna apenas um conselho de profissoes aleatorio
+   //ex:Conselho Federal de Biomedicina (CFBM) e conselhos regionais (CRBM)
+   professionalCouncil()
+
+   //Este metodo retorna um conselho pela sigla
+   //sigla:string OMB = Ordem dos Músicos do Brasil (OMB)
+   professionalCouncilBySigla(sigla)
+
+   //Este metodo retorna um array com os supremos tribunais do governo
+   //ex:Supremo Tribunal Federal (STF), Tribunal Superior do Trabalho (TST)
+   superiorCourtList()
+   
+   //Este metodo retorna um array com os tribuinais regionais
+   //ex:Tribunal Regional Federal da 3ª Região (TRF3) (MS e SP)
+   superiorCourt()
+   
+   //Este metodo metodoo retorna apenas um tribunal regional aleatorio por vez
+   regionalCourt()
+    
+   //Este metodo retorna um array com os tribunais de justiça do Brasil
+   //ex:Tribunal de Justiça do Ceará (TJCE)
+   justiceCourtList()
+   
+   //Este metodo retorna apenas um tribunal de justiça aleatorio
+   //ex: Tribunal de Justiça do Rio de Janeiro (TJRJ)
+   justiceCourt()
+   
+   //Este metodo retorn um array com os tribunais eleitorais
+   //ex: Tribunal Regional Eleitoral do Acre,Tribunal Regional Eleitoral do Ceará
+   electoralCourtList()
+   
+   //Este metodo retorna um tribunal eleitoral randomico
+   //ex:Tribunal Regional Eleitoral de Rondônia
+   electoralCourt()
+
+   //Este metodo retorna um array com os tribunais do trabalho
+   //ex:Tribunal Regional Eleitoral do Acre
+   workerCourtList()
+   
+   //Este metodo retorna uma string com um tribunal do trabalho aleatorio
+   //ex:Tribunal Regional Eleitoral do Piauí
+   workerCourt()
+   
+   //Este metodo retorna um array com os tribunais miliares do Brasil
+   //ex:Tribunal de Justiça Militar de Minas Gerais (TJMMG)
+   militaryCourtList()
+
+   //Este metodo retorn um tribunal militar aleatorio
+   militaryCourt()
+
+   //Este metodo retorna um departamento ou assembleia aleatorio da camara dos deputados
+   //ex: Ouvidoria Parlamentar,Diretoria-Geral (DG),Departamento de Comissões (Decom)
+   ChamberOfDeputies()
+
+  //Este metodo retorna um departamente, partição ou assembleia do senado federal
+  //ex:Corregedoria Parlamentar,Conselho Editorial
+  federalSenate ()
+
+  //Este metodo retorna um departamente, partição ou assembleia da casa civil
+  //ex:Subchefia de Análise Governamental, Subchefia Adjunta de Gestão Pública
+  civilHouse()
+
+  //Este metodo retorna um ministerio aleatorio que é representado por um ministro
+  //ex:Agricultura e Pecuária,Comunicações,Esporte,Educação
+  ministries()
+
+
 ```
 <h3 id="gym">Dados de Academia e treinos</h3>
 
