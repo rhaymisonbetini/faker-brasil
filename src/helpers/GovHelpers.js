@@ -196,7 +196,7 @@ class GovHelpers {
     * return array of string with all Chamber of Deputies
     * @returns {array<string>}
     */
-    static ChamberOfDeputies() {
+    static chamberOfDeputies() {
         return [
             "Mesa Diretora",
             "Centro de Estudos e Debates Estratégicos",

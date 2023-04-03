@@ -143,8 +143,8 @@ class GovData {
     * ex: "Tribunal Regional Eleitoral do Acre"
     * @returns {string}
     */
-    ChamberOfDeputies() {
-        return RandomArrayElement.randomElement(GovHelpers.ChamberOfDeputies());
+    chamberOfDeputies() {
+        return RandomArrayElement.randomElement(GovHelpers.chamberOfDeputies());
     }
 
     /**

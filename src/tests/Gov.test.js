@@ -81,7 +81,7 @@ describe('Test for GovDatas generator', () => {
     })
 
     it('Chamber Of DeputiesList get one', () => {
-        expect(typeof addressData.ChamberOfDeputies()).toEqual('string')
+        expect(typeof addressData.chamberOfDeputies()).toEqual('string')
     })
 
     it('federal Senate court List get one', () => {
