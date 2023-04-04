@@ -50,10 +50,10 @@ Nossa biblioteca hoje conta com diversos métodos de criação de dados que est�
 <h3 id="p">Dados Pessoais</h3>
 
 ```javascript
-    //Este metodo retorna um nome simples ex: Lucas, Pedro, Sara
+    //Este método retorna um nome simples ex: Lucas, Pedro, Sara
     firstName() 
 
-    //Este metodo retorna um sobre nome ex: Balestre, Cenedesi, Ferari,Leoardes
+    //Este método retorna um sobre nome ex: Balestre, Cenedesi, Ferari,Leoardes
     lastName() 
 
     //Este metdo retorna um nome completo:  Lucas Betini soares de almeida
@@ -62,13 +62,13 @@ Nossa biblioteca hoje conta com diversos métodos de criação de dados que est�
     //Retorna um rg fake
     rg()
     
-    // Este metodo retorn um cpf valido com mascara ou nao...
+    // Este método retorn um cpf valido com mascara ou nao...
     // false: 12345678955
     // true:  123.456.789-55
     cpf(points = false)
 
 
-    // Este metodo retorn um email com ou sem um prefixo
+    // Este método retorn um email com ou sem um prefixo
     // null: radom@radom.com.br ou .pt
     // firstName:  firstName@radom.com.br ou pt
     email(firstName = null)
@@ -99,7 +99,7 @@ Nossa biblioteca hoje conta com diversos métodos de criação de dados que est�
     //ex: cellPhone(true,true) +55 (27)99956-5478
     cellPhone(prefix, mask)
 
-    //Este metodo é bem da hora e preguiçoso! Ele te retorna uma pessoa com dados completo!
+    //Este método é bem da hora e preguiçoso! Ele te retorna uma pessoa com dados completo!
     //ex retorno: {
     // firstName: this.firstName(),
     // lastName: this.lastName(),
@@ -115,47 +115,47 @@ Nossa biblioteca hoje conta com diversos métodos de criação de dados que est�
     //}
     newPerson()
 
-    //Este metodo te retorna uma pessoa completa com menos de 18 anos de 
+    //Este método te retorna uma pessoa completa com menos de 18 anos de 
     //idade com base no ano corrente
     newPersonYounger()
 
-    //Este metodo te retorna uma pessoa adulta completa com mais de 18 e menos de 60 anos
+    //Este método te retorna uma pessoa adulta completa com mais de 18 e menos de 60 anos
     newAdultPerson()
 
-    //Este metodo te retorna uma pessoa idosa completa com mais de 60 anos
+    //Este método te retorna uma pessoa idosa completa com mais de 60 anos
     newOlderPerson()
 
 ```
 <h3 id="anddress">Dados de endereço</h3>
 
 ```javascript
-  //Este metodo é um quebra galho e busca um cep diretamente nos correios
+  //Este método é um quebra galho e busca um cep diretamente nos correios
   async getAddressByCepCorreio(cep)
 
-  //Este metodo gera um cep randomico
+  //Este método gera um cep randomico
   randomCep()
 
-  //Este metodo gera um cep randomigo pela localidade
+  //Este método gera um cep randomigo pela localidade
   //location:location  ex: SP, RJ, MG, ES
   randomCepByState(location)
 
-  //Este metodo gera um nome de rua alatorio
+  //Este método gera um nome de rua alatorio
   street()
 
-  //Este metodo gera um nome de bairro fake
+  //Este método gera um nome de bairro fake
   neighborhood()
 
-  //Este metodo gera randomicamente um condominio, conunto, predio, edificil etc...
+  //Este método gera randomicamente um condominio, conunto, predio, edificil etc...
   //ex: Condominio Juares de Padua
   building()
 
-  //Este metodo retorna uma cidade aleatoria
+  //Este método retorna uma cidade aleatória
   city()
 
-  //Metoto retorna um estado brasileiro aleatorio
+  //Metoto retorna um estado brasileiro aleatório
   state()
 
-  //Este metodo gera randomicamente um endereco completo
+  //Este método gera randomicamente um endereco completo
   //ex de retorno: {
   //  cep: string,
   //  state: string,
@@ -168,7 +168,7 @@ Nossa biblioteca hoje conta com diversos métodos de criação de dados que est�
   // }
   randomFullAddress()
 
-  //Este metodo retorna randomicamente um endereco completo, só que de do metodo buildg
+  //Este método retorna randomicamente um endereco completo, só que de do método buildg
   // O retorno é igual ao do randomFullAddress adicionando apenas o campo bloco
   randomFullAddressBuilding()
 
@@ -177,69 +177,69 @@ Nossa biblioteca hoje conta com diversos métodos de criação de dados que est�
 
 ```javascript
 
-  //Este metodo retorn um modelo e marca de modo : Honda Pop 110i,Honda PCX
+  //Este método retorn um modelo e marca de modo : Honda Pop 110i,Honda PCX
   motocicle()
 
-  //Este metodo retorna um nome de carro ex:Sentra S 2.0/ 2.0 Flex Fuel 16V Aut.
+  //Este método retorna um nome de carro ex:Sentra S 2.0/ 2.0 Flex Fuel 16V Aut.
   autoName()
 
-  //Este metodo retorna uma carro de automovel ex: nissan
+  //Este método retorna uma carro de automovel ex: nissan
   autoModel()
 
-  //Este metodo retorna um carro com nome e modelo
+  //Este método retorna um carro com nome e modelo
   auto()
 
-  //Este metodo retprma um array de carros pelo modelo
+  //Este método retprma um array de carros pelo modelo
   //model:string ex: Renault
   // return [...{{ "name": "LOGAN Authentique Hi-Flex 1.0 16V 4p", "marca": "Renault" },
   // { "name": "LOGAN Authentique Hi-Flex 1.6 8V 4p", "marca": "Renault" }} ...]
   autosByModel(model)
 
-  //Este metodo retorna apenas um carro aleatorio pelo modelo
+  //Este método retorna apenas um carro aleatório pelo modelo
   //model:string ex: Renault
   //{ "name": "LOGAN Authentique Hi-Flex 1.6 8V 4p", "marca": "Renault" }
   autoByModel(model)
 
-  //Este metodo retorna uma placa de carro com ou sem mascara
+  //Este método retorna uma placa de carro com ou sem mascara
   //mask: boolean 
   // true xxx-xxxx
   // false xxxxxxx
   licensePlate(mask)
 
-  //Este metodo retorna um numero fake de renavam
+  //Este método retorna um numero fake de renavam
   renavam()
-  //Este metodo retorna um numero fake de chassi
+  //Este método retorna um numero fake de chassi
   chassi()
 
-  //Este metodo retorna uma categoria aleatoria
+  //Este método retorna uma categoria aleatória
   //ex: ALUGUEL, PARTICULAR
   category()
 
-  //Este metodo retorn um tipo aleatorio
+  //Este método retorn um tipo aleatório
   //ex:AUTOMÓVEL, MICROÔNIBUS,ÔNIBUS
   type()
 
-  //Este metodo retorna a cacorrecia
+  //Este método retorna a cacorrecia
   //ex: AMBULÂNCIA, TRAILER,FURGÃO
   body()
 
-  //Este metodo retorna o tipo de combustivel do carro
+  //Este método retorna o tipo de combustivel do carro
   //ex: ÁLCOOL,DIESEL,GASOGÊNIO
   fuel()
 
-  //Este metodo retorna a especie do carro
+  //Este método retorna a especie do carro
   //ex: CARGA, ESPECIAL, PASSAGEIRO
   specie()
 
-  //Este metodo retorna as restricoes do veiculo
+  //Este método retorna as restricoes do veiculo
   //ex: ALIENAÇÃO FIDUCIÁRIA,RESTRIÇÃO POR BENEF. TRIBUTÁRIO
   restrictions()
 
-  //Este metodo retorna uma cor aleatoria de veiculo
+  //Este método retorna uma cor aleatória de veiculo
   //ex: AMARELO,FANTASIA,PRATA
   color()
 
-  //Este é o metodo preguiçoso que retorna um carro com todos os dados completos
+  //Este é o método preguiçoso que retorna um carro com todos os dados completos
   //ex: {
   // name: auto.name,
   // model: auto.marca,
@@ -256,7 +256,7 @@ Nossa biblioteca hoje conta com diversos métodos de criação de dados que est�
   // }
   fullAuto()
 
-  //Este é o metodo preguiçoso que retorna uma moto com todos os dados completos
+  //Este é o método preguiçoso que retorna uma moto com todos os dados completos
   //ex: {
   // name: auto,
   // model: auto.split(' ')[0],
@@ -273,35 +273,35 @@ Nossa biblioteca hoje conta com diversos métodos de criação de dados que est�
 <h3 id="bank">Dados Bancários</h3>
 
 ```javascript
-  //Este metodo retorna um objeto com um banco brasileiro aleatorio
+  //Este método retorna um objeto com um banco brasileiro aleatório
   //ex: "code": "001","name": "BANCO DO BRASIL",
   bank()
 
-  //Este metodo retorna aleatoriamente o nome de um banco brasileiro
+  //Este método retorna aleatóriamente o nome de um banco brasileiro
   bankName()
 
-  //Este metodo retorna os tipos de contas bancarias existentes
+  //Este método retorna os tipos de contas bancárias existentes
   //ex: ['CORRENTE', 'PJ', 'POUPANÇA', 'CONJUNTA']
   accountType()
 
-  //Este metodo retorna uma conta bancaria
+  //Este método retorna uma conta bancaria
   //154787-9
   bankAccountNumber()
 
-  //Este metodo retorna uma agencia bancaria de 4 digitios
+  //Este método retorna uma agencia bancaria de 4 digitios
   bankAgency()
 
-  //Este metodo retorna  o numero de um cartao de crédito valido
+  //Este método retorna  o numero de um cartao de crédito valido
   creadCardNumber()
 
-  //Este metodo retorna um objecto de cartao de credito completo
+  //Este método retorna um objeto de cartao de crédito completo
   //Ele aceita uma flag como parametro, caso nao seja passado ele escolhe uma das opcoes possiveis.
   //flags = ['VISA', 'MasterCard', 'Amex', 'Diners', 'Discover', 'EnRoute', 'JCB', 'Voyager']
   //ex:{flag:'string', number:'string','ccv',expiration:'string'}
   credCard(flag)
 
-  //Este metodo cria uma conta bancaria completa com cartao
-  //Aceita uma flag para cartao ( como metodo credCard)
+  //Este método cria uma conta bancaria completa com cartao
+  //Aceita uma flag para cartao ( como método credCard)
   //ex:  return {
   //code: bank.code,
   //name: bank.name,
@@ -316,73 +316,73 @@ Nossa biblioteca hoje conta com diversos métodos de criação de dados que est�
 
 ```javascript
    
-  //Este metodo retorna um array de string com conselhos de profissões
+  //Este método retorna um array de string com conselhos de profissões
   // ex:Advogados: Ordem dos Advogados do Brasil Nacional (OAB) e Ordem dos Advogados do Brasil Seccional (OAB do respectivo estado de atuação)
   professionalCouncilList()
 
-  //Este metodo retorna apenas um conselho de profissoes aleatorio
+  //Este método retorna apenas um conselho de profissoes aleatório
   //ex:Conselho Federal de Biomedicina (CFBM) e conselhos regionais (CRBM)
   professionalCouncil()
 
-  //Este metodo retorna um conselho pela sigla
+  //Este método retorna um conselho pela sigla
   //sigla:string OMB = Ordem dos Músicos do Brasil (OMB)
   professionalCouncilBySigla(sigla)
 
-  //Este metodo retorna um array com os supremos tribunais do governo
+  //Este método retorna um array com os supremos tribunais do governo
   //ex:Supremo Tribunal Federal (STF), Tribunal Superior do Trabalho (TST)
   superiorCourtList()
    
-  //Este metodo retorna um array com os tribuinais regionais
+  //Este método retorna um array com os tribuinais regionais
   //ex:Tribunal Regional Federal da 3ª Região (TRF3) (MS e SP)
   superiorCourt()
    
-  //Este metodo metodoo retorna apenas um tribunal regional aleatorio por vez
+  //Este método métodoo retorna apenas um tribunal regional aleatório por vez
   regionalCourt()
     
-  //Este metodo retorna um array com os tribunais de justiça do Brasil
+  //Este método retorna um array com os tribunais de justiça do Brasil
   //ex:Tribunal de Justiça do Ceará (TJCE)
   justiceCourtList()
    
-  //Este metodo retorna apenas um tribunal de justiça aleatorio
+  //Este método retorna apenas um tribunal de justiça aleatório
   //ex: Tribunal de Justiça do Rio de Janeiro (TJRJ)
   justiceCourt()
    
-  //Este metodo retorn um array com os tribunais eleitorais
+  //Este método retorn um array com os tribunais eleitorais
   //ex: Tribunal Regional Eleitoral do Acre,Tribunal Regional Eleitoral do Ceará
   electoralCourtList()
    
-  //Este metodo retorna um tribunal eleitoral randomico
+  //Este método retorna um tribunal eleitoral randomico
   //ex:Tribunal Regional Eleitoral de Rondônia
   electoralCourt()
 
-  //Este metodo retorna um array com os tribunais do trabalho
+  //Este método retorna um array com os tribunais do trabalho
   //ex:Tribunal Regional Eleitoral do Acre
   workerCourtList()
    
-  //Este metodo retorna uma string com um tribunal do trabalho aleatorio
+  //Este método retorna uma string com um tribunal do trabalho aleatório
   //ex:Tribunal Regional Eleitoral do Piauí
   workerCourt()
    
-  //Este metodo retorna um array com os tribunais miliares do Brasil
+  //Este método retorna um array com os tribunais miliares do Brasil
   //ex:Tribunal de Justiça Militar de Minas Gerais (TJMMG)
   militaryCourtList()
 
-  //Este metodo retorn um tribunal militar aleatorio
+  //Este método retorn um tribunal militar aleatório
   militaryCourt()
 
-  //Este metodo retorna um departamento ou assembleia aleatorio da camara dos deputados
+  //Este método retorna um departamento ou assemblia aleatório da camara dos deputados
   //ex: Ouvidoria Parlamentar,Diretoria-Geral (DG),Departamento de Comissões (Decom)
   chamberOfDeputies()
 
-  //Este metodo retorna um departamente, partição ou assembleia do senado federal
+  //Este método retorna um departamento, partição ou assemblia do senado federal
   //ex:Corregedoria Parlamentar,Conselho Editorial
   federalSenate ()
 
-  //Este metodo retorna um departamente, partição ou assembleia da casa civil
+  //Este método retorna um departamento, partição ou assemblia da casa civil
   //ex:Subchefia de Análise Governamental, Subchefia Adjunta de Gestão Pública
   civilHouse()
 
-  //Este metodo retorna um ministerio aleatorio que é representado por um ministro
+  //Este método retorna um ministerio aleatório que é representado por um ministro
   //ex:Agricultura e Pecuária,Comunicações,Esporte,Educação
   ministries()
 
@@ -391,6 +391,61 @@ Nossa biblioteca hoje conta com diversos métodos de criação de dados que est�
 <h3 id="gym">Dados de Academia e treinos</h3>
 
 ```javascript
+  //Este método retorna um nome fantasia para uma Academia
+  //ex: Espaço Fitness
+  gymName()
+
+  //Este método retorna um nome aleatório de um equipamento de treino
+  //ex: Aparelho de glúteo,Apolete,Puxador,Peck Deck
+  machineGymName()
+
+  //Este método retorna um exercicio aleatório
+  //ex:Stiff unilateral
+  radomExerciseName()
+  
+  //Este método retorna um array de string com execicios para um grupo muscular
+  //0 - coxa. 1 - panturrilha. 2 - peitoral.3 - dorsal. 4 - deltoides.5 - biceps.6 - triceps.
+  //type:number
+  //ex: exerciseGroup(2)
+  //return [
+  //"Panturrilha burrinho (gêmeos sentado)",
+  //"Panturrilha em pé unilateral",
+  //"Panturrilha em pé (bilateral)",
+  // ],
+  exerciseGroup(type)
+  
+  //Este método retorna uma técnica especial de musculaçao
+  //Ex: Pós-exaustao, SST
+  speciaTechniques()
+  
+  //Este método é muito da hora, pois ele te retorna uma serie de exercicios de forma randômica.
+  // O retorno é um array de objetos contendo seu treino com nome, técnica especial e série
+  //ex: [ {name: "Supino com barra", especialTechnique: "SST", serie: 3x10 }, 
+  // {name: "cruzamento de cabos", especialTechnique: "Sem técnica especial", serie: 5x12 } ]
+  radomWorkout()
+  
+  //Este método retorna uma semana completa de treinos.
+  //Retorna um array de arrays onde a chave é o dia da semana e contendo o treino daquele dia.
+  // dias da semana 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'
+  //ex:[
+  // monday: [
+  //{
+  //name: 'flexão de braço fechado (Apoio mãos fechadas)',
+  //especialTechnique: 'Drop-set',
+  //serie: '5x15'
+  //},
+  //{
+  //name: 'Tríceps coice com halteres',
+  //especialTechnique: 'Sem técnica especial',
+  //serie: '4x12'
+  //},
+  //{
+  //name: 'Mergulho com mãos apoiadas no banco',
+  //especialTechnique: 'Pós-exaustao',
+  //serie: '5,20'
+  //}
+  //..
+  weekWorkout()
 ```
 <h3 id="health">Dados de instituições de saúde (hospital, veterinária, odonto)</h3>
 
@@ -399,6 +454,27 @@ Nossa biblioteca hoje conta com diversos métodos de criação de dados que est�
 <h3 id="internet">Dados de internet</h3>
 
 ```javascript
+  //Este método vai ter retornar um ip fake
+  ip();
+
+  //Este metodo vai te retornar um objecto dados fakes de uma network
+  //ex de retorno {
+  // ip: string,
+  // maske: string,
+  // bitmask: string,
+  // hostmask: strin,
+  // broadcast: string,
+  // size: string,
+  // first: string,
+  // las: string,
+  // }
+  network()
+
+  //Este método vai te retornar um dominio fake
+  //domain:string caso queira passar um nome base de criacao
+  //https:boolean caso queria informar para que seja gerado um https
+  //ex retorno: http://emagrecercomsaude.com.br
+  domain(domain = null, https = false)
 ```
 <h3 id="market">Dados de Mercado (super mercado, eletrônicos, eletrodomésticos, farmácia)</h3>
 
@@ -411,6 +487,22 @@ Nossa biblioteca hoje conta com diversos métodos de criação de dados que est�
 <h3 id="univerity">Dados de Universidades</h3>
 
 ```javascript
+  //Este método retorna um objecto com dados randomicos de uma universiade brasileira
+  //incluindo as Miliatares
+  //ex:
+  // {"universidade": "ACADEMIA DA POLÍCIA CIVIL DO ESTADO DA BAHIA",
+  // "sigla": "ACADEPOL",
+  // "uf": "BA"}
+  getUniversity()
+
+  //Este método retorna uma sigla de uma univerisade aleatoria
+  //ex: ASMEC,UNIAN,UNEST,UNIME
+  getUniversitySigla()
+
+  //Este método retorna um nome aleatório de uma universidade brasileira
+  //ex: UNIÃO DE ENSINO SUPERIOR DE VIÇOSA,UNIÃO DAS ESCOLAS DO GRUPO FAIMI DE EDUCAÇÃO
+  getUniveristyName()
+
 ```
 
  
