@@ -10,7 +10,7 @@ class MarketData {
     /**
      * return marketProduct name, price and validate
      * @param {boolean} complete
-     * @returns object
+     * @returns {object}
      */
     marketProduct(complete = false) {
         let industryData = new IndustryData();

@@ -479,6 +479,87 @@ Nossa biblioteca hoje conta com diversos métodos de criação de dados que est�
 <h3 id="market">Dados de Mercado (super mercado, eletrônicos, eletrodomésticos, farmácia)</h3>
 
 ```javascript
+  //Este metodo retorna um objeto produto de supermercado
+  //complete:boolean = informa se o produto deve ser retornado com seu fornecedor
+  //ex:{`product:'string', price: number, date:string, supplier:object}
+  marketProduct(complete = false)
+
+  //Este metodo gera uma lista de fornecedores com seus produtos
+  //products:number = informa quantos produtos voce deseja por fonecedores
+  //supplier:number = quantidade de fornecedores que voce quer gerar
+  //[{supplier: supp,products: productsList},{supplier: supp,products: productsList}]
+  //Onde supplier e o metodo de gerador de industria e o producto e uma array com o metodo marketProduct
+  generateMarketBySupplier(products, supplier)
+
+  //Este metodo retorna um objeto produto de farmácia
+  //complete:boolean = informa se o produto deve ser retornado com seu fornecedor
+  //ex:{`product:'string', price: number, date:string,supplier:object}
+  drugStoreProducts(complete = false)
+
+  //Este metodo gera uma lista de fornecedores de Medicamentos com seus produtos
+  //products:number = informa quantos produtos voce deseja por fonecedores
+  //supplier:number = quantidade de fornecedores que voce quer gerar
+  //[{supplier: supp,products: productsList},{supplier: supp,products: productsList}]
+  //Onde supplier e o metodo de gerador de industria e o producto e uma array com o metodo marketProduct
+  generateDrugStoreBySupplier(products, supplier)
+
+  //Este metodo retorna um objeto produto de Eletrônico
+  //complete:boolean = informa se o produto deve ser retornado com seu fornecedor
+  //ex:{`product:'string', price: number, date:string,supplier:object}
+  eletronicProducts(complete = false)
+
+
+  //Este metodo gera uma lista de Eletrônico de Medicamentos com seus produtos
+  //products:number = informa quantos produtos voce deseja por fonecedores
+  //supplier:number = quantidade de fornecedores que voce quer gerar
+  //[{supplier: supp,products: productsList},{supplier: supp,products: productsList}]
+  //Onde supplier e o metodo de gerador de industria e o producto e uma array com o metodo marketProduct
+  generateEletronicSupplier(products, supplier)
+
+  //Este metodo retorna um objeto produto de Informática
+  //complete:boolean = informa se o produto deve ser retornado com seu fornecedor
+  //ex:{`product:'string', price: number, date:string,supplier:object}
+  pcProducts(complete=false)
+
+  //Este metodo gera uma lista de Eletrônico de Informática com seus produtos
+  //products:number = informa quantos produtos voce deseja por fonecedores
+  //supplier:number = quantidade de fornecedores que voce quer gerar
+  //[{supplier: supp,products: productsList},{supplier: supp,products: productsList}]
+  //Onde supplier e o metodo de gerador de industria e o producto e uma array com o metodo marketProduct
+  generatepcProductsSupplier(products, supplier)
+
+  //Este metodo retorna um modelo de celular
+  //ex:Motorola, Galaxy S20 FE 5G Azul-Marinho
+  cellPhoneModel()
+
+  //Este metodo retorna um item de material de construcao
+  //Ex:Broxa p / pintura,Conexão simples para torneira
+  construction()
+
+  //Este metodo retorna um Array de string com um computador e sua configuracao completa
+  //ex: [
+  // 'Intel Core i5-10210U (10ª geração);',
+  // 'SSD de 512GB;',
+  // '8GB de memória RAM;',
+  // 'Tela de 15.6" com resolução HD;',
+  // 'Windows 10;',
+  // 'Uma porta USB 2.0 e uma porta USB 3.0;',
+  // 'HDMI.',
+  // ]
+  pc()
+
+  //Este metodo retorna um objeto produto de Vestuário
+  //complete:boolean = informa se o produto deve ser retornado com seu fornecedor
+  //ex:{`product:'string', price: number, date:string,gender:string, size:string, color:string, supplier:object}
+  clothesProduct(complete)
+
+  //Este metodo gera uma lista de Eletrônico de Informática com seus produtos
+  //products:number = informa quantos produtos voce deseja por fonecedores
+  //supplier:number = quantidade de fornecedores que voce quer gerar
+  //[{supplier: supp,products: productsList},{supplier: supp,products: productsList}]
+  //Onde supplier e o metodo de gerador de industria e o producto e uma array com o metodo marketProduct
+  generateClothesProductsSupplier(products, supplier)
+
 ```
 <h3 id="industry">Dados da indústria</h3>
 
