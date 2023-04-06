@@ -636,7 +636,7 @@ Nossa biblioteca hoje conta com diversos métodos de criação de dados que est�
 
   //Este metodo cria os dados de uma nota fiscal eletronica
   //ex:{
-  number: RandomArrayElement.randomStringOnlyNumbers(3),
+  //number: RandomArrayElement.randomStringOnlyNumbers(3),
   // serie: 1,
   // inOrOut: string => ex['ENTRADA', 'SAIDA'],
   // accessKey: string,
