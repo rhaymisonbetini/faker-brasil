@@ -524,7 +524,7 @@ Nossa biblioteca hoje conta com diversos métodos de criação de dados que est�
   //Este metodo gera uma lista de fornecedores com seus produtos
   //products:number = informa quantos produtos voce deseja por fonecedores
   //supplier:number = quantidade de fornecedores que voce quer gerar
-  //[{supplier: supp,products: productsList},{supplier: supp,products: productsList}]
+  //ex:[{supplier: supp,products: productsList},{supplier: supp,products: productsList}]
   //Onde supplier e o metodo de gerador de industria e o producto e uma array com o metodo marketProduct
   generateMarketBySupplier(products, supplier)
 
@@ -536,8 +536,8 @@ Nossa biblioteca hoje conta com diversos métodos de criação de dados que est�
   //Este metodo gera uma lista de fornecedores de Medicamentos com seus produtos
   //products:number = informa quantos produtos voce deseja por fonecedores
   //supplier:number = quantidade de fornecedores que voce quer gerar
-  //[{supplier: supp,products: productsList},{supplier: supp,products: productsList}]
-  //Onde supplier e o metodo de gerador de industria e o producto e uma array com o metodo marketProduct
+  //ex:[{supplier: supp,products: productsList},{supplier: supp,products: productsList}]
+  //Onde supplier e o metodo de gerador de industria e o producto e uma array com o metodo drugStoreProducts
   generateDrugStoreBySupplier(products, supplier)
 
   //Este metodo retorna um objeto produto de Eletrônico
@@ -549,8 +549,8 @@ Nossa biblioteca hoje conta com diversos métodos de criação de dados que est�
   //Este metodo gera uma lista de Eletrônico de Medicamentos com seus produtos
   //products:number = informa quantos produtos voce deseja por fonecedores
   //supplier:number = quantidade de fornecedores que voce quer gerar
-  //[{supplier: supp,products: productsList},{supplier: supp,products: productsList}]
-  //Onde supplier e o metodo de gerador de industria e o producto e uma array com o metodo marketProduct
+  //ex:[{supplier: supp,products: productsList},{supplier: supp,products: productsList}]
+  //Onde supplier e o metodo de gerador de industria e o producto e uma array com o metodo eletronicProducts
   generateEletronicSupplier(products, supplier)
 
   //Este metodo retorna um objeto produto de Informática
@@ -561,8 +561,8 @@ Nossa biblioteca hoje conta com diversos métodos de criação de dados que est�
   //Este metodo gera uma lista de Eletrônico de Informática com seus produtos
   //products:number = informa quantos produtos voce deseja por fonecedores
   //supplier:number = quantidade de fornecedores que voce quer gerar
-  //[{supplier: supp,products: productsList},{supplier: supp,products: productsList}]
-  //Onde supplier e o metodo de gerador de industria e o producto e uma array com o metodo marketProduct
+  //ex:[{supplier: supp,products: productsList},{supplier: supp,products: productsList}]
+  //Onde supplier e o metodo de gerador de industria e o producto e uma array com o metodo pcProducts
   generatepcProductsSupplier(products, supplier)
 
   //Este metodo retorna um modelo de celular
@@ -593,8 +593,8 @@ Nossa biblioteca hoje conta com diversos métodos de criação de dados que est�
   //Este metodo gera uma lista de Eletrônico de Informática com seus produtos
   //products:number = informa quantos produtos voce deseja por fonecedores
   //supplier:number = quantidade de fornecedores que voce quer gerar
-  //[{supplier: supp,products: productsList},{supplier: supp,products: productsList}]
-  //Onde supplier e o metodo de gerador de industria e o producto e uma array com o metodo marketProduct
+  //ex:[{supplier: supp,products: productsList},{supplier: supp,products: productsList}]
+  //Onde supplier e o metodo de gerador de industria e o producto e uma array com o metodo clothesProduct
   generateClothesProductsSupplier(products, supplier)
 
 ```
