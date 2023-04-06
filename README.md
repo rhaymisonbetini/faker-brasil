@@ -450,6 +450,43 @@ Nossa biblioteca hoje conta com diversos métodos de criação de dados que est�
 <h3 id="health">Dados de instituições de saúde (hospital, veterinária, odonto)</h3>
 
 ```javascript
+
+  //Este metodo retorna um nome aleagorio de uma unidade de saude/hospital
+  //ex:Unidade de pronto atendimento Joaquim Melo, Hospital Santa izabel
+  hospital()
+
+  //Este metodo retorna uma especialidade médica
+  //ex:Podólogo,Nefrologista,Cirurgião
+  medicSpecialist()
+
+  //Este metodo retorna um tipo de exame médico
+  //ex:hemograma,teste ergométrico,ultrassonografia transvaginal
+  medicalExams()
+
+  //Este metodo retorna o nome de uma clínica odontologica
+  //ex:Centro do Sorriso,Pronto Odonto,Mundial dentes
+  dental()
+
+  //Este metodo retorna uma lista de exames odontologicos
+  //ex:Rx interproximal (“bitewing”),Telerradiografia sem traçado
+  dentalExams()
+
+  //Este metodo retorna uma especialidade odontologica
+  //ex:Endodontia,Ortodontia
+  dentalSpecialist()
+
+  //Este metodo retorna o nome de uma clinica veterinaria
+  //ex:Clínica Veterinária e Pet Shop Amigo Animal,Saudavel Cão
+  veterinarian()
+
+  //Este metodo retorna uma lista de exames veterinarios
+  //ex:PARR: Diagnóstico e Imunofenotipagem de linfomas,Anaplasma spp
+  vetExams()
+
+  //Este metodo retorna uma especialidade veterinaria
+  //ex:patologia,nefrologia e urologia
+  vetSpecialist()
+
 ```
 <h3 id="internet">Dados de internet</h3>
 
@@ -564,6 +601,58 @@ Nossa biblioteca hoje conta com diversos métodos de criação de dados que est�
 <h3 id="industry">Dados da indústria</h3>
 
 ```javascript
+
+  //Este metodo retorna o nome de uma profissao de forma aleatoria
+  //ex:Administrador de Banco de Dados,Advogado,Aeronauta
+  job()
+
+  //Este metodo retorna o nome de uma empresa 
+  //ex:Grupo  Figueiras LTDA, Empresa Josue dos Santos MEI
+  enterprise()
+
+  //Este metodo retorna um numero valido de cnpj
+  //mask:boolean true para mascara padrao do cnpj 
+  cnpj(mask = false)
+
+  //Este metodo retorna um ramo de atividade
+  //ex: Casa e Decoração,Empresas de Telemarketing,Fotografia
+  activity()
+
+  //Este metodo retorna um objeto que é uma empresa com todos seus dados completos
+  //activity:string  caso queria passar um ramo de atividade
+  //ex:{
+  // name: string,
+  // cnpj: string,
+  // inscription: string,
+  // openDate: string
+  // activity: string,
+  // site: string,
+  // email:string,
+  // phone: string,
+  // cellPhone: string,
+  // address: object => randomFullAddress no modulo de endereços,
+  // }
+  fullEnterPrise(activity = null)
+
+  //Este metodo cria os dados de uma nota fiscal eletronica
+  //ex:{
+  number: RandomArrayElement.randomStringOnlyNumbers(3),
+  // serie: 1,
+  // inOrOut: string => ex['ENTRADA', 'SAIDA'],
+  // accessKey: string,
+  // operation: string => ex['Venda de Produto', 'Prestação de Serviços', 'Remessa', 'Consignação', 'Transferência', 'Devolução', 'Devolução de mercadoria', 'Importação', 'Exportação'],
+  // autorizationProtocol: string,
+  // crt: string,
+  // inscription: string,
+  // cpnpj:string,
+  // date: string,
+  // baseIcms: string,
+  // icms: string,
+  // value: string,
+  // weight:string
+  // }
+  nfe()
+
 ```
 <h3 id="univerity">Dados de Universidades</h3>
 
