@@ -35,7 +35,7 @@ Nossa biblioteca hoje conta com diversos métodos de criação de dados que est�
  * <a href="#anddress"> Dados de endereço</a>
  * <a href="#auto"> Dados de automóveis </a>
  * <a href="#bank"> Dados Bancários</a>
- * <a href="#gov"> Dados de agência governamentais, </a>
+ * <a href="#gov"> Dados de agências governamentais, </a>
  * <a href="#gym"> Dados de Academia e treinos, </a>
  * <a href="#health"> Dados de instituições de saúde (hospital, veterinária, odonto)</a>
  * <a href="#internet"> Dados de internet, </a>
@@ -312,7 +312,7 @@ Nossa biblioteca hoje conta com diversos métodos de criação de dados que est�
   // }
   fullBank(flag)
 ```
-<h3 id="gov"> Dados de agência governamentais</h3>
+<h3 id="gov"> Dados de agências governamentais</h3>
 
 ```javascript
    
