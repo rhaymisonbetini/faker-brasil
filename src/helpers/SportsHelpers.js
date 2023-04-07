@@ -3,6 +3,36 @@
 class SportsHelpers {
 
     /**
+     * This method return a Brazilian Basket team
+     * @returns {string}
+     */
+    static basketTeams() {
+        return [
+            "Bauru Basket (São Paulo)",
+            "Brasília Basquete (Distrito Federal)",
+            "Cerrado (Distrito Federal)",
+            "Caxias do Sul Basquete (Rio Grande do Sul)",
+            "C.A. Paulistano (São Paulo)",
+            "C.R. Flamengo (Rio de Janeiro)",
+            "E.C. Pinheiros (São Paulo)",
+            "Fortaleza Basquete Cearense (Ceará)",
+            "Minas Tênis Clube (Minas Gerais)",
+            "Mogi Basquete (São Paulo)",
+            "Pato Basquete (Paraná)",
+            "Rio Claro (São Paulo)",
+            "São Paulo F.C. (São Paulo)",
+            "Sesi Franca (São Paulo)",
+            "S.C. Corinthians (São Paulo)",
+            "Unifacisa (Pernambuco)",
+            "União Corinthians (Rio Grande do Sul)",
+            "Flamengo",
+            "Lobos Brasília",
+            "Paulistano",
+            "Bauru"
+        ]
+    }
+
+    /**
     * This method return a array wwith a brazilian Champions
     * @returns {Array<string>}
     */

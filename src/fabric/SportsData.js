@@ -36,7 +36,25 @@ class SportsData {
     randomFootballMatch() {
         let team1 = RandomArrayElement.randomElement(SportsHelpers.randomTeam());
         let team2 = RandomArrayElement.randomElement(SportsHelpers.randomTeam());
-        return team1 + ' ' + RandomArrayElement.randoNumberIn(0, 6).toFixed(0) + ' X ' + RandomArrayElement.randoNumber(0, 6).toFixed(0) + ' ' + team2
+        return team1 + ' ' + RandomArrayElement.randoNumberIn(0, 6).toFixed(0) + ' X ' + RandomArrayElement.randoNumberIn(0, 6).toFixed(0) + ' ' + team2
+    }
+
+    /**
+     * This method get a random braziliam basket Team 
+     * @returns {string}
+     */
+    basketTeam() {
+        return RandomArrayElement.randomElement(SportsHelpers.basketTeams())
+    }
+
+    /**
+    * return a random basket match
+    * @returns {string}
+    */
+    basketTeamMatch() {
+        let team1 = RandomArrayElement.randomElement(SportsHelpers.basketTeams());
+        let team2 = RandomArrayElement.randomElement(SportsHelpers.basketTeams());
+        return team1 + ' ' + RandomArrayElement.randoNumberIn(60, 120).toFixed(0) + ' X ' + RandomArrayElement.randoNumberIn(60, 120).toFixed(0) + ' ' + team2
     }
 }
 
