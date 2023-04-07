@@ -2,7 +2,7 @@ const SportsData = require('../fabric/SportsData');
 const { it, expect } = require('@jest/globals');
 let sportsData = new SportsData();
 
-describe('Teste for MarketData generator', () => {
+describe('Teste for SportData generator', () => {
 
     it('Espect to be a instace of a class', () => {
         expect(sportsData).toBeInstanceOf(SportsData)
