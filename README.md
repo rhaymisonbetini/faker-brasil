@@ -44,8 +44,8 @@ Nossa biblioteca hoje conta com diversos métodos de criação de dados que est�
  * <a href="#univerity"> Dados de Universidades.</a>
  * <a href="#sports"> Dados Esportes.</a>
  * <a href="#image"> Dados Imagens.</a>
+ * <a href="#music"> Dados Musicais</a>
  * <a href="#univerity"> Dados Geograficos - DESENVOLVIMENTO.</a>
- * <a href="#univerity"> Dados Musicais - DESENVOLVIMENTO.</a>
  * <a href="#univerity"> Dados Cientificos - DESENVOLVIMENTO.</a>
 
 <h3 id="p">Dados Pessoais</h3>
@@ -717,7 +717,7 @@ Nossa biblioteca hoje conta com diversos métodos de criação de dados que est�
 
 ```
  
-<h3 id="image">Dados de Esportes</h3>
+<h3 id="image">Dados de Imagens</h3>
 
 ```javascript
   //Todos os metodo do Gerador de Imagens sao async
@@ -792,4 +792,41 @@ Nossa biblioteca hoje conta com diversos métodos de criação de dados que est�
   //Este metodo gera uma imagem randomica  de transportes
   //width:number, height:number
   async getTransportImage(width = 640, height = 480)
+```
+
+<h3 id="music">Dados Musicais</h3>
+
+```javascript
+
+  //Este metodo retorna o nome um festival de musica brasileiro
+  //ex:LOLLAPALOOZA,XXXPERIENCE
+  musicFestival()
+
+  //Este metodo retorna o nome de uma casa de shows brasileira
+  //ex:Rodeo Rock Bar
+  eventsHouse()
+
+  //Este metodo retorna um estilo musical aleatorio
+  //Ex:emo,pop,progressivo
+  musicalStyle()
+
+  //Este metodo retorna uma marca de guitarra
+  //Ex:Golden,LTD,Fender
+  guitars()
+
+  //Este metodo retorna um instrumento musical de percussao
+  //ex:carrilhão,metalofone,pandeiro,bateria
+  percussionMusicalInstrument()
+
+  //Este metodo retorna um instrumento musical de sopro aleatorio
+  //ex:fagote,sousafone,trompa
+  windMusicalInstrument()
+
+  //Este metodo retorna um instrumento musical de corta aleatorio
+  //ex: Guitarra, Cavaquinho, Baixo
+  stringMusicalInstrument()
+
+  //Este metodo retorna um instrumento eletornico aleatorio
+  //ex:sintetizador,teremim,teclado
+  eletronicMusicalInstrument()
 ```
