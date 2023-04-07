@@ -2,8 +2,6 @@
 
 const SportsHelpers = require('../helpers/SportsHelpers');
 const RandomArrayElement = require('../services/RandomArrayElement');
-const PersonalData = require("./PersonalData")
-
 class SportsData {
 
     /**
@@ -53,7 +51,6 @@ class SportsData {
      * @returns {object}
      */
     soccerFullTeam() {
-        let personData = new PersonalData();
         let positions = SportsHelpers.soccerPosition();
         let team = [];
 
