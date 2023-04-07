@@ -42,7 +42,7 @@ Nossa biblioteca hoje conta com diversos métodos de criação de dados que est�
  * <a href="#market"> Dados de Mercado (super mercado, eletrônicos, eletrodomésticos, farmácia), </a>
  * <a href="#industry"> Dados da Indústria, </a>
  * <a href="#univerity"> Dados de Universidades.</a>
- * <a href="#univerity"> Dados Esportes - DESENVOLVIMENTO.</a>
+ * <a href="#sports"> Dados Esportes.</a>
  * <a href="#univerity"> Dados Imagens - DESENVOLVIMENTO.</a>
  * <a href="#univerity"> Dados Geograficos - DESENVOLVIMENTO.</a>
 
@@ -675,4 +675,33 @@ Nossa biblioteca hoje conta com diversos métodos de criação de dados que est�
 
 ```
 
+<h3 id="sports">Dados de Esportes</h3>
+
+```javascript
+
+  //Este metodo retorna o nome de um time de futebol brasileiro de forma randomica
+  //:extlético Tubarão,Confiança,Ferroviário
+  getRandomBrazilianTeam()
+
+  //Este metodo retorna de forma aleatoria o nome de ume campeonato de futebol Brasileiro
+  //ex:Copa do Nordeste,Copa do Brasil Sub-17,Libertadores
+  getRandomChampionShip()
+
+  //Este metodo retorna ume estadio Brasileiro com suas caracteristicas
+  //ex:Nilton Santos, Rio de Janeiro, Rio de Janeiro RJ, Gov. Municipal, Capacidade: 46.831
+  getRandomStadium()
+
+  //Este metodo retorna o resultado aleatorio de uma partida de futebol
+  //ex: Flamengo 4 X 0 Bragantino
+  randomFootballMatch()
+
+  //Este metodo retorna aleatoriamente um time de basquete Brasileiro
+  //ex:Bauru Basket (São Paulo)
+  basketTeam()
+
+  //Este metodo retorna aleatoriamente uma partida de basqueteerentes
+  //ex:C.R. Flamengo (Rio de Janeiro) 120 X 98 Lobos Brasília
+  basketTeamMatch()
+
+```
  
