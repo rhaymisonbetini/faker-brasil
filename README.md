@@ -695,6 +695,17 @@ Nossa biblioteca hoje conta com diversos métodos de criação de dados que est�
   //ex: Flamengo 4 X 0 Bragantino
   randomFootballMatch()
 
+  //Este metodo retorna uma posicao de um atleta
+  //ex: Atacante, Goleiro
+  soccerPosition()
+
+  //Este metodo retorna um time de futebol completo
+  //ex:{
+  // name:string
+  // team:array<object> -> retorna um array com os jogadores e suas posicoes{ name, position}
+  //}
+  soccerFullTeam()
+
   //Este metodo retorna aleatoriamente um time de basquete Brasileiro
   //ex:Bauru Basket (São Paulo)
   basketTeam()

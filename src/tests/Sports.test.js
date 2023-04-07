@@ -33,6 +33,22 @@ describe('Teste for MarketData generator', () => {
         expect(sport).toContain('X')
     })
 
+    
+    it('Get random random football position', () =>{
+        let sport = sportsData.soccerPosition();
+        expect(typeof sport).toEqual('string');
+        expect(sport.length).toBeGreaterThan(0);
+    })
+
+
+    it('Get random random football team', () =>{
+        let sport = sportsData.soccerFullTeam();
+        expect(typeof sport).toEqual('object');
+        expect(sport).toHaveProperty('name')
+        expect(sport).toHaveProperty('team')
+        expect(typeof sport.team).toEqual('object');
+    })
+
     it('Get random random basket Team', () =>{
         let sport = sportsData.basketTeam();
         expect(typeof sport).toEqual('string');
