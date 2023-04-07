@@ -43,9 +43,10 @@ Nossa biblioteca hoje conta com diversos métodos de criação de dados que est�
  * <a href="#industry"> Dados da Indústria, </a>
  * <a href="#univerity"> Dados de Universidades.</a>
  * <a href="#sports"> Dados Esportes.</a>
- * <a href="#univerity"> Dados Imagens - DESENVOLVIMENTO.</a>
+ * <a href="#image"> Dados Imagens.</a>
  * <a href="#univerity"> Dados Geograficos - DESENVOLVIMENTO.</a>
-
+ * <a href="#univerity"> Dados Musicais - DESENVOLVIMENTO.</a>
+ * <a href="#univerity"> Dados Cientificos - DESENVOLVIMENTO.</a>
 
 <h3 id="p">Dados Pessoais</h3>
 
@@ -716,3 +717,79 @@ Nossa biblioteca hoje conta com diversos métodos de criação de dados que est�
 
 ```
  
+<h3 id="image">Dados de Esportes</h3>
+
+```javascript
+  //Todos os metodo do Gerador de Imagens sao async
+  //Todos os metodos retornam uma url que voce pode acessar para utilizar a imagem fake
+  //ex:https://xsgames.co/randomusers/assets/avatars/male/37.jpg
+
+  //Este metodo gera um avatar aleatorio
+  //gender:string => male | female
+  async getAvatarImage(gender)
+
+  //Este metodo gera uma imagem randomica e abstrata
+  //width:number, height:number
+  async getImageRandom(width = 640, height = 480)
+
+  //Este metodo gera uma imagem randomica  de carros
+  //width:number, height:number
+  async getCarImage(width = 640, height = 480)
+
+  //Este metodo gera uma imagem randomica  de carros
+  //width:number, height:number
+  async getCarImage(width = 640, height = 480)
+
+  //Este metodo gera uma imagem randomica  de animais
+  //width:number, height:number
+  async getAnimalImage(width = 640, height = 480)
+
+  //Este metodo gera uma imagem randomica  de uma cidade
+  //width:number, height:number
+  async getCityImage(width = 640, height = 480)
+
+  
+  //Este metodo gera uma imagem randomica  de gatos
+  //width:number, height:number
+  async getCatImage(width = 640, height = 480)
+
+  //Este metodo gera uma imagem randomica  de negocios
+  //width:number, height:number
+  async getBusinessImage(width = 640, height = 480)
+
+
+  //Este metodo gera uma imagem randomica  de moda
+  //width:number, height:number
+  async getFashionImage(width = 640, height = 480)
+
+  //Este metodo gera uma imagem randomica  de comidas
+  //width:number, height:number
+  async getFoodImage(width = 640, height = 480)
+
+  //Este metodo gera uma imagem randomica  da natureza
+  //width:number, height:number
+  async getNatureImage(width = 640, height = 480)
+
+  //Este metodo gera uma imagem randomica  da vida noturna
+  //width:number, height:number
+  async getNightlifeImage(width = 640, height = 480)
+
+
+  //Este metodo gera uma imagem randomica  de pessoas
+  //width:number, height:number
+  async getPeopleImage(width = 640, height = 480)
+
+  //Este metodo gera uma imagem randomica  de esportes
+  //width:number, height:number
+  async getSportsImage(width = 640, height = 480)
+
+  
+  //Este metodo gera uma imagem randomica tecnica/mecanica/computacao/pecas
+  //width:number, height:number
+  async getTechnicsImage(width = 640, height = 480)
+
+
+  //Este metodo gera uma imagem randomica  de transportes
+  //width:number, height:number
+  async getTransportImage(width = 640, height = 480)
+```
