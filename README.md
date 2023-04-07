@@ -33,18 +33,18 @@ Nossa biblioteca hoje conta com diversos métodos de criação de dados que est�
  ### Geradores
  * <a href="#peronal"> Dados pessoais</a></a>
  * <a href="#anddress"> Dados de endereço</a>
- * <a href="#auto"> Dados de automóveis </a>
+ * <a href="#auto"> Dados de Automóveis </a>
  * <a href="#bank"> Dados Bancários</a>
- * <a href="#gov"> Dados de agências governamentais, </a>
+ * <a href="#gov"> Dados de Agências governamentais, </a>
  * <a href="#gym"> Dados de Academia e treinos, </a>
- * <a href="#health"> Dados de instituições de saúde (hospital, veterinária, odonto)</a>
- * <a href="#internet"> Dados de internet, </a>
+ * <a href="#health"> Dados de Instituições de saúde (hospital, veterinária, odonto)</a>
+ * <a href="#internet"> Dados de Internet, </a>
  * <a href="#market"> Dados de Mercado (super mercado, eletrônicos, eletrodomésticos, farmácia), </a>
- * <a href="#industry"> Dados da indústria, </a>
+ * <a href="#industry"> Dados da Indústria, </a>
  * <a href="#univerity"> Dados de Universidades.</a>
- * <a href="#univerity"> Dados geograficos - DESENVOLVIMENTO.</a>
- * <a href="#univerity"> Dados imagens - DESENVOLVIMENTO.</a>
- * <a href="#univerity"> Dados sportes - DESENVOLVIMENTO.</a>
+ * <a href="#univerity"> Dados Esportes - DESENVOLVIMENTO.</a>
+ * <a href="#univerity"> Dados Imagens - DESENVOLVIMENTO.</a>
+ * <a href="#univerity"> Dados Geograficos - DESENVOLVIMENTO.</a>
 
 
 <h3 id="p">Dados Pessoais</h3>
