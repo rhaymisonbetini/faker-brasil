@@ -2,6 +2,7 @@
 
 const SportsHelpers = require('../helpers/SportsHelpers');
 const RandomArrayElement = require('../services/RandomArrayElement');
+const PersonalData = require("./PersonalData")
 
 class SportsData {
 
@@ -37,6 +38,35 @@ class SportsData {
         let team1 = RandomArrayElement.randomElement(SportsHelpers.randomTeam());
         let team2 = RandomArrayElement.randomElement(SportsHelpers.randomTeam());
         return team1 + ' ' + RandomArrayElement.randoNumberIn(0, 6).toFixed(0) + ' X ' + RandomArrayElement.randoNumberIn(0, 6).toFixed(0) + ' ' + team2
+    }
+
+    /**
+    * return a random soccer position
+    * @returns {string}
+    */
+    soccerPosition() {
+        return RandomArrayElement.randomElement(SportsHelpers.soccerPosition())
+    }
+
+    /**
+     * return a full soccer team
+     * @returns {object}
+     */
+    soccerFullTeam() {
+        let personData = new PersonalData();
+        let positions = SportsHelpers.soccerPosition();
+        let team = [];
+
+        for (let i = 0; i < positions.length; i++) {
+            team.push({
+                name: !i ? RandomArrayElement.randomElement(SportsHelpers.goalkeeper()) : RandomArrayElement.randomElement(SportsHelpers.soccersPlayers()),
+                position: positions[i]
+            })
+        }
+        return {
+            name: this.getRandomBrazilianTeam(),
+            team: team
+        }
     }
 
     /**
