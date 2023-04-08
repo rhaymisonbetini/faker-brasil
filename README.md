@@ -45,6 +45,7 @@ Nossa biblioteca hoje conta com diversos métodos de criação de dados que est�
  * <a href="#sports"> Dados Esportes</a>
  * <a href="#image"> Dados Imagens</a>
  * <a href="#music"> Dados Musicais</a>
+ * <a href="#social"> Dados Redes Sociais, Textos, Noticias</a>
  * <a href="#univerity"> Dados Geograficos - DESENVOLVIMENTO.</a>
  * <a href="#univerity"> Dados Cientificos - DESENVOLVIMENTO.</a>
 
@@ -829,4 +830,21 @@ Nossa biblioteca hoje conta com diversos métodos de criação de dados que est�
   //Este metodo retorna um instrumento eletornico aleatorio
   //ex:sintetizador,teremim,teclado
   eletronicMusicalInstrument()
+```
+
+<h3 id="social">Dados Redes Sociais, Textos, Noticias</h3>
+
+```javascript
+
+  //Este metodo retorna um comentario aleatório positivo para redes sociais
+  //ex: Que incrível!, Adoreii!, Que legal! 🤩
+  positiveComment()
+
+  //Este metodo retorna um comentário aleatorio negaivo para redes sociais
+  //ex: Infelizmente não gostei!
+  negativeComment()
+
+  //Este metodo retorna um array de parafragros com um texto sobre esporte (futebol)
+  //paragraph:number => Por default são gerados 3 paragrafos, caso voce queira um texto maior é só passar a quantidade.
+  sportText(paragraph = 3)
 ```
