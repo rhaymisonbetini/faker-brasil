@@ -20,15 +20,15 @@ Pronto, agora você precisa importa a Lib no seu arquivo javascript
 ```javascript
 const SuperFakerBrasil = require('faker-brasil');
 ```
-Criamos uma nova instância da classe SuperFakerBrasil e estamos pronto para utilizar toda nossa biblioteca.
-Essa super classe estende de todas as outras através, criando assim uma super classe fake
+Agora vamos criar uma nova instância da classe SuperFakerBrasil e estaremos pronto para utilizar toda nossa biblioteca.
+Essa super classe estende de todas as outras... criando assim uma super classe fake
 
 ```javascript
 const fakerBrasil = new SuperFakerBrasil();
 ```
 Prontinho! Estamos prontos para utilizar e criar dados fakes. 
 Nossa biblioteca hoje conta com diversos métodos de criação de dados que estão distribuídos em 
-11 classes geradoras!
+15 classes geradoras!
 
  ### Geradores
  * <a href="#peronal"> Dados pessoais</a></a>
