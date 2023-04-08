@@ -15,6 +15,7 @@ const GovData = require('./src/fabric/GovData')
 const SportsData = require('./src/fabric/SportsData')
 const ImageData = require('./src/fabric/ImageData')
 const MusicData = require('./src/fabric/MusicData')
+const SocialNetworkData = require('./src/fabric/SocialNetworkData')
 class SuperFakerBrasil extends Mixin(
     PersonalData,
     UniversityData,
@@ -29,7 +30,8 @@ class SuperFakerBrasil extends Mixin(
     GovData,
     SportsData,
     ImageData,
-    MusicData
+    MusicData,
+    SocialNetworkData
 ) {
 
     constructor() {
