@@ -47,7 +47,6 @@ Nossa biblioteca hoje conta com diversos métodos de criação de dados que est�
  * <a href="#music"> Dados Musicais</a>
  * <a href="#social"> Dados Redes Sociais, Textos, Noticias</a>
  * <a href="#univerity"> Dados Geograficos - DESENVOLVIMENTO.</a>
- * <a href="#univerity"> Dados Cientificos - DESENVOLVIMENTO.</a>
 
 <h3 id="p">Dados Pessoais</h3>
 
@@ -844,7 +843,26 @@ Nossa biblioteca hoje conta com diversos métodos de criação de dados que est�
   //ex: Infelizmente não gostei!
   negativeComment()
 
+  //Este metodo te retorna um post completo para uma rede social
+  //ex:{
+  //image: string => url da imagem/foto
+  //post: string => texto do do post
+  //history: Array<object> => historico de comentarios e a pessoa que comentou {name:string, post:string}
+  //}
+  fakePost()
+
   //Este metodo retorna um array de parafragros com um texto sobre esporte (futebol)
   //paragraph:number => Por default são gerados 3 paragrafos, caso voce queira um texto maior é só passar a quantidade.
   sportText(paragraph = 3)
+
+  //Este metodo retorna um array de parafragros com um texto aleatorio (politica,cidade,etc..)
+  //paragraph:number => Por default são gerados 3 paragrafos, caso voce queira um texto maior é só passar a quantidade.
+  newsText(paragraph = 3)
+
+  //Este metodo retorna um array de parafragros com um texto aleatorio 
+  //paragraph:number => Por default são gerados 3 paragrafos, caso voce queira um texto maior é só passar a quantidade.
+  randomText(paragraph = 3)
+
+
+
 ```

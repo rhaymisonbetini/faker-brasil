@@ -34,4 +34,29 @@ describe('Teste for SocialNetworkData generator', () => {
         expect(social.length).toEqual(5)
     })
 
+    it('Get a radom positive newsText', () => {
+        let social = socialNetworkData.newsText(5);
+        expect(social).toBeInstanceOf(Array)
+        expect(typeof social).toEqual('object');
+        expect(social.length).toEqual(5)
+    })
+
+    it('Get a radom positive randomText', () => {
+        let social = socialNetworkData.randomText(5);
+        expect(social).toBeInstanceOf(Array)
+        expect(typeof social).toEqual('object');
+        expect(social.length).toEqual(5)
+    })
+
+    it('Get a radom positive fakePost', async() => {
+        let social = await socialNetworkData.fakePost();
+        expect(typeof social).toEqual('object');
+        expect(social).toHaveProperty("image")
+        expect(social).toHaveProperty("post")
+        expect(social).toHaveProperty("history")
+        expect(social.history).toBeInstanceOf(Array)
+        expect(social.history.length).toBeGreaterThan(0)
+        expect(social.history[0]).toHaveProperty("name")
+        expect(social.history[0]).toHaveProperty("post")
+    })
 })
