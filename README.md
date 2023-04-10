@@ -12,13 +12,13 @@
    <img src="https://img.shields.io/github/issues-pr-closed/rhaymisonbetini/faker-brasil.svg">
 </p>
 
-<p  align="center">
+<p align="center">
    <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
    <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white">
    <img src="https://img.shields.io/badge/Jest-323330?style=for-the-badge&logo=Jest&logoColor=white">
 </p>
 
-<p>
+<p align="center">
   <a href="https://www.linkedin.com/in/heleno-betini-2b3016175/">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white">
   </a>
