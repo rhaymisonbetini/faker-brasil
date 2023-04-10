@@ -65,6 +65,14 @@ class RandomArrayElement {
     }
 
     /**
+    * return a random number between min and max and not Flor
+    * @returns {int}
+    */
+    static superRandom(min, max) {
+       return Math.random() * (max - min) + min;
+    }
+
+    /**
      * shuffle a givem array
      * @param {array} arr 
      * @returns 
