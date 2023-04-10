@@ -5,6 +5,9 @@
 <p align="center">
    <img alt="Bower" src="https://img.shields.io/bower/l/MI?style=flat-square">
    <img alt="Bower" src="https://img.shields.io/badge/version-1.0.0-blue">
+   <img src="https://img.shields.io/github/contributors/badges/shields" />
+   <img src="https://img.shields.io/circleci/project/github/badges/daily-tests?label=service%100tests" alt="service-test status">
+   <img src="https://img.shields.io/badge/coverage-100%25-yellowgree" alt="coverage">
 </p>
 
 
