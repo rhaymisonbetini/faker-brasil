@@ -10,7 +10,7 @@
 
 <h1 align="center">A MAIOR BIBLIOTECA DE DADOS FAKES GENUINAMENTE BRASILEIROS. FEITO DE BR PARA BR!</h1>
 
-<h4>Como instalar essa bagaça!</h4>
+<h4>Como instalar</h4>
 
 ```
 npm install faker-brasil
