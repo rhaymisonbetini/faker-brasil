@@ -13,7 +13,7 @@
 <h4>Como instalar essa bagaça!</h4>
 
 ```
-Previsao de lançamento no npm em 09-04-2023
+npm install faker-brasil
 ```
 Pronto, agora você precisa importa a Lib no seu arquivo javascript
 
