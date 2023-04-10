@@ -46,7 +46,7 @@ Nossa biblioteca hoje conta com diversos métodos de criação de dados que est�
  * <a href="#image"> Dados Imagens</a>
  * <a href="#music"> Dados Musicais</a>
  * <a href="#social"> Dados Redes Sociais, Textos, Noticias</a>
- * <a href="#univerity"> Dados Geograficos - DESENVOLVIMENTO.</a>
+ * <a href="#geo"> Dados Geograficos.</a>
 
 <h3 id="p">Dados Pessoais</h3>
 
@@ -863,6 +863,31 @@ Nossa biblioteca hoje conta com diversos métodos de criação de dados que est�
   //paragraph:number => Por default são gerados 3 paragrafos, caso voce queira um texto maior é só passar a quantidade.
   randomText(paragraph = 3)
 
+```
+
+<h3 id="geo">Dados Redes Sociais, Textos, Noticias</h3>
+
+```javascript
+
+  //Este metodo retorna um objeto de coordenada geoagrafica aleatoria dentro do Brazil
+  //state:string = Se voce quiser uma coordenada dentro de um estado especifico
+  //basta passar a sigla do estado (em caixa alta): SP, RJ,MG, MT,ES etc..
+  //return {
+  // state: string,
+  // lat: number,
+  // lng: number
+  // }
+  geoRandomBrCoordState(state = null);
 
 
+  //Este metodo retorna um objeto de coordenada geoagrafica aleatoria dentro de um municipio Brasileiro
+  //state:string = Se voce quiser uma coordenada dentro de um municipio especifico
+  //basta passar o nome do municipio (em caixa alta): VILA VELHA, JUIZ DE FORA,ARACAJU, SALVADOR etc..
+  //return {
+  // state: string,
+  // city: string
+  // lat: number,
+  // lng: number
+  // }
+  getRandomCoordsByCity(city = null)
 ```
