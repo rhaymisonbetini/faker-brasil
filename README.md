@@ -10,10 +10,10 @@
 
 <h1 align="center">A MAIOR BIBLIOTECA DE DADOS FAKES GENUINAMENTE BRASILEIROS. FEITO DE BR PARA BR!</h1>
 
-<h4>Como instalar essa bagaça!</h4>
+<h4>Como instalar</h4>
 
 ```
-Previsao de lançamento no npm em 09-04-2023
+npm install faker-brasil
 ```
 Pronto, agora você precisa importa a Lib no seu arquivo javascript
 
