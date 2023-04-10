@@ -4,7 +4,7 @@
 
 <p align="center">
    <img src="https://img.shields.io/bower/l/MI?style=flat-square">
-   <img src="https://img.shields.io/badge/version-1.0.0-blue">
+   <img src="https://img.shields.io/badge/version-1.0.1-blue">
    <img src="https://img.shields.io/badge/coverage-100%25-yellowgree" alt="coverage">
    <img src="https://img.shields.io/github/issues/rhaymisonbetini/faker-brasil.svg">
    <img src="https://img.shields.io/github/issues-closed/rhaymisonbetini/faker-brasil.svg">
@@ -884,7 +884,7 @@ Nossa biblioteca hoje conta com diversos métodos de criação de dados que est�
 
 ```
 
-<h3 id="geo">Dados Redes Sociais, Textos, Noticias</h3>
+<h3 id="geo">Dados Geograficos</h3>
 
 ```javascript
 
