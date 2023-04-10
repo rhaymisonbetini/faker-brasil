@@ -6,6 +6,13 @@
    <img alt="Bower" src="https://img.shields.io/bower/l/MI?style=flat-square">
    <img alt="Bower" src="https://img.shields.io/badge/version-1.0.0-blue">
    <img src="https://img.shields.io/badge/coverage-100%25-yellowgree" alt="coverage">
+   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
+   <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white">
+   <img src="https://img.shields.io/badge/Jest-323330?style=for-the-badge&logo=Jest&logoColor=white">
+   <img src="https://img.shields.io/github/issues/rhaymisonbetini/faker-brasil.svg">
+   <img src="https://img.shields.io/github/issues-closed/rhaymisonbetini/faker-brasil.svg">
+   <img src="https://img.shields.io/github/issues-pr/rhaymisonbetini/faker-brasil.svg">
+   <img src="https://img.shields.io/github/issues-pr-closed/rhaymisonbetini/faker-brasil.svg">
 </p>
 
 
