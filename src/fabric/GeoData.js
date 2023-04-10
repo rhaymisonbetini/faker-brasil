@@ -29,8 +29,8 @@ class GeoData {
             //In this point we can move by x and y to get random point and not always the middle
             return {
                 state: randomStateCoord.state.code,
-                xM: RandomArrayElement.superRandom(xM, xM - RandomArrayElement.randoNumberIn(-.0000000000050, .0000000500)),
-                yM: RandomArrayElement.superRandom(yM, yM - RandomArrayElement.randoNumberIn(-.0000000000050, .0000000500))
+                lat: RandomArrayElement.superRandom(xM, xM - RandomArrayElement.randoNumberIn(-.0000000000050, .0000000500)),
+                lng: RandomArrayElement.superRandom(yM, yM - RandomArrayElement.randoNumberIn(-.0000000000050, .0000000500))
             }
         } else {
             return {
