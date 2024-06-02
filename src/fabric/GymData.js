@@ -1,16 +1,16 @@
 'use strict'
 
-const RandomarrayElement = require('../services/RandomarrayElement');
+const RandomArrayElement = require('../services/RandomArrayElement');
 const GymHelpers = require('../helpers/GymHelpers')
 
 class GymData {
 
     /**
      * return a radom gym name
-     * @returns {string      }
+     * @returns {string}
      */
     gymName() {
-        return RandomarrayElement.randomElement(GymHelpers.gymName())
+        return RandomArrayElement.randomElement(GymHelpers.gymName())
     }
 
 
@@ -19,7 +19,7 @@ class GymData {
     * @returns {string}
     */
     machineGymName() {
-        return RandomarrayElement.randomElement(GymHelpers.machineName())
+        return RandomArrayElement.randomElement(GymHelpers.machineName())
     }
 
 
@@ -28,7 +28,7 @@ class GymData {
     * @returns {array<string>}
     */
     radomExerciseName() {
-        return RandomarrayElement.randomElement(GymHelpers.typesOfExercise()[RandomarrayElement.randoNumberIn(0, 6)])
+        return RandomArrayElement.randomElement(GymHelpers.typesOfExercise()[RandomArrayElement.randoNumberIn(0, 6)])
     }
 
     /**
@@ -52,7 +52,7 @@ class GymData {
     * @returns {string}
     */
     speciaTechniques() {
-        return RandomarrayElement.randomElement(GymHelpers.speciaTechniques())
+        return RandomArrayElement.randomElement(GymHelpers.speciaTechniques())
     }
 
     /**
@@ -60,13 +60,13 @@ class GymData {
      * @returns {array<object>}
      */
     radomWorkout() {
-        let randomWorkout = GymHelpers.typesOfExercise()[RandomarrayElement.randoNumberIn(0, 6)]
+        let randomWorkout = GymHelpers.typesOfExercise()[RandomArrayElement.randoNumberIn(0, 6)]
         let workout = []
         for (let i = 0; i < randomWorkout.length; i++) {
             workout.push({
                 name: randomWorkout[i],
                 especialTechnique: this.speciaTechniques(),
-                serie: RandomarrayElement.randomElement(GymHelpers.series())
+                serie: RandomArrayElement.randomElement(GymHelpers.series())
             })
         }
         return workout;
@@ -83,7 +83,7 @@ class GymData {
             generated.push({
                 name: workout[i],
                 especialTechnique: this.speciaTechniques(),
-                serie: RandomarrayElement.randomElement(GymHelpers.series())
+                serie: RandomArrayElement.randomElement(GymHelpers.series())
             })
         }
         return generated;
@@ -113,7 +113,7 @@ class GymData {
      */
     weekWorkout() {
         let weekDays = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
-        let exercise = RandomarrayElement.shuffleArray([0, 1, 2, 3, 4, 6]);
+        let exercise = RandomArrayElement.shuffleArray([0, 1, 2, 3, 4, 6]);
         let weekWorkout = [];
         for (let i = 0; i < exercise.length; i++) {
             weekWorkout[weekDays[i]] = this.generateGivemWorkout(this.exerciseGroup(exercise[i]))
